@@ -1,0 +1,129 @@
+{
+  "versao_base": "territorio-2026-10-28-r1",
+  "versao_contrato_referencia": "1.0.0",
+  "congelada_em": "2026-10-28T23:40:33.295367+00:00",
+  "estado": "CONGELADA_COM_LACUNAS_DOCUMENTADAS",
+  "escopo": "Snapshot analítico; pontos 1, 2 e 3 concluídos. Não implementa API ou base operacional.",
+  "periodos": {
+    "normais": "1991-01-01/2020-12-31",
+    "clima_observado_desastres": "2015-01-01/2025-12-31",
+    "crime_populacao": "2025-01-01/2025-12-31"
+  },
+  "datas_coleta": [
+    "2026-10-27"
+  ],
+  "indicadores": 180,
+  "disponiveis": 153,
+  "ausentes": 27,
+  "municipios": [
+    "2304400",
+    "2611606",
+    "2927408",
+    "3106200",
+    "3304557",
+    "3550308",
+    "4106902",
+    "4314902",
+    "5208707",
+    "5300108"
+  ],
+  "politica": "Não sobrescrever; qualquer correção ou atualização gera nova edição.",
+  "script_auditoria_sha256": "5098dcfa0ac7cb40aaad68740db8433ab52b3f41d1a5a1536b0a08f58b87e63c",
+  "arquivos": [
+    {
+      "arquivo": "clima_anual.csv",
+      "bytes": 34008,
+      "sha256": "bca7ad9e326616bf6076f1e100ccdf7255b0f088f294035e8165b1a4b4e33e9e"
+    },
+    {
+      "arquivo": "clima_diario.csv",
+      "bytes": 2617933,
+      "sha256": "4c3fc1f09cc318bb1a595be7783ed67b20cf5971186aba74302381f97a6f4a15"
+    },
+    {
+      "arquivo": "clima_normais.csv",
+      "bytes": 17977,
+      "sha256": "f5df2ed8913a80f889999a78f28b472193f0e2e49af103bd7b4be25b8457adc9"
+    },
+    {
+      "arquivo": "cobertura_municipios.csv",
+      "bytes": 983,
+      "sha256": "20d98204ee02cdec63fc277a1689bcdf0a8ee366102acab5b6baadc2f29771c9"
+    },
+    {
+      "arquivo": "conciliacao_seguranca.csv",
+      "bytes": 2234,
+      "sha256": "175401f87b5c3bf17a53f90c26008d1d0e49c8edc02e36572ad19348f5d1a754"
+    },
+    {
+      "arquivo": "contexto_auditoria.json",
+      "bytes": 1095,
+      "sha256": "2a3e8afe127ebdc79e6673210c24653d642742c8a09db076ef9548d3979c7844"
+    },
+    {
+      "arquivo": "desastres_registros.csv",
+      "bytes": 15100,
+      "sha256": "f8d8ed73b891824a1a3e2fb039f5d4ac6d02eec707667f70956b64af619da92c"
+    },
+    {
+      "arquivo": "evidencias_lacunas_seguranca.json",
+      "bytes": 7313,
+      "sha256": "c026687dac4af7122587bc0b784ed9a999b712b1fe12abfce5d08594fa55ae31"
+    },
+    {
+      "arquivo": "fontes.csv",
+      "bytes": 37278,
+      "sha256": "1c5779be8054fa6e4523540af626f0b1ead654d02e69789fa8652f2fc6894fb6"
+    },
+    {
+      "arquivo": "indicadores.csv",
+      "bytes": 34909,
+      "sha256": "cc967af2708bc46f47dc0a60640b2175e44f2571fce5c588e093d457088af6cb"
+    },
+    {
+      "arquivo": "indicadores.json",
+      "bytes": 166621,
+      "sha256": "a4dbeac2175d5e2ba4ca1d0912cbe1ee83cefe4fcef33086734ad526f89e38ec"
+    },
+    {
+      "arquivo": "lacunas.csv",
+      "bytes": 7348,
+      "sha256": "28c116ff3e7ead9edcfbabefd3da115c6d57a595f0f926582ce682073a9e0ce4"
+    },
+    {
+      "arquivo": "LEIA-ME.md",
+      "bytes": 5787,
+      "sha256": "ccebeb121586246de97bd0b364149f87cd0eb9443e8d3b4c1401499ccc198982"
+    },
+    {
+      "arquivo": "mapeamento_catalogo.csv",
+      "bytes": 1507,
+      "sha256": "e177bde3f49e3aee4ac749458b546acf7ac8b1c0017687104eb237adcba6a632"
+    },
+    {
+      "arquivo": "municipios.json",
+      "bytes": 2466,
+      "sha256": "0e2147c28c7a2b15c35264754acf0b7cadede8a3d133b0c74a04706bf0512983"
+    },
+    {
+      "arquivo": "populacao_2025.csv",
+      "bytes": 369,
+      "sha256": "16a95a8fce1ec4c10771026943001a8e3654148cf8edab72b626b6ec7b9ba1b9"
+    },
+    {
+      "arquivo": "seguranca_anual.csv",
+      "bytes": 19359,
+      "sha256": "b628076fd82b57ed21079f530bcaca283ce44d5b8e76be3d5d04b930bbddef51"
+    },
+    {
+      "arquivo": "seguranca_mensal.csv",
+      "bytes": 58026,
+      "sha256": "382e706e3553bf8cdbac81741ec9b56ac69462b3f994f3511e57c5b0b5b64cec"
+    },
+    {
+      "arquivo": "validacao.json",
+      "bytes": 289619,
+      "sha256": "50e4a8dfd0fe0cb37fe42c09652f4e01f998f867e289f02f5687cef7755304e8"
+    }
+  ]
+}

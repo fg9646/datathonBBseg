@@ -1,0 +1,181 @@
+codigo_ibge,municipio,uf,abrangencia,id,valor,unidade,disponibilidade,motivo_ausencia,inicio,fim,fontes_ids
+2304400,Fortaleza,CE,municipio,clima.chuva_normal,1584.0,mm/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PREC.xlsx
+2304400,Fortaleza,CE,municipio,clima.cobertura_chuva,0.7155301144848183,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A305.csv;expansao/inmet_2016_A305.csv;expansao/inmet_2017_A305.csv;expansao/inmet_2018_A305.csv;expansao/inmet_2019_A305.csv;expansao/inmet_2020_A305.csv;expansao/inmet_2021_A305.csv;expansao/inmet_2022_A305.csv;expansao/inmet_2023_A305.csv;expansao/inmet_2024_A305.csv;expansao/inmet_2025_A305.csv
+2304400,Fortaleza,CE,municipio,clima.cobertura_rajada,0.7287207565953211,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A305.csv;expansao/inmet_2016_A305.csv;expansao/inmet_2017_A305.csv;expansao/inmet_2018_A305.csv;expansao/inmet_2019_A305.csv;expansao/inmet_2020_A305.csv;expansao/inmet_2021_A305.csv;expansao/inmet_2022_A305.csv;expansao/inmet_2023_A305.csv;expansao/inmet_2024_A305.csv;expansao/inmet_2025_A305.csv
+2304400,Fortaleza,CE,municipio,clima.dias_chuva_ge50_normal,,dias/ano,AUSENTE,FONTE_SEM_VALOR,1991-01-01,2020-12-31,piloto/inmet_PRENDIA50.xlsx
+2304400,Fortaleza,CE,municipio,clima.dias_minima_le10_normal,0.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMINNDIA10.xlsx
+2304400,Fortaleza,CE,municipio,clima.maxima_media_normal,31.1,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMAX.xlsx
+2304400,Fortaleza,CE,municipio,clima.minima_media_normal,23.9,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMIN.xlsx
+2304400,Fortaleza,CE,municipio,clima.rajada_max_observada,84.96000000000001,km/h,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A305.csv;expansao/inmet_2016_A305.csv;expansao/inmet_2017_A305.csv;expansao/inmet_2018_A305.csv;expansao/inmet_2019_A305.csv;expansao/inmet_2020_A305.csv;expansao/inmet_2021_A305.csv;expansao/inmet_2022_A305.csv;expansao/inmet_2023_A305.csv;expansao/inmet_2024_A305.csv;expansao/inmet_2025_A305.csv
+2304400,Fortaleza,CE,municipio,desastres.protocolos_alagamento,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2304400,Fortaleza,CE,municipio,desastres.protocolos_chuva_intensa,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2304400,Fortaleza,CE,municipio,desastres.protocolos_enxurrada,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2304400,Fortaleza,CE,municipio,desastres.protocolos_granizo,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2304400,Fortaleza,CE,municipio,desastres.protocolos_inundacao,3,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2304400,Fortaleza,CE,municipio,desastres.protocolos_vendaval,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2304400,Fortaleza,CE,municipio,seguranca.furto_residencial,,ocorrencias,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/ce_cvp_2025.xlsx;expansao/ce_furto_2025.xlsx
+2304400,Fortaleza,CE,municipio,seguranca.roubo_residencial,,ocorrencias,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/ce_cvp_2025.xlsx;expansao/ce_furto_2025.xlsx
+2304400,Fortaleza,CE,municipio,seguranca.taxa_furto_residencial,,ocorrencias/100mil_habitantes,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/ce_cvp_2025.xlsx;expansao/ce_furto_2025.xlsx;expansao/ibge_pop_2025.json
+2304400,Fortaleza,CE,municipio,seguranca.taxa_roubo_residencial,,ocorrencias/100mil_habitantes,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/ce_cvp_2025.xlsx;expansao/ce_furto_2025.xlsx;expansao/ibge_pop_2025.json
+2611606,Recife,PE,municipio,clima.chuva_normal,2155.5,mm/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PREC.xlsx
+2611606,Recife,PE,municipio,clima.cobertura_chuva,0.5900945744151319,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A301.csv;expansao/inmet_2016_A301.csv;expansao/inmet_2017_A301.csv;expansao/inmet_2018_A301.csv;expansao/inmet_2019_A301.csv;expansao/inmet_2020_A301.csv;expansao/inmet_2021_A301.csv;expansao/inmet_2022_A301.csv;expansao/inmet_2023_A301.csv
+2611606,Recife,PE,municipio,clima.cobertura_rajada,0.4659034345445495,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A301.csv;expansao/inmet_2016_A301.csv;expansao/inmet_2017_A301.csv;expansao/inmet_2018_A301.csv;expansao/inmet_2019_A301.csv;expansao/inmet_2020_A301.csv;expansao/inmet_2021_A301.csv;expansao/inmet_2022_A301.csv;expansao/inmet_2023_A301.csv
+2611606,Recife,PE,municipio,clima.dias_chuva_ge50_normal,8.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PRENDIA50.xlsx
+2611606,Recife,PE,municipio,clima.dias_minima_le10_normal,0.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMINNDIA10.xlsx
+2611606,Recife,PE,municipio,clima.maxima_media_normal,29.7,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMAX.xlsx
+2611606,Recife,PE,municipio,clima.minima_media_normal,22.3,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMIN.xlsx
+2611606,Recife,PE,municipio,clima.rajada_max_observada,52.56,km/h,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A301.csv;expansao/inmet_2016_A301.csv;expansao/inmet_2017_A301.csv;expansao/inmet_2018_A301.csv;expansao/inmet_2019_A301.csv;expansao/inmet_2020_A301.csv;expansao/inmet_2021_A301.csv;expansao/inmet_2022_A301.csv;expansao/inmet_2023_A301.csv
+2611606,Recife,PE,municipio,desastres.protocolos_alagamento,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2611606,Recife,PE,municipio,desastres.protocolos_chuva_intensa,1,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2611606,Recife,PE,municipio,desastres.protocolos_enxurrada,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2611606,Recife,PE,municipio,desastres.protocolos_granizo,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2611606,Recife,PE,municipio,desastres.protocolos_inundacao,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2611606,Recife,PE,municipio,desastres.protocolos_vendaval,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2611606,Recife,PE,municipio,seguranca.furto_residencial,,ocorrencias,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/pe_cvp_microdados.xlsx
+2611606,Recife,PE,municipio,seguranca.roubo_residencial,,ocorrencias,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/pe_cvp_microdados.xlsx
+2611606,Recife,PE,municipio,seguranca.taxa_furto_residencial,,ocorrencias/100mil_habitantes,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/ibge_pop_2025.json;expansao/pe_cvp_microdados.xlsx
+2611606,Recife,PE,municipio,seguranca.taxa_roubo_residencial,,ocorrencias/100mil_habitantes,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/ibge_pop_2025.json;expansao/pe_cvp_microdados.xlsx
+2927408,Salvador,BA,municipio,clima.chuva_normal,1833.3,mm/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PREC.xlsx
+2927408,Salvador,BA,municipio,clima.cobertura_chuva,0.9718765555002489,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A401.csv;expansao/inmet_2016_A401.csv;expansao/inmet_2017_A401.csv;expansao/inmet_2018_A401.csv;expansao/inmet_2019_A401.csv;expansao/inmet_2020_A401.csv;expansao/inmet_2021_A401.csv;expansao/inmet_2022_A401.csv;expansao/inmet_2023_A401.csv;expansao/inmet_2024_A401.csv;expansao/inmet_2025_A401.csv
+2927408,Salvador,BA,municipio,clima.cobertura_rajada,0.971627675460428,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A401.csv;expansao/inmet_2016_A401.csv;expansao/inmet_2017_A401.csv;expansao/inmet_2018_A401.csv;expansao/inmet_2019_A401.csv;expansao/inmet_2020_A401.csv;expansao/inmet_2021_A401.csv;expansao/inmet_2022_A401.csv;expansao/inmet_2023_A401.csv;expansao/inmet_2024_A401.csv;expansao/inmet_2025_A401.csv
+2927408,Salvador,BA,municipio,clima.dias_chuva_ge50_normal,6.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PRENDIA50.xlsx
+2927408,Salvador,BA,municipio,clima.dias_minima_le10_normal,0.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMINNDIA10.xlsx
+2927408,Salvador,BA,municipio,clima.maxima_media_normal,29.0,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMAX.xlsx
+2927408,Salvador,BA,municipio,clima.minima_media_normal,22.7,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMIN.xlsx
+2927408,Salvador,BA,municipio,clima.rajada_max_observada,89.64,km/h,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A401.csv;expansao/inmet_2016_A401.csv;expansao/inmet_2017_A401.csv;expansao/inmet_2018_A401.csv;expansao/inmet_2019_A401.csv;expansao/inmet_2020_A401.csv;expansao/inmet_2021_A401.csv;expansao/inmet_2022_A401.csv;expansao/inmet_2023_A401.csv;expansao/inmet_2024_A401.csv;expansao/inmet_2025_A401.csv
+2927408,Salvador,BA,municipio,desastres.protocolos_alagamento,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2927408,Salvador,BA,municipio,desastres.protocolos_chuva_intensa,2,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2927408,Salvador,BA,municipio,desastres.protocolos_enxurrada,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2927408,Salvador,BA,municipio,desastres.protocolos_granizo,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2927408,Salvador,BA,municipio,desastres.protocolos_inundacao,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2927408,Salvador,BA,municipio,desastres.protocolos_vendaval,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+2927408,Salvador,BA,municipio,seguranca.furto_residencial,,ocorrencias,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/ba_outros_2025.xlsx
+2927408,Salvador,BA,municipio,seguranca.roubo_residencial,344,ocorrencias,DISPONIVEL,,2025-01-01,2025-12-31,expansao/ba_outros_2025.xlsx
+2927408,Salvador,BA,municipio,seguranca.taxa_furto_residencial,,ocorrencias/100mil_habitantes,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/ba_outros_2025.xlsx;expansao/ibge_pop_2025.json
+2927408,Salvador,BA,municipio,seguranca.taxa_roubo_residencial,13.415469284035124,ocorrencias/100mil_habitantes,DISPONIVEL,,2025-01-01,2025-12-31,expansao/ba_outros_2025.xlsx;expansao/ibge_pop_2025.json
+3106200,Belo Horizonte,MG,municipio,clima.chuva_normal,1578.3,mm/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PREC.xlsx
+3106200,Belo Horizonte,MG,municipio,clima.cobertura_chuva,0.9937779990044798,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A521.csv;expansao/inmet_2016_A521.csv;expansao/inmet_2017_A521.csv;expansao/inmet_2018_A521.csv;expansao/inmet_2019_A521.csv;expansao/inmet_2020_A521.csv;expansao/inmet_2021_A521.csv;expansao/inmet_2022_A521.csv;expansao/inmet_2023_A521.csv;expansao/inmet_2024_A521.csv;expansao/inmet_2025_A521.csv
+3106200,Belo Horizonte,MG,municipio,clima.cobertura_rajada,0.9930313588850174,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A521.csv;expansao/inmet_2016_A521.csv;expansao/inmet_2017_A521.csv;expansao/inmet_2018_A521.csv;expansao/inmet_2019_A521.csv;expansao/inmet_2020_A521.csv;expansao/inmet_2021_A521.csv;expansao/inmet_2022_A521.csv;expansao/inmet_2023_A521.csv;expansao/inmet_2024_A521.csv;expansao/inmet_2025_A521.csv
+3106200,Belo Horizonte,MG,municipio,clima.dias_chuva_ge50_normal,5.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PRENDIA50.xlsx
+3106200,Belo Horizonte,MG,municipio,clima.dias_minima_le10_normal,0.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMINNDIA10.xlsx
+3106200,Belo Horizonte,MG,municipio,clima.maxima_media_normal,27.3,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMAX.xlsx
+3106200,Belo Horizonte,MG,municipio,clima.minima_media_normal,18.0,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMIN.xlsx
+3106200,Belo Horizonte,MG,municipio,clima.rajada_max_observada,90.0,km/h,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A521.csv;expansao/inmet_2016_A521.csv;expansao/inmet_2017_A521.csv;expansao/inmet_2018_A521.csv;expansao/inmet_2019_A521.csv;expansao/inmet_2020_A521.csv;expansao/inmet_2021_A521.csv;expansao/inmet_2022_A521.csv;expansao/inmet_2023_A521.csv;expansao/inmet_2024_A521.csv;expansao/inmet_2025_A521.csv
+3106200,Belo Horizonte,MG,municipio,desastres.protocolos_alagamento,1,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3106200,Belo Horizonte,MG,municipio,desastres.protocolos_chuva_intensa,11,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3106200,Belo Horizonte,MG,municipio,desastres.protocolos_enxurrada,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3106200,Belo Horizonte,MG,municipio,desastres.protocolos_granizo,1,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3106200,Belo Horizonte,MG,municipio,desastres.protocolos_inundacao,2,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3106200,Belo Horizonte,MG,municipio,desastres.protocolos_vendaval,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3106200,Belo Horizonte,MG,municipio,seguranca.furto_residencial,,ocorrencias,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/mg_furto.csv;expansao/mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,municipio,seguranca.roubo_residencial,,ocorrencias,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/mg_furto.csv;expansao/mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,municipio,seguranca.taxa_furto_residencial,,ocorrencias/100mil_habitantes,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/ibge_pop_2025.json;expansao/mg_furto.csv;expansao/mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,municipio,seguranca.taxa_roubo_residencial,,ocorrencias/100mil_habitantes,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/ibge_pop_2025.json;expansao/mg_furto.csv;expansao/mg_violentos_2025.csv
+3304557,Rio de Janeiro,RJ,municipio,clima.chuva_normal,2414.8,mm/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PREC.xlsx
+3304557,Rio de Janeiro,RJ,municipio,clima.cobertura_chuva,0.9196117471378795,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A621.csv;expansao/inmet_2016_A621.csv;expansao/inmet_2017_A621.csv;expansao/inmet_2018_A621.csv;expansao/inmet_2019_A621.csv;expansao/inmet_2020_A621.csv;expansao/inmet_2021_A621.csv;expansao/inmet_2022_A621.csv;expansao/inmet_2023_A621.csv;expansao/inmet_2024_A621.csv;expansao/inmet_2025_A621.csv
+3304557,Rio de Janeiro,RJ,municipio,clima.cobertura_rajada,0.9143852663016426,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A621.csv;expansao/inmet_2016_A621.csv;expansao/inmet_2017_A621.csv;expansao/inmet_2018_A621.csv;expansao/inmet_2019_A621.csv;expansao/inmet_2020_A621.csv;expansao/inmet_2021_A621.csv;expansao/inmet_2022_A621.csv;expansao/inmet_2023_A621.csv;expansao/inmet_2024_A621.csv;expansao/inmet_2025_A621.csv
+3304557,Rio de Janeiro,RJ,municipio,clima.dias_chuva_ge50_normal,13.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PRENDIA50.xlsx
+3304557,Rio de Janeiro,RJ,municipio,clima.dias_minima_le10_normal,0.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMINNDIA10.xlsx
+3304557,Rio de Janeiro,RJ,municipio,clima.maxima_media_normal,26.9,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMAX.xlsx
+3304557,Rio de Janeiro,RJ,municipio,clima.minima_media_normal,18.0,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMIN.xlsx
+3304557,Rio de Janeiro,RJ,municipio,clima.rajada_max_observada,83.16000000000001,km/h,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A621.csv;expansao/inmet_2016_A621.csv;expansao/inmet_2017_A621.csv;expansao/inmet_2018_A621.csv;expansao/inmet_2019_A621.csv;expansao/inmet_2020_A621.csv;expansao/inmet_2021_A621.csv;expansao/inmet_2022_A621.csv;expansao/inmet_2023_A621.csv;expansao/inmet_2024_A621.csv;expansao/inmet_2025_A621.csv
+3304557,Rio de Janeiro,RJ,municipio,desastres.protocolos_alagamento,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3304557,Rio de Janeiro,RJ,municipio,desastres.protocolos_chuva_intensa,16,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3304557,Rio de Janeiro,RJ,municipio,desastres.protocolos_enxurrada,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3304557,Rio de Janeiro,RJ,municipio,desastres.protocolos_granizo,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3304557,Rio de Janeiro,RJ,municipio,desastres.protocolos_inundacao,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3304557,Rio de Janeiro,RJ,municipio,desastres.protocolos_vendaval,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3304557,Rio de Janeiro,RJ,municipio,seguranca.furto_residencial,,ocorrencias,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/rj_municipios.csv
+3304557,Rio de Janeiro,RJ,municipio,seguranca.roubo_residencial,253,ocorrencias,DISPONIVEL,,2025-01-01,2025-12-31,expansao/rj_municipios.csv
+3304557,Rio de Janeiro,RJ,municipio,seguranca.taxa_furto_residencial,,ocorrencias/100mil_habitantes,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/ibge_pop_2025.json;expansao/rj_municipios.csv
+3304557,Rio de Janeiro,RJ,municipio,seguranca.taxa_roubo_residencial,3.7588796102175563,ocorrencias/100mil_habitantes,DISPONIVEL,,2025-01-01,2025-12-31,expansao/ibge_pop_2025.json;expansao/rj_municipios.csv
+3550308,São Paulo,SP,municipio,clima.chuva_normal,1658.3,mm/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PREC.xlsx
+3550308,São Paulo,SP,municipio,clima.cobertura_chuva,0.9696366351418616,fracao,DISPONIVEL,,2015-01-01,2025-12-31,piloto/inmet_2015_A701.csv;piloto/inmet_2016_A701.csv;piloto/inmet_2017_A701.csv;piloto/inmet_2018_A701.csv;piloto/inmet_2019_A701.csv;piloto/inmet_2020_A701.csv;piloto/inmet_2021_A701.csv;piloto/inmet_2022_A701.csv;piloto/inmet_2023_A701.csv;piloto/inmet_2024_A701.csv;piloto/inmet_2025_A701.csv
+3550308,São Paulo,SP,municipio,clima.cobertura_rajada,0.9748631159780986,fracao,DISPONIVEL,,2015-01-01,2025-12-31,piloto/inmet_2015_A701.csv;piloto/inmet_2016_A701.csv;piloto/inmet_2017_A701.csv;piloto/inmet_2018_A701.csv;piloto/inmet_2019_A701.csv;piloto/inmet_2020_A701.csv;piloto/inmet_2021_A701.csv;piloto/inmet_2022_A701.csv;piloto/inmet_2023_A701.csv;piloto/inmet_2024_A701.csv;piloto/inmet_2025_A701.csv
+3550308,São Paulo,SP,municipio,clima.dias_chuva_ge50_normal,4.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PRENDIA50.xlsx
+3550308,São Paulo,SP,municipio,clima.dias_minima_le10_normal,14.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMINNDIA10.xlsx
+3550308,São Paulo,SP,municipio,clima.maxima_media_normal,26.1,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMAX.xlsx
+3550308,São Paulo,SP,municipio,clima.minima_media_normal,16.4,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMIN.xlsx
+3550308,São Paulo,SP,municipio,clima.rajada_max_observada,90.0,km/h,DISPONIVEL,,2015-01-01,2025-12-31,piloto/inmet_2015_A701.csv;piloto/inmet_2016_A701.csv;piloto/inmet_2017_A701.csv;piloto/inmet_2018_A701.csv;piloto/inmet_2019_A701.csv;piloto/inmet_2020_A701.csv;piloto/inmet_2021_A701.csv;piloto/inmet_2022_A701.csv;piloto/inmet_2023_A701.csv;piloto/inmet_2024_A701.csv;piloto/inmet_2025_A701.csv
+3550308,São Paulo,SP,municipio,desastres.protocolos_alagamento,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3550308,São Paulo,SP,municipio,desastres.protocolos_chuva_intensa,4,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3550308,São Paulo,SP,municipio,desastres.protocolos_enxurrada,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3550308,São Paulo,SP,municipio,desastres.protocolos_granizo,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3550308,São Paulo,SP,municipio,desastres.protocolos_inundacao,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3550308,São Paulo,SP,municipio,desastres.protocolos_vendaval,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+3550308,São Paulo,SP,municipio,seguranca.furto_residencial,5193,ocorrencias,DISPONIVEL,,2025-01-01,2025-12-31,piloto/sp_criminais_2025.xlsx
+3550308,São Paulo,SP,municipio,seguranca.roubo_residencial,657,ocorrencias,DISPONIVEL,,2025-01-01,2025-12-31,piloto/sp_criminais_2025.xlsx
+3550308,São Paulo,SP,municipio,seguranca.taxa_furto_residencial,43.62047049125151,ocorrencias/100mil_habitantes,DISPONIVEL,,2025-01-01,2025-12-31,piloto/ibge_pop_2025.json;piloto/sp_criminais_2025.xlsx
+3550308,São Paulo,SP,municipio,seguranca.taxa_roubo_residencial,5.518707705132339,ocorrencias/100mil_habitantes,DISPONIVEL,,2025-01-01,2025-12-31,piloto/ibge_pop_2025.json;piloto/sp_criminais_2025.xlsx
+4106902,Curitiba,PR,municipio,clima.chuva_normal,1630.7,mm/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PREC.xlsx
+4106902,Curitiba,PR,municipio,clima.cobertura_chuva,0.8937282229965157,fracao,DISPONIVEL,,2015-01-01,2025-12-31,piloto/inmet_2015_A807.csv;piloto/inmet_2016_A807.csv;piloto/inmet_2017_A807.csv;piloto/inmet_2018_A807.csv;piloto/inmet_2019_A807.csv;piloto/inmet_2020_A807.csv;piloto/inmet_2021_A807.csv;piloto/inmet_2022_A807.csv;piloto/inmet_2023_A807.csv;piloto/inmet_2024_A807.csv;piloto/inmet_2025_A807.csv
+4106902,Curitiba,PR,municipio,clima.cobertura_rajada,0.8927327028372325,fracao,DISPONIVEL,,2015-01-01,2025-12-31,piloto/inmet_2015_A807.csv;piloto/inmet_2016_A807.csv;piloto/inmet_2017_A807.csv;piloto/inmet_2018_A807.csv;piloto/inmet_2019_A807.csv;piloto/inmet_2020_A807.csv;piloto/inmet_2021_A807.csv;piloto/inmet_2022_A807.csv;piloto/inmet_2023_A807.csv;piloto/inmet_2024_A807.csv;piloto/inmet_2025_A807.csv
+4106902,Curitiba,PR,municipio,clima.dias_chuva_ge50_normal,3.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PRENDIA50.xlsx
+4106902,Curitiba,PR,municipio,clima.dias_minima_le10_normal,65.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMINNDIA10.xlsx
+4106902,Curitiba,PR,municipio,clima.maxima_media_normal,23.8,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMAX.xlsx
+4106902,Curitiba,PR,municipio,clima.minima_media_normal,13.8,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMIN.xlsx
+4106902,Curitiba,PR,municipio,clima.rajada_max_observada,96.12,km/h,DISPONIVEL,,2015-01-01,2025-12-31,piloto/inmet_2015_A807.csv;piloto/inmet_2016_A807.csv;piloto/inmet_2017_A807.csv;piloto/inmet_2018_A807.csv;piloto/inmet_2019_A807.csv;piloto/inmet_2020_A807.csv;piloto/inmet_2021_A807.csv;piloto/inmet_2022_A807.csv;piloto/inmet_2023_A807.csv;piloto/inmet_2024_A807.csv;piloto/inmet_2025_A807.csv
+4106902,Curitiba,PR,municipio,desastres.protocolos_alagamento,9,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+4106902,Curitiba,PR,municipio,desastres.protocolos_chuva_intensa,1,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+4106902,Curitiba,PR,municipio,desastres.protocolos_enxurrada,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+4106902,Curitiba,PR,municipio,desastres.protocolos_granizo,3,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+4106902,Curitiba,PR,municipio,desastres.protocolos_inundacao,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+4106902,Curitiba,PR,municipio,desastres.protocolos_vendaval,4,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+4106902,Curitiba,PR,municipio,seguranca.furto_residencial,3222,ocorrencias,DISPONIVEL,,2025-01-01,2025-12-31,piloto/pr_2025.pdf
+4106902,Curitiba,PR,municipio,seguranca.roubo_residencial,208,ocorrencias,DISPONIVEL,,2025-01-01,2025-12-31,piloto/pr_2025.pdf
+4106902,Curitiba,PR,municipio,seguranca.taxa_furto_residencial,175.98911948088124,ocorrencias/100mil_habitantes,DISPONIVEL,,2025-01-01,2025-12-31,piloto/ibge_pop_2025.json;piloto/pr_2025.pdf
+4106902,Curitiba,PR,municipio,seguranca.taxa_roubo_residencial,11.361184621981161,ocorrencias/100mil_habitantes,DISPONIVEL,,2025-01-01,2025-12-31,piloto/ibge_pop_2025.json;piloto/pr_2025.pdf
+4314902,Porto Alegre,RS,municipio,clima.chuva_normal,1494.6,mm/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PREC.xlsx
+4314902,Porto Alegre,RS,municipio,clima.cobertura_chuva,0.960179193628671,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A801.csv;expansao/inmet_2016_A801.csv;expansao/inmet_2017_A801.csv;expansao/inmet_2018_A801.csv;expansao/inmet_2019_A801.csv;expansao/inmet_2020_A801.csv;expansao/inmet_2021_A801.csv;expansao/inmet_2022_A801.csv;expansao/inmet_2023_A801.csv;expansao/inmet_2024_A801.csv;expansao/inmet_2025_A801.csv
+4314902,Porto Alegre,RS,municipio,clima.cobertura_rajada,0.9303135888501742,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A801.csv;expansao/inmet_2016_A801.csv;expansao/inmet_2017_A801.csv;expansao/inmet_2018_A801.csv;expansao/inmet_2019_A801.csv;expansao/inmet_2020_A801.csv;expansao/inmet_2021_A801.csv;expansao/inmet_2022_A801.csv;expansao/inmet_2023_A801.csv;expansao/inmet_2024_A801.csv;expansao/inmet_2025_A801.csv
+4314902,Porto Alegre,RS,municipio,clima.dias_chuva_ge50_normal,4.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PRENDIA50.xlsx
+4314902,Porto Alegre,RS,municipio,clima.dias_minima_le10_normal,48.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMINNDIA10.xlsx
+4314902,Porto Alegre,RS,municipio,clima.maxima_media_normal,25.6,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMAX.xlsx
+4314902,Porto Alegre,RS,municipio,clima.minima_media_normal,15.9,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMIN.xlsx
+4314902,Porto Alegre,RS,municipio,clima.rajada_max_observada,119.52000000000001,km/h,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A801.csv;expansao/inmet_2016_A801.csv;expansao/inmet_2017_A801.csv;expansao/inmet_2018_A801.csv;expansao/inmet_2019_A801.csv;expansao/inmet_2020_A801.csv;expansao/inmet_2021_A801.csv;expansao/inmet_2022_A801.csv;expansao/inmet_2023_A801.csv;expansao/inmet_2024_A801.csv;expansao/inmet_2025_A801.csv
+4314902,Porto Alegre,RS,municipio,desastres.protocolos_alagamento,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+4314902,Porto Alegre,RS,municipio,desastres.protocolos_chuva_intensa,5,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+4314902,Porto Alegre,RS,municipio,desastres.protocolos_enxurrada,4,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+4314902,Porto Alegre,RS,municipio,desastres.protocolos_granizo,1,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+4314902,Porto Alegre,RS,municipio,desastres.protocolos_inundacao,4,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+4314902,Porto Alegre,RS,municipio,desastres.protocolos_vendaval,1,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+4314902,Porto Alegre,RS,municipio,seguranca.furto_residencial,,ocorrencias,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,municipio,seguranca.roubo_residencial,,ocorrencias,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,municipio,seguranca.taxa_furto_residencial,,ocorrencias/100mil_habitantes,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/ibge_pop_2025.json;expansao/rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,municipio,seguranca.taxa_roubo_residencial,,ocorrencias/100mil_habitantes,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/ibge_pop_2025.json;expansao/rs_2025_completo.xlsx
+5208707,Goiânia,GO,municipio,clima.chuva_normal,1610.8,mm/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PREC.xlsx
+5208707,Goiânia,GO,municipio,clima.cobertura_chuva,0.9173718267794922,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A002.csv;expansao/inmet_2016_A002.csv;expansao/inmet_2017_A002.csv;expansao/inmet_2018_A002.csv;expansao/inmet_2019_A002.csv;expansao/inmet_2020_A002.csv;expansao/inmet_2021_A002.csv;expansao/inmet_2022_A002.csv;expansao/inmet_2023_A002.csv;expansao/inmet_2024_A002.csv;expansao/inmet_2025_A002.csv
+5208707,Goiânia,GO,municipio,clima.cobertura_rajada,0.9420109507217521,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A002.csv;expansao/inmet_2016_A002.csv;expansao/inmet_2017_A002.csv;expansao/inmet_2018_A002.csv;expansao/inmet_2019_A002.csv;expansao/inmet_2020_A002.csv;expansao/inmet_2021_A002.csv;expansao/inmet_2022_A002.csv;expansao/inmet_2023_A002.csv;expansao/inmet_2024_A002.csv;expansao/inmet_2025_A002.csv
+5208707,Goiânia,GO,municipio,clima.dias_chuva_ge50_normal,6.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PRENDIA50.xlsx
+5208707,Goiânia,GO,municipio,clima.dias_minima_le10_normal,3.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMINNDIA10.xlsx
+5208707,Goiânia,GO,municipio,clima.maxima_media_normal,31.4,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMAX.xlsx
+5208707,Goiânia,GO,municipio,clima.minima_media_normal,18.6,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMIN.xlsx
+5208707,Goiânia,GO,municipio,clima.rajada_max_observada,83.52,km/h,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A002.csv;expansao/inmet_2016_A002.csv;expansao/inmet_2017_A002.csv;expansao/inmet_2018_A002.csv;expansao/inmet_2019_A002.csv;expansao/inmet_2020_A002.csv;expansao/inmet_2021_A002.csv;expansao/inmet_2022_A002.csv;expansao/inmet_2023_A002.csv;expansao/inmet_2024_A002.csv;expansao/inmet_2025_A002.csv
+5208707,Goiânia,GO,municipio,desastres.protocolos_alagamento,6,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+5208707,Goiânia,GO,municipio,desastres.protocolos_chuva_intensa,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+5208707,Goiânia,GO,municipio,desastres.protocolos_enxurrada,2,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+5208707,Goiânia,GO,municipio,desastres.protocolos_granizo,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+5208707,Goiânia,GO,municipio,desastres.protocolos_inundacao,2,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+5208707,Goiânia,GO,municipio,desastres.protocolos_vendaval,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+5208707,Goiânia,GO,municipio,seguranca.furto_residencial,,ocorrencias,AUSENTE,FONTE_SEM_VALOR,2025-01-01,2025-12-31,expansao/go_2025.pdf
+5208707,Goiânia,GO,municipio,seguranca.roubo_residencial,,ocorrencias,AUSENTE,FONTE_SEM_VALOR,2025-01-01,2025-12-31,expansao/go_2025.pdf
+5208707,Goiânia,GO,municipio,seguranca.taxa_furto_residencial,,ocorrencias/100mil_habitantes,AUSENTE,FONTE_SEM_VALOR,2025-01-01,2025-12-31,expansao/go_2025.pdf;expansao/ibge_pop_2025.json
+5208707,Goiânia,GO,municipio,seguranca.taxa_roubo_residencial,,ocorrencias/100mil_habitantes,AUSENTE,FONTE_SEM_VALOR,2025-01-01,2025-12-31,expansao/go_2025.pdf;expansao/ibge_pop_2025.json
+5300108,Brasília,DF,distrito_federal,clima.chuva_normal,1478.8,mm/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PREC.xlsx
+5300108,Brasília,DF,distrito_federal,clima.cobertura_chuva,0.9843205574912892,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A001.csv;expansao/inmet_2016_A001.csv;expansao/inmet_2017_A001.csv;expansao/inmet_2018_A001.csv;expansao/inmet_2019_A001.csv;expansao/inmet_2020_A001.csv;expansao/inmet_2021_A001.csv;expansao/inmet_2022_A001.csv;expansao/inmet_2023_A001.csv;expansao/inmet_2024_A001.csv;expansao/inmet_2025_A001.csv
+5300108,Brasília,DF,distrito_federal,clima.cobertura_rajada,0.98456943753111,fracao,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A001.csv;expansao/inmet_2016_A001.csv;expansao/inmet_2017_A001.csv;expansao/inmet_2018_A001.csv;expansao/inmet_2019_A001.csv;expansao/inmet_2020_A001.csv;expansao/inmet_2021_A001.csv;expansao/inmet_2022_A001.csv;expansao/inmet_2023_A001.csv;expansao/inmet_2024_A001.csv;expansao/inmet_2025_A001.csv
+5300108,Brasília,DF,distrito_federal,clima.dias_chuva_ge50_normal,5.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_PRENDIA50.xlsx
+5300108,Brasília,DF,distrito_federal,clima.dias_minima_le10_normal,0.0,dias/ano,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMINNDIA10.xlsx
+5300108,Brasília,DF,distrito_federal,clima.maxima_media_normal,27.0,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMAX.xlsx
+5300108,Brasília,DF,distrito_federal,clima.minima_media_normal,17.0,°C,DISPONIVEL,,1991-01-01,2020-12-31,piloto/inmet_TMIN.xlsx
+5300108,Brasília,DF,distrito_federal,clima.rajada_max_observada,84.60000000000001,km/h,DISPONIVEL,,2015-01-01,2025-12-31,expansao/inmet_2015_A001.csv;expansao/inmet_2016_A001.csv;expansao/inmet_2017_A001.csv;expansao/inmet_2018_A001.csv;expansao/inmet_2019_A001.csv;expansao/inmet_2020_A001.csv;expansao/inmet_2021_A001.csv;expansao/inmet_2022_A001.csv;expansao/inmet_2023_A001.csv;expansao/inmet_2024_A001.csv;expansao/inmet_2025_A001.csv
+5300108,Brasília,DF,distrito_federal,desastres.protocolos_alagamento,1,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+5300108,Brasília,DF,distrito_federal,desastres.protocolos_chuva_intensa,1,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+5300108,Brasília,DF,distrito_federal,desastres.protocolos_enxurrada,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+5300108,Brasília,DF,distrito_federal,desastres.protocolos_granizo,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+5300108,Brasília,DF,distrito_federal,desastres.protocolos_inundacao,0,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+5300108,Brasília,DF,distrito_federal,desastres.protocolos_vendaval,1,protocolos,DISPONIVEL,,2015-01-01,2025-12-31,piloto/atlas_1991_2025.csv
+5300108,Brasília,DF,distrito_federal,seguranca.furto_residencial,,ocorrencias,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/df_2025.xlsx
+5300108,Brasília,DF,distrito_federal,seguranca.roubo_residencial,155,ocorrencias,DISPONIVEL,,2025-01-01,2025-12-31,expansao/df_2025.xlsx
+5300108,Brasília,DF,distrito_federal,seguranca.taxa_furto_residencial,,ocorrencias/100mil_habitantes,AUSENTE,SEM_RECORTE_RESIDENCIAL,2025-01-01,2025-12-31,expansao/df_2025.xlsx;expansao/ibge_pop_2025.json
+5300108,Brasília,DF,distrito_federal,seguranca.taxa_roubo_residencial,5.172012803901633,ocorrencias/100mil_habitantes,DISPONIVEL,,2025-01-01,2025-12-31,expansao/df_2025.xlsx;expansao/ibge_pop_2025.json

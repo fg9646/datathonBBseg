@@ -1,0 +1,5034 @@
+[
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "clima.chuva_normal",
+    "valor": 1584.0,
+    "unidade": "mm/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PREC.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "82397",
+      "nome": "Fortaleza"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_chuva",
+    "valor": 0.7155301144848183,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A305.csv",
+      "expansao/inmet_2016_A305.csv",
+      "expansao/inmet_2017_A305.csv",
+      "expansao/inmet_2018_A305.csv",
+      "expansao/inmet_2019_A305.csv",
+      "expansao/inmet_2020_A305.csv",
+      "expansao/inmet_2021_A305.csv",
+      "expansao/inmet_2022_A305.csv",
+      "expansao/inmet_2023_A305.csv",
+      "expansao/inmet_2024_A305.csv",
+      "expansao/inmet_2025_A305.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A305",
+      "nome": "Fortaleza"
+    },
+    "cobertura": {
+      "numerador": 2875,
+      "denominador": 4018,
+      "proporcao": 0.7155301144848183,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_rajada",
+    "valor": 0.7287207565953211,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A305.csv",
+      "expansao/inmet_2016_A305.csv",
+      "expansao/inmet_2017_A305.csv",
+      "expansao/inmet_2018_A305.csv",
+      "expansao/inmet_2019_A305.csv",
+      "expansao/inmet_2020_A305.csv",
+      "expansao/inmet_2021_A305.csv",
+      "expansao/inmet_2022_A305.csv",
+      "expansao/inmet_2023_A305.csv",
+      "expansao/inmet_2024_A305.csv",
+      "expansao/inmet_2025_A305.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A305",
+      "nome": "Fortaleza"
+    },
+    "cobertura": {
+      "numerador": 2928,
+      "denominador": 4018,
+      "proporcao": 0.7287207565953211,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "clima.dias_chuva_ge50_normal",
+    "valor": null,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "FONTE_SEM_VALOR",
+    "fontes_ids": [
+      "piloto/inmet_PRENDIA50.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "82397",
+      "nome": "Fortaleza"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "clima.dias_minima_le10_normal",
+    "valor": 0.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMINNDIA10.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "82397",
+      "nome": "Fortaleza"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "clima.maxima_media_normal",
+    "valor": 31.1,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMAX.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "82397",
+      "nome": "Fortaleza"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "clima.minima_media_normal",
+    "valor": 23.9,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMIN.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "82397",
+      "nome": "Fortaleza"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "clima.rajada_max_observada",
+    "valor": 84.96000000000001,
+    "unidade": "km/h",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A305.csv",
+      "expansao/inmet_2016_A305.csv",
+      "expansao/inmet_2017_A305.csv",
+      "expansao/inmet_2018_A305.csv",
+      "expansao/inmet_2019_A305.csv",
+      "expansao/inmet_2020_A305.csv",
+      "expansao/inmet_2021_A305.csv",
+      "expansao/inmet_2022_A305.csv",
+      "expansao/inmet_2023_A305.csv",
+      "expansao/inmet_2024_A305.csv",
+      "expansao/inmet_2025_A305.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A305",
+      "nome": "Fortaleza"
+    },
+    "cobertura": {
+      "numerador": 2928,
+      "denominador": 4018,
+      "proporcao": 0.7287207565953211,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_alagamento",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12300. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_chuva_intensa",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13214. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_enxurrada",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12200. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_granizo",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13213. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_inundacao",
+    "valor": 3,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12100. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_vendaval",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13215. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "seguranca.furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/ce_cvp_2025.xlsx",
+      "expansao/ce_furto_2025.xlsx"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "seguranca.roubo_residencial",
+    "valor": null,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/ce_cvp_2025.xlsx",
+      "expansao/ce_furto_2025.xlsx"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/ce_cvp_2025.xlsx",
+      "expansao/ce_furto_2025.xlsx",
+      "expansao/ibge_pop_2025.json"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; quantidade/população IBGE 2025 (2578483) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_roubo_residencial",
+    "valor": null,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/ce_cvp_2025.xlsx",
+      "expansao/ce_furto_2025.xlsx",
+      "expansao/ibge_pop_2025.json"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; quantidade/população IBGE 2025 (2578483) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "clima.chuva_normal",
+    "valor": 2155.5,
+    "unidade": "mm/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PREC.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "82900",
+      "nome": "Recife (Curado)"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_chuva",
+    "valor": 0.5900945744151319,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A301.csv",
+      "expansao/inmet_2016_A301.csv",
+      "expansao/inmet_2017_A301.csv",
+      "expansao/inmet_2018_A301.csv",
+      "expansao/inmet_2019_A301.csv",
+      "expansao/inmet_2020_A301.csv",
+      "expansao/inmet_2021_A301.csv",
+      "expansao/inmet_2022_A301.csv",
+      "expansao/inmet_2023_A301.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A301",
+      "nome": "Recife"
+    },
+    "cobertura": {
+      "numerador": 2371,
+      "denominador": 4018,
+      "proporcao": 0.5900945744151319,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto. Estação A301: arquivos de 2024 e 2025 ausentes no acervo consultado; não substituídos por outra estação."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_rajada",
+    "valor": 0.4659034345445495,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A301.csv",
+      "expansao/inmet_2016_A301.csv",
+      "expansao/inmet_2017_A301.csv",
+      "expansao/inmet_2018_A301.csv",
+      "expansao/inmet_2019_A301.csv",
+      "expansao/inmet_2020_A301.csv",
+      "expansao/inmet_2021_A301.csv",
+      "expansao/inmet_2022_A301.csv",
+      "expansao/inmet_2023_A301.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A301",
+      "nome": "Recife"
+    },
+    "cobertura": {
+      "numerador": 1872,
+      "denominador": 4018,
+      "proporcao": 0.4659034345445495,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto. Estação A301: arquivos de 2024 e 2025 ausentes no acervo consultado; não substituídos por outra estação."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "clima.dias_chuva_ge50_normal",
+    "valor": 8.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PRENDIA50.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "82900",
+      "nome": "Recife (Curado)"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "clima.dias_minima_le10_normal",
+    "valor": 0.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMINNDIA10.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "82900",
+      "nome": "Recife (Curado)"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "clima.maxima_media_normal",
+    "valor": 29.7,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMAX.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "82900",
+      "nome": "Recife (Curado)"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "clima.minima_media_normal",
+    "valor": 22.3,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMIN.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "82900",
+      "nome": "Recife (Curado)"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "clima.rajada_max_observada",
+    "valor": 52.56,
+    "unidade": "km/h",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A301.csv",
+      "expansao/inmet_2016_A301.csv",
+      "expansao/inmet_2017_A301.csv",
+      "expansao/inmet_2018_A301.csv",
+      "expansao/inmet_2019_A301.csv",
+      "expansao/inmet_2020_A301.csv",
+      "expansao/inmet_2021_A301.csv",
+      "expansao/inmet_2022_A301.csv",
+      "expansao/inmet_2023_A301.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A301",
+      "nome": "Recife"
+    },
+    "cobertura": {
+      "numerador": 1872,
+      "denominador": 4018,
+      "proporcao": 0.4659034345445495,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto. Estação A301: arquivos de 2024 e 2025 ausentes no acervo consultado; não substituídos por outra estação."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_alagamento",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12300. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_chuva_intensa",
+    "valor": 1,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13214. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_enxurrada",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12200. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_granizo",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13213. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_inundacao",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12100. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_vendaval",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13215. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "seguranca.furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/pe_cvp_microdados.xlsx"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "seguranca.roubo_residencial",
+    "valor": null,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/pe_cvp_microdados.xlsx"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/ibge_pop_2025.json",
+      "expansao/pe_cvp_microdados.xlsx"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; quantidade/população IBGE 2025 (1588376) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_roubo_residencial",
+    "valor": null,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/ibge_pop_2025.json",
+      "expansao/pe_cvp_microdados.xlsx"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; quantidade/população IBGE 2025 (1588376) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "clima.chuva_normal",
+    "valor": 1833.3,
+    "unidade": "mm/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PREC.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83229",
+      "nome": "Salvador (Ondina)"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_chuva",
+    "valor": 0.9718765555002489,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A401.csv",
+      "expansao/inmet_2016_A401.csv",
+      "expansao/inmet_2017_A401.csv",
+      "expansao/inmet_2018_A401.csv",
+      "expansao/inmet_2019_A401.csv",
+      "expansao/inmet_2020_A401.csv",
+      "expansao/inmet_2021_A401.csv",
+      "expansao/inmet_2022_A401.csv",
+      "expansao/inmet_2023_A401.csv",
+      "expansao/inmet_2024_A401.csv",
+      "expansao/inmet_2025_A401.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A401",
+      "nome": "Salvador"
+    },
+    "cobertura": {
+      "numerador": 3905,
+      "denominador": 4018,
+      "proporcao": 0.9718765555002489,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_rajada",
+    "valor": 0.971627675460428,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A401.csv",
+      "expansao/inmet_2016_A401.csv",
+      "expansao/inmet_2017_A401.csv",
+      "expansao/inmet_2018_A401.csv",
+      "expansao/inmet_2019_A401.csv",
+      "expansao/inmet_2020_A401.csv",
+      "expansao/inmet_2021_A401.csv",
+      "expansao/inmet_2022_A401.csv",
+      "expansao/inmet_2023_A401.csv",
+      "expansao/inmet_2024_A401.csv",
+      "expansao/inmet_2025_A401.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A401",
+      "nome": "Salvador"
+    },
+    "cobertura": {
+      "numerador": 3904,
+      "denominador": 4018,
+      "proporcao": 0.971627675460428,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "clima.dias_chuva_ge50_normal",
+    "valor": 6.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PRENDIA50.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83229",
+      "nome": "Salvador (Ondina)"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "clima.dias_minima_le10_normal",
+    "valor": 0.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMINNDIA10.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83229",
+      "nome": "Salvador (Ondina)"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "clima.maxima_media_normal",
+    "valor": 29.0,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMAX.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83229",
+      "nome": "Salvador (Ondina)"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "clima.minima_media_normal",
+    "valor": 22.7,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMIN.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83229",
+      "nome": "Salvador (Ondina)"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "clima.rajada_max_observada",
+    "valor": 89.64,
+    "unidade": "km/h",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A401.csv",
+      "expansao/inmet_2016_A401.csv",
+      "expansao/inmet_2017_A401.csv",
+      "expansao/inmet_2018_A401.csv",
+      "expansao/inmet_2019_A401.csv",
+      "expansao/inmet_2020_A401.csv",
+      "expansao/inmet_2021_A401.csv",
+      "expansao/inmet_2022_A401.csv",
+      "expansao/inmet_2023_A401.csv",
+      "expansao/inmet_2024_A401.csv",
+      "expansao/inmet_2025_A401.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A401",
+      "nome": "Salvador"
+    },
+    "cobertura": {
+      "numerador": 3904,
+      "denominador": 4018,
+      "proporcao": 0.971627675460428,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_alagamento",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12300. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_chuva_intensa",
+    "valor": 2,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13214. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_enxurrada",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12200. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_granizo",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13213. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_inundacao",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12100. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_vendaval",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13215. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "seguranca.furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/ba_outros_2025.xlsx"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "seguranca.roubo_residencial",
+    "valor": 344,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/ba_outros_2025.xlsx"
+    ],
+    "metodo": "sheet1; linha Excel 341; ID=292740; ROUBO A RESIDÊNCIA; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Total municipal de janeiro a dezembro. Código da fonte com seis dígitos mapeado ao IBGE 2927408. Sem furto residencial nesta planilha."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/ba_outros_2025.xlsx",
+      "expansao/ibge_pop_2025.json"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; quantidade/população IBGE 2025 (2564204) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_roubo_residencial",
+    "valor": 13.415469284035124,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/ba_outros_2025.xlsx",
+      "expansao/ibge_pop_2025.json"
+    ],
+    "metodo": "sheet1; linha Excel 341; ID=292740; ROUBO A RESIDÊNCIA; quantidade/população IBGE 2025 (2564204) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Total municipal de janeiro a dezembro. Código da fonte com seis dígitos mapeado ao IBGE 2927408. Sem furto residencial nesta planilha."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "clima.chuva_normal",
+    "valor": 1578.3,
+    "unidade": "mm/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PREC.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83587",
+      "nome": "Belo Horizonte"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_chuva",
+    "valor": 0.9937779990044798,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A521.csv",
+      "expansao/inmet_2016_A521.csv",
+      "expansao/inmet_2017_A521.csv",
+      "expansao/inmet_2018_A521.csv",
+      "expansao/inmet_2019_A521.csv",
+      "expansao/inmet_2020_A521.csv",
+      "expansao/inmet_2021_A521.csv",
+      "expansao/inmet_2022_A521.csv",
+      "expansao/inmet_2023_A521.csv",
+      "expansao/inmet_2024_A521.csv",
+      "expansao/inmet_2025_A521.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A521",
+      "nome": "Pampulha"
+    },
+    "cobertura": {
+      "numerador": 3993,
+      "denominador": 4018,
+      "proporcao": 0.9937779990044798,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_rajada",
+    "valor": 0.9930313588850174,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A521.csv",
+      "expansao/inmet_2016_A521.csv",
+      "expansao/inmet_2017_A521.csv",
+      "expansao/inmet_2018_A521.csv",
+      "expansao/inmet_2019_A521.csv",
+      "expansao/inmet_2020_A521.csv",
+      "expansao/inmet_2021_A521.csv",
+      "expansao/inmet_2022_A521.csv",
+      "expansao/inmet_2023_A521.csv",
+      "expansao/inmet_2024_A521.csv",
+      "expansao/inmet_2025_A521.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A521",
+      "nome": "Pampulha"
+    },
+    "cobertura": {
+      "numerador": 3990,
+      "denominador": 4018,
+      "proporcao": 0.9930313588850174,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "clima.dias_chuva_ge50_normal",
+    "valor": 5.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PRENDIA50.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83587",
+      "nome": "Belo Horizonte"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "clima.dias_minima_le10_normal",
+    "valor": 0.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMINNDIA10.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83587",
+      "nome": "Belo Horizonte"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "clima.maxima_media_normal",
+    "valor": 27.3,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMAX.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83587",
+      "nome": "Belo Horizonte"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "clima.minima_media_normal",
+    "valor": 18.0,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMIN.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83587",
+      "nome": "Belo Horizonte"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "clima.rajada_max_observada",
+    "valor": 90.0,
+    "unidade": "km/h",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A521.csv",
+      "expansao/inmet_2016_A521.csv",
+      "expansao/inmet_2017_A521.csv",
+      "expansao/inmet_2018_A521.csv",
+      "expansao/inmet_2019_A521.csv",
+      "expansao/inmet_2020_A521.csv",
+      "expansao/inmet_2021_A521.csv",
+      "expansao/inmet_2022_A521.csv",
+      "expansao/inmet_2023_A521.csv",
+      "expansao/inmet_2024_A521.csv",
+      "expansao/inmet_2025_A521.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A521",
+      "nome": "Pampulha"
+    },
+    "cobertura": {
+      "numerador": 3990,
+      "denominador": 4018,
+      "proporcao": 0.9930313588850174,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_alagamento",
+    "valor": 1,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12300. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_chuva_intensa",
+    "valor": 11,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13214. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_enxurrada",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12200. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_granizo",
+    "valor": 1,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13213. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_inundacao",
+    "valor": 2,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12100. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_vendaval",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13215. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "seguranca.furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/mg_furto.csv",
+      "expansao/mg_violentos_2025.csv"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "seguranca.roubo_residencial",
+    "valor": null,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/mg_furto.csv",
+      "expansao/mg_violentos_2025.csv"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/ibge_pop_2025.json",
+      "expansao/mg_furto.csv",
+      "expansao/mg_violentos_2025.csv"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; quantidade/população IBGE 2025 (2415872) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_roubo_residencial",
+    "valor": null,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/ibge_pop_2025.json",
+      "expansao/mg_furto.csv",
+      "expansao/mg_violentos_2025.csv"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; quantidade/população IBGE 2025 (2415872) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "clima.chuva_normal",
+    "valor": 2414.8,
+    "unidade": "mm/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PREC.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83007",
+      "nome": "Alto da Boa Vista"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Alto da Boa Vista tem relevo/clima local; não representa toda a cidade nem a estação automática Vila Militar."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_chuva",
+    "valor": 0.9196117471378795,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A621.csv",
+      "expansao/inmet_2016_A621.csv",
+      "expansao/inmet_2017_A621.csv",
+      "expansao/inmet_2018_A621.csv",
+      "expansao/inmet_2019_A621.csv",
+      "expansao/inmet_2020_A621.csv",
+      "expansao/inmet_2021_A621.csv",
+      "expansao/inmet_2022_A621.csv",
+      "expansao/inmet_2023_A621.csv",
+      "expansao/inmet_2024_A621.csv",
+      "expansao/inmet_2025_A621.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A621",
+      "nome": "Vila Militar"
+    },
+    "cobertura": {
+      "numerador": 3695,
+      "denominador": 4018,
+      "proporcao": 0.9196117471378795,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_rajada",
+    "valor": 0.9143852663016426,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A621.csv",
+      "expansao/inmet_2016_A621.csv",
+      "expansao/inmet_2017_A621.csv",
+      "expansao/inmet_2018_A621.csv",
+      "expansao/inmet_2019_A621.csv",
+      "expansao/inmet_2020_A621.csv",
+      "expansao/inmet_2021_A621.csv",
+      "expansao/inmet_2022_A621.csv",
+      "expansao/inmet_2023_A621.csv",
+      "expansao/inmet_2024_A621.csv",
+      "expansao/inmet_2025_A621.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A621",
+      "nome": "Vila Militar"
+    },
+    "cobertura": {
+      "numerador": 3674,
+      "denominador": 4018,
+      "proporcao": 0.9143852663016426,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "clima.dias_chuva_ge50_normal",
+    "valor": 13.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PRENDIA50.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83007",
+      "nome": "Alto da Boa Vista"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Alto da Boa Vista tem relevo/clima local; não representa toda a cidade nem a estação automática Vila Militar."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "clima.dias_minima_le10_normal",
+    "valor": 0.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMINNDIA10.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83007",
+      "nome": "Alto da Boa Vista"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Alto da Boa Vista tem relevo/clima local; não representa toda a cidade nem a estação automática Vila Militar."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "clima.maxima_media_normal",
+    "valor": 26.9,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMAX.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83007",
+      "nome": "Alto da Boa Vista"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Alto da Boa Vista tem relevo/clima local; não representa toda a cidade nem a estação automática Vila Militar."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "clima.minima_media_normal",
+    "valor": 18.0,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMIN.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83007",
+      "nome": "Alto da Boa Vista"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Alto da Boa Vista tem relevo/clima local; não representa toda a cidade nem a estação automática Vila Militar."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "clima.rajada_max_observada",
+    "valor": 83.16000000000001,
+    "unidade": "km/h",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A621.csv",
+      "expansao/inmet_2016_A621.csv",
+      "expansao/inmet_2017_A621.csv",
+      "expansao/inmet_2018_A621.csv",
+      "expansao/inmet_2019_A621.csv",
+      "expansao/inmet_2020_A621.csv",
+      "expansao/inmet_2021_A621.csv",
+      "expansao/inmet_2022_A621.csv",
+      "expansao/inmet_2023_A621.csv",
+      "expansao/inmet_2024_A621.csv",
+      "expansao/inmet_2025_A621.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A621",
+      "nome": "Vila Militar"
+    },
+    "cobertura": {
+      "numerador": 3674,
+      "denominador": 4018,
+      "proporcao": 0.9143852663016426,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_alagamento",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12300. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_chuva_intensa",
+    "valor": 16,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13214. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_enxurrada",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12200. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_granizo",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13213. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_inundacao",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12100. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_vendaval",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13215. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "seguranca.furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/rj_municipios.csv"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "seguranca.roubo_residencial",
+    "valor": 253,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/rj_municipios.csv"
+    ],
+    "metodo": "fmun_cod=3304557; ano=2025; coluna=roubo_residencia; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "ISP: data da confecção do Registro de Ocorrência. Não há furto residencial específico neste arquivo. Totais gerais têm composição distinta de outros estados."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/ibge_pop_2025.json",
+      "expansao/rj_municipios.csv"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; quantidade/população IBGE 2025 (6730729) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_roubo_residencial",
+    "valor": 3.7588796102175563,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/ibge_pop_2025.json",
+      "expansao/rj_municipios.csv"
+    ],
+    "metodo": "fmun_cod=3304557; ano=2025; coluna=roubo_residencia; quantidade/população IBGE 2025 (6730729) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. ISP: data da confecção do Registro de Ocorrência. Não há furto residencial específico neste arquivo. Totais gerais têm composição distinta de outros estados."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "clima.chuva_normal",
+    "valor": 1658.3,
+    "unidade": "mm/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PREC.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83781",
+      "nome": "São Paulo–Mirante"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_chuva",
+    "valor": 0.9696366351418616,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_2015_A701.csv",
+      "piloto/inmet_2016_A701.csv",
+      "piloto/inmet_2017_A701.csv",
+      "piloto/inmet_2018_A701.csv",
+      "piloto/inmet_2019_A701.csv",
+      "piloto/inmet_2020_A701.csv",
+      "piloto/inmet_2021_A701.csv",
+      "piloto/inmet_2022_A701.csv",
+      "piloto/inmet_2023_A701.csv",
+      "piloto/inmet_2024_A701.csv",
+      "piloto/inmet_2025_A701.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A701",
+      "nome": "São Paulo–Mirante"
+    },
+    "cobertura": {
+      "numerador": 3896,
+      "denominador": 4018,
+      "proporcao": 0.9696366351418616,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_rajada",
+    "valor": 0.9748631159780986,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_2015_A701.csv",
+      "piloto/inmet_2016_A701.csv",
+      "piloto/inmet_2017_A701.csv",
+      "piloto/inmet_2018_A701.csv",
+      "piloto/inmet_2019_A701.csv",
+      "piloto/inmet_2020_A701.csv",
+      "piloto/inmet_2021_A701.csv",
+      "piloto/inmet_2022_A701.csv",
+      "piloto/inmet_2023_A701.csv",
+      "piloto/inmet_2024_A701.csv",
+      "piloto/inmet_2025_A701.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A701",
+      "nome": "São Paulo–Mirante"
+    },
+    "cobertura": {
+      "numerador": 3917,
+      "denominador": 4018,
+      "proporcao": 0.9748631159780986,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "clima.dias_chuva_ge50_normal",
+    "valor": 4.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PRENDIA50.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83781",
+      "nome": "São Paulo–Mirante"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "clima.dias_minima_le10_normal",
+    "valor": 14.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMINNDIA10.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83781",
+      "nome": "São Paulo–Mirante"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "clima.maxima_media_normal",
+    "valor": 26.1,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMAX.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83781",
+      "nome": "São Paulo–Mirante"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "clima.minima_media_normal",
+    "valor": 16.4,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMIN.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83781",
+      "nome": "São Paulo–Mirante"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "clima.rajada_max_observada",
+    "valor": 90.0,
+    "unidade": "km/h",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_2015_A701.csv",
+      "piloto/inmet_2016_A701.csv",
+      "piloto/inmet_2017_A701.csv",
+      "piloto/inmet_2018_A701.csv",
+      "piloto/inmet_2019_A701.csv",
+      "piloto/inmet_2020_A701.csv",
+      "piloto/inmet_2021_A701.csv",
+      "piloto/inmet_2022_A701.csv",
+      "piloto/inmet_2023_A701.csv",
+      "piloto/inmet_2024_A701.csv",
+      "piloto/inmet_2025_A701.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A701",
+      "nome": "São Paulo–Mirante"
+    },
+    "cobertura": {
+      "numerador": 3917,
+      "denominador": 4018,
+      "proporcao": 0.9748631159780986,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_alagamento",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12300. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_chuva_intensa",
+    "valor": 4,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13214. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_enxurrada",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12200. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_granizo",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13213. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_inundacao",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12100. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_vendaval",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13215. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "seguranca.furto_residencial",
+    "valor": 5193,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/sp_criminais_2025.xlsx"
+    ],
+    "metodo": "NOME_MUNICIPIO_CIRCUNSCRICAO=S.PAULO; DESCR_TIPOLOCAL=Residência; NATUREZA_APURADA em FURTO - OUTROS, ROUBO - OUTROS; ANO_ESTATISTICA=2025; deduplicação por delegacia de registro+NUM_BO+ANO_BO+natureza; NATUREZA_APURADA=FURTO - OUTROS; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Extração própria de microdados. Unidade: combinação boletim/natureza. Pode divergir do total estatístico oficial por atualização, local ignorado e metodologia. Categoria residencial não garante arrombamento. Não há CEP nos microdados."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "seguranca.roubo_residencial",
+    "valor": 657,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/sp_criminais_2025.xlsx"
+    ],
+    "metodo": "NOME_MUNICIPIO_CIRCUNSCRICAO=S.PAULO; DESCR_TIPOLOCAL=Residência; NATUREZA_APURADA em FURTO - OUTROS, ROUBO - OUTROS; ANO_ESTATISTICA=2025; deduplicação por delegacia de registro+NUM_BO+ANO_BO+natureza; NATUREZA_APURADA=ROUBO - OUTROS; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Extração própria de microdados. Unidade: combinação boletim/natureza. Pode divergir do total estatístico oficial por atualização, local ignorado e metodologia. Categoria residencial não garante arrombamento. Não há CEP nos microdados."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_furto_residencial",
+    "valor": 43.62047049125151,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/ibge_pop_2025.json",
+      "piloto/sp_criminais_2025.xlsx"
+    ],
+    "metodo": "NOME_MUNICIPIO_CIRCUNSCRICAO=S.PAULO; DESCR_TIPOLOCAL=Residência; NATUREZA_APURADA em FURTO - OUTROS, ROUBO - OUTROS; ANO_ESTATISTICA=2025; deduplicação por delegacia de registro+NUM_BO+ANO_BO+natureza; NATUREZA_APURADA=FURTO - OUTROS; quantidade/população IBGE 2025 (11904961) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Extração própria de microdados. Unidade: combinação boletim/natureza. Pode divergir do total estatístico oficial por atualização, local ignorado e metodologia. Categoria residencial não garante arrombamento. Não há CEP nos microdados."
+    ]
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_roubo_residencial",
+    "valor": 5.518707705132339,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/ibge_pop_2025.json",
+      "piloto/sp_criminais_2025.xlsx"
+    ],
+    "metodo": "NOME_MUNICIPIO_CIRCUNSCRICAO=S.PAULO; DESCR_TIPOLOCAL=Residência; NATUREZA_APURADA em FURTO - OUTROS, ROUBO - OUTROS; ANO_ESTATISTICA=2025; deduplicação por delegacia de registro+NUM_BO+ANO_BO+natureza; NATUREZA_APURADA=ROUBO - OUTROS; quantidade/população IBGE 2025 (11904961) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Extração própria de microdados. Unidade: combinação boletim/natureza. Pode divergir do total estatístico oficial por atualização, local ignorado e metodologia. Categoria residencial não garante arrombamento. Não há CEP nos microdados."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "clima.chuva_normal",
+    "valor": 1630.7,
+    "unidade": "mm/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PREC.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83842",
+      "nome": "Curitiba"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_chuva",
+    "valor": 0.8937282229965157,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_2015_A807.csv",
+      "piloto/inmet_2016_A807.csv",
+      "piloto/inmet_2017_A807.csv",
+      "piloto/inmet_2018_A807.csv",
+      "piloto/inmet_2019_A807.csv",
+      "piloto/inmet_2020_A807.csv",
+      "piloto/inmet_2021_A807.csv",
+      "piloto/inmet_2022_A807.csv",
+      "piloto/inmet_2023_A807.csv",
+      "piloto/inmet_2024_A807.csv",
+      "piloto/inmet_2025_A807.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A807",
+      "nome": "Curitiba"
+    },
+    "cobertura": {
+      "numerador": 3591,
+      "denominador": 4018,
+      "proporcao": 0.8937282229965157,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_rajada",
+    "valor": 0.8927327028372325,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_2015_A807.csv",
+      "piloto/inmet_2016_A807.csv",
+      "piloto/inmet_2017_A807.csv",
+      "piloto/inmet_2018_A807.csv",
+      "piloto/inmet_2019_A807.csv",
+      "piloto/inmet_2020_A807.csv",
+      "piloto/inmet_2021_A807.csv",
+      "piloto/inmet_2022_A807.csv",
+      "piloto/inmet_2023_A807.csv",
+      "piloto/inmet_2024_A807.csv",
+      "piloto/inmet_2025_A807.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A807",
+      "nome": "Curitiba"
+    },
+    "cobertura": {
+      "numerador": 3587,
+      "denominador": 4018,
+      "proporcao": 0.8927327028372325,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "clima.dias_chuva_ge50_normal",
+    "valor": 3.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PRENDIA50.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83842",
+      "nome": "Curitiba"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "clima.dias_minima_le10_normal",
+    "valor": 65.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMINNDIA10.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83842",
+      "nome": "Curitiba"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "clima.maxima_media_normal",
+    "valor": 23.8,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMAX.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83842",
+      "nome": "Curitiba"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "clima.minima_media_normal",
+    "valor": 13.8,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMIN.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83842",
+      "nome": "Curitiba"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "clima.rajada_max_observada",
+    "valor": 96.12,
+    "unidade": "km/h",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_2015_A807.csv",
+      "piloto/inmet_2016_A807.csv",
+      "piloto/inmet_2017_A807.csv",
+      "piloto/inmet_2018_A807.csv",
+      "piloto/inmet_2019_A807.csv",
+      "piloto/inmet_2020_A807.csv",
+      "piloto/inmet_2021_A807.csv",
+      "piloto/inmet_2022_A807.csv",
+      "piloto/inmet_2023_A807.csv",
+      "piloto/inmet_2024_A807.csv",
+      "piloto/inmet_2025_A807.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A807",
+      "nome": "Curitiba"
+    },
+    "cobertura": {
+      "numerador": 3587,
+      "denominador": 4018,
+      "proporcao": 0.8927327028372325,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_alagamento",
+    "valor": 9,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12300. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_chuva_intensa",
+    "valor": 1,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13214. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_enxurrada",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12200. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_granizo",
+    "valor": 3,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13213. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_inundacao",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12100. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_vendaval",
+    "valor": 4,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13215. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "seguranca.furto_residencial",
+    "valor": 3222,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/pr_2025.pdf"
+    ],
+    "metodo": "página PDF 38; linha 1 AISP; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Registros no BOU, sujeitos a subnotificação/revisão; furto em residência não implica arrombamento; sem recorte por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "seguranca.roubo_residencial",
+    "valor": 208,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/pr_2025.pdf"
+    ],
+    "metodo": "página PDF 40; linha 1 AISP; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Registros no BOU, sujeitos a subnotificação/revisão; furto em residência não implica arrombamento; sem recorte por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_furto_residencial",
+    "valor": 175.98911948088124,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/ibge_pop_2025.json",
+      "piloto/pr_2025.pdf"
+    ],
+    "metodo": "página PDF 38; linha 1 AISP; quantidade/população IBGE 2025 (1830795) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Registros no BOU, sujeitos a subnotificação/revisão; furto em residência não implica arrombamento; sem recorte por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_roubo_residencial",
+    "valor": 11.361184621981161,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/ibge_pop_2025.json",
+      "piloto/pr_2025.pdf"
+    ],
+    "metodo": "página PDF 40; linha 1 AISP; quantidade/população IBGE 2025 (1830795) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Registros no BOU, sujeitos a subnotificação/revisão; furto em residência não implica arrombamento; sem recorte por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "clima.chuva_normal",
+    "valor": 1494.6,
+    "unidade": "mm/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PREC.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83967",
+      "nome": "Porto Alegre"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_chuva",
+    "valor": 0.960179193628671,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A801.csv",
+      "expansao/inmet_2016_A801.csv",
+      "expansao/inmet_2017_A801.csv",
+      "expansao/inmet_2018_A801.csv",
+      "expansao/inmet_2019_A801.csv",
+      "expansao/inmet_2020_A801.csv",
+      "expansao/inmet_2021_A801.csv",
+      "expansao/inmet_2022_A801.csv",
+      "expansao/inmet_2023_A801.csv",
+      "expansao/inmet_2024_A801.csv",
+      "expansao/inmet_2025_A801.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A801",
+      "nome": "Jardim Botânico"
+    },
+    "cobertura": {
+      "numerador": 3858,
+      "denominador": 4018,
+      "proporcao": 0.960179193628671,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_rajada",
+    "valor": 0.9303135888501742,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A801.csv",
+      "expansao/inmet_2016_A801.csv",
+      "expansao/inmet_2017_A801.csv",
+      "expansao/inmet_2018_A801.csv",
+      "expansao/inmet_2019_A801.csv",
+      "expansao/inmet_2020_A801.csv",
+      "expansao/inmet_2021_A801.csv",
+      "expansao/inmet_2022_A801.csv",
+      "expansao/inmet_2023_A801.csv",
+      "expansao/inmet_2024_A801.csv",
+      "expansao/inmet_2025_A801.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A801",
+      "nome": "Jardim Botânico"
+    },
+    "cobertura": {
+      "numerador": 3738,
+      "denominador": 4018,
+      "proporcao": 0.9303135888501742,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "clima.dias_chuva_ge50_normal",
+    "valor": 4.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PRENDIA50.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83967",
+      "nome": "Porto Alegre"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "clima.dias_minima_le10_normal",
+    "valor": 48.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMINNDIA10.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83967",
+      "nome": "Porto Alegre"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "clima.maxima_media_normal",
+    "valor": 25.6,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMAX.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83967",
+      "nome": "Porto Alegre"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "clima.minima_media_normal",
+    "valor": 15.9,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMIN.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83967",
+      "nome": "Porto Alegre"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "clima.rajada_max_observada",
+    "valor": 119.52000000000001,
+    "unidade": "km/h",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A801.csv",
+      "expansao/inmet_2016_A801.csv",
+      "expansao/inmet_2017_A801.csv",
+      "expansao/inmet_2018_A801.csv",
+      "expansao/inmet_2019_A801.csv",
+      "expansao/inmet_2020_A801.csv",
+      "expansao/inmet_2021_A801.csv",
+      "expansao/inmet_2022_A801.csv",
+      "expansao/inmet_2023_A801.csv",
+      "expansao/inmet_2024_A801.csv",
+      "expansao/inmet_2025_A801.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A801",
+      "nome": "Jardim Botânico"
+    },
+    "cobertura": {
+      "numerador": 3738,
+      "denominador": 4018,
+      "proporcao": 0.9303135888501742,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_alagamento",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12300. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_chuva_intensa",
+    "valor": 5,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13214. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_enxurrada",
+    "valor": 4,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12200. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_granizo",
+    "valor": 1,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13213. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_inundacao",
+    "valor": 4,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12100. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_vendaval",
+    "valor": 1,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13215. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "seguranca.furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/rs_2025_completo.xlsx"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "seguranca.roubo_residencial",
+    "valor": null,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/rs_2025_completo.xlsx"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/ibge_pop_2025.json",
+      "expansao/rs_2025_completo.xlsx"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; quantidade/população IBGE 2025 (1388794) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_roubo_residencial",
+    "valor": null,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/ibge_pop_2025.json",
+      "expansao/rs_2025_completo.xlsx"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; quantidade/população IBGE 2025 (1388794) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "clima.chuva_normal",
+    "valor": 1610.8,
+    "unidade": "mm/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PREC.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83423",
+      "nome": "Goiânia"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_chuva",
+    "valor": 0.9173718267794922,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A002.csv",
+      "expansao/inmet_2016_A002.csv",
+      "expansao/inmet_2017_A002.csv",
+      "expansao/inmet_2018_A002.csv",
+      "expansao/inmet_2019_A002.csv",
+      "expansao/inmet_2020_A002.csv",
+      "expansao/inmet_2021_A002.csv",
+      "expansao/inmet_2022_A002.csv",
+      "expansao/inmet_2023_A002.csv",
+      "expansao/inmet_2024_A002.csv",
+      "expansao/inmet_2025_A002.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A002",
+      "nome": "Goiânia"
+    },
+    "cobertura": {
+      "numerador": 3686,
+      "denominador": 4018,
+      "proporcao": 0.9173718267794922,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "clima.cobertura_rajada",
+    "valor": 0.9420109507217521,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A002.csv",
+      "expansao/inmet_2016_A002.csv",
+      "expansao/inmet_2017_A002.csv",
+      "expansao/inmet_2018_A002.csv",
+      "expansao/inmet_2019_A002.csv",
+      "expansao/inmet_2020_A002.csv",
+      "expansao/inmet_2021_A002.csv",
+      "expansao/inmet_2022_A002.csv",
+      "expansao/inmet_2023_A002.csv",
+      "expansao/inmet_2024_A002.csv",
+      "expansao/inmet_2025_A002.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A002",
+      "nome": "Goiânia"
+    },
+    "cobertura": {
+      "numerador": 3785,
+      "denominador": 4018,
+      "proporcao": 0.9420109507217521,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "clima.dias_chuva_ge50_normal",
+    "valor": 6.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PRENDIA50.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83423",
+      "nome": "Goiânia"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "clima.dias_minima_le10_normal",
+    "valor": 3.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMINNDIA10.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83423",
+      "nome": "Goiânia"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "clima.maxima_media_normal",
+    "valor": 31.4,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMAX.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83423",
+      "nome": "Goiânia"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "clima.minima_media_normal",
+    "valor": 18.6,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMIN.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83423",
+      "nome": "Goiânia"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "clima.rajada_max_observada",
+    "valor": 83.52,
+    "unidade": "km/h",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A002.csv",
+      "expansao/inmet_2016_A002.csv",
+      "expansao/inmet_2017_A002.csv",
+      "expansao/inmet_2018_A002.csv",
+      "expansao/inmet_2019_A002.csv",
+      "expansao/inmet_2020_A002.csv",
+      "expansao/inmet_2021_A002.csv",
+      "expansao/inmet_2022_A002.csv",
+      "expansao/inmet_2023_A002.csv",
+      "expansao/inmet_2024_A002.csv",
+      "expansao/inmet_2025_A002.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A002",
+      "nome": "Goiânia"
+    },
+    "cobertura": {
+      "numerador": 3785,
+      "denominador": 4018,
+      "proporcao": 0.9420109507217521,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_alagamento",
+    "valor": 6,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12300. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_chuva_intensa",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13214. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_enxurrada",
+    "valor": 2,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12200. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_granizo",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13213. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_inundacao",
+    "valor": 2,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12100. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "desastres.protocolos_vendaval",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13215. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "seguranca.furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "FONTE_SEM_VALOR",
+    "fontes_ids": [
+      "expansao/go_2025.pdf"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Publicação consultada somente estadual; nenhum número foi atribuído ao município. A fonte só permite o total estadual; a ausência é municipal e não significa que Goiânia esteja fora dos dez municípios cobertos."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "seguranca.roubo_residencial",
+    "valor": null,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "FONTE_SEM_VALOR",
+    "fontes_ids": [
+      "expansao/go_2025.pdf"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Publicação consultada somente estadual; nenhum número foi atribuído ao município. A fonte só permite o total estadual; a ausência é municipal e não significa que Goiânia esteja fora dos dez municípios cobertos."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "FONTE_SEM_VALOR",
+    "fontes_ids": [
+      "expansao/go_2025.pdf",
+      "expansao/ibge_pop_2025.json"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; quantidade/população IBGE 2025 (1503256) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Publicação consultada somente estadual; nenhum número foi atribuído ao município. A fonte só permite o total estadual; a ausência é municipal e não significa que Goiânia esteja fora dos dez municípios cobertos."
+    ]
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "abrangencia": "municipio",
+    "id": "seguranca.taxa_roubo_residencial",
+    "valor": null,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "FONTE_SEM_VALOR",
+    "fontes_ids": [
+      "expansao/go_2025.pdf",
+      "expansao/ibge_pop_2025.json"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; quantidade/população IBGE 2025 (1503256) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Publicação consultada somente estadual; nenhum número foi atribuído ao município. A fonte só permite o total estadual; a ausência é municipal e não significa que Goiânia esteja fora dos dez municípios cobertos."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "clima.chuva_normal",
+    "valor": 1478.8,
+    "unidade": "mm/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PREC.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83377",
+      "nome": "Brasília"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "clima.cobertura_chuva",
+    "valor": 0.9843205574912892,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A001.csv",
+      "expansao/inmet_2016_A001.csv",
+      "expansao/inmet_2017_A001.csv",
+      "expansao/inmet_2018_A001.csv",
+      "expansao/inmet_2019_A001.csv",
+      "expansao/inmet_2020_A001.csv",
+      "expansao/inmet_2021_A001.csv",
+      "expansao/inmet_2022_A001.csv",
+      "expansao/inmet_2023_A001.csv",
+      "expansao/inmet_2024_A001.csv",
+      "expansao/inmet_2025_A001.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A001",
+      "nome": "Brasília"
+    },
+    "cobertura": {
+      "numerador": 3955,
+      "denominador": 4018,
+      "proporcao": 0.9843205574912892,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "clima.cobertura_rajada",
+    "valor": 0.98456943753111,
+    "unidade": "fracao",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A001.csv",
+      "expansao/inmet_2016_A001.csv",
+      "expansao/inmet_2017_A001.csv",
+      "expansao/inmet_2018_A001.csv",
+      "expansao/inmet_2019_A001.csv",
+      "expansao/inmet_2020_A001.csv",
+      "expansao/inmet_2021_A001.csv",
+      "expansao/inmet_2022_A001.csv",
+      "expansao/inmet_2023_A001.csv",
+      "expansao/inmet_2024_A001.csv",
+      "expansao/inmet_2025_A001.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A001",
+      "nome": "Brasília"
+    },
+    "cobertura": {
+      "numerador": 3956,
+      "denominador": 4018,
+      "proporcao": 0.98456943753111,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "clima.dias_chuva_ge50_normal",
+    "valor": 5.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_PRENDIA50.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83377",
+      "nome": "Brasília"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "clima.dias_minima_le10_normal",
+    "valor": 0.0,
+    "unidade": "dias/ano",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMINNDIA10.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83377",
+      "nome": "Brasília"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "clima.maxima_media_normal",
+    "valor": 27.0,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMAX.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83377",
+      "nome": "Brasília"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "clima.minima_media_normal",
+    "valor": 17.0,
+    "unidade": "°C",
+    "periodo": {
+      "inicio": "1991-01-01",
+      "fim": "2020-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/inmet_TMIN.xlsx"
+    ],
+    "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+    "estacao": {
+      "codigo": "83377",
+      "nome": "Brasília"
+    },
+    "cobertura": null,
+    "limitacoes": [
+      "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "clima.rajada_max_observada",
+    "valor": 84.60000000000001,
+    "unidade": "km/h",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/inmet_2015_A001.csv",
+      "expansao/inmet_2016_A001.csv",
+      "expansao/inmet_2017_A001.csv",
+      "expansao/inmet_2018_A001.csv",
+      "expansao/inmet_2019_A001.csv",
+      "expansao/inmet_2020_A001.csv",
+      "expansao/inmet_2021_A001.csv",
+      "expansao/inmet_2022_A001.csv",
+      "expansao/inmet_2023_A001.csv",
+      "expansao/inmet_2024_A001.csv",
+      "expansao/inmet_2025_A001.csv"
+    ],
+    "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+    "estacao": {
+      "codigo": "A001",
+      "nome": "Brasília"
+    },
+    "cobertura": {
+      "numerador": 3956,
+      "denominador": 4018,
+      "proporcao": 0.98456943753111,
+      "unidade": "dias"
+    },
+    "limitacoes": [
+      "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "desastres.protocolos_alagamento",
+    "valor": 1,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12300. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "desastres.protocolos_chuva_intensa",
+    "valor": 1,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13214. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "desastres.protocolos_enxurrada",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12200. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "desastres.protocolos_granizo",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13213. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "desastres.protocolos_inundacao",
+    "valor": 0,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12100. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "desastres.protocolos_vendaval",
+    "valor": 1,
+    "unidade": "protocolos",
+    "periodo": {
+      "inicio": "2015-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "piloto/atlas_1991_2025.csv"
+    ],
+    "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13215. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "seguranca.furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/df_2025.xlsx"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "seguranca.roubo_residencial",
+    "valor": 155,
+    "unidade": "ocorrencias",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/df_2025.xlsx"
+    ],
+    "metodo": "aba DF (site); linha Excel 23; coluna D total; classificação residencial da fonte; unidade de registro varia por órgão.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Abrange todo o DF, compatível com IBGE 5300108. Fonte por data do fato; sujeita a revisões. Não representa somente a RA Brasília."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "seguranca.taxa_furto_residencial",
+    "valor": null,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "AUSENTE",
+    "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+    "fontes_ids": [
+      "expansao/df_2025.xlsx",
+      "expansao/ibge_pop_2025.json"
+    ],
+    "metodo": "Recorte verificado nos campos publicados; quantidade/população IBGE 2025 (2996899) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+    ]
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "abrangencia": "distrito_federal",
+    "id": "seguranca.taxa_roubo_residencial",
+    "valor": 5.172012803901633,
+    "unidade": "ocorrencias/100mil_habitantes",
+    "periodo": {
+      "inicio": "2025-01-01",
+      "fim": "2025-12-31"
+    },
+    "disponibilidade": "DISPONIVEL",
+    "motivo_ausencia": null,
+    "fontes_ids": [
+      "expansao/df_2025.xlsx",
+      "expansao/ibge_pop_2025.json"
+    ],
+    "metodo": "aba DF (site); linha Excel 23; coluna D total; quantidade/população IBGE 2025 (2996899) × 100000.",
+    "estacao": null,
+    "cobertura": null,
+    "limitacoes": [
+      "Taxa por moradores, não domicílios ou probabilidade de sinistro. Abrange todo o DF, compatível com IBGE 5300108. Fonte por data do fato; sujeita a revisões. Não representa somente a RA Brasília."
+    ]
+  }
+]

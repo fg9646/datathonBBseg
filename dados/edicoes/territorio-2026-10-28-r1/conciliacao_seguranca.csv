@@ -1,0 +1,30 @@
+﻿municipio,ano,indicador,total_publicado,soma_meses,diferenca,fonte
+Belo Horizonte,2023,Furtos consumados — geral,74383,74383,0,mg_furto.csv
+Belo Horizonte,2023,Roubos consumados — geral,7073,7073,0,mg_violentos_2023.csv
+Belo Horizonte,2024,Furtos consumados — geral,67844,67844,0,mg_furto.csv
+Belo Horizonte,2024,Roubos consumados — geral,6777,6777,0,mg_violentos_2024.csv
+Belo Horizonte,2025,Furtos consumados — geral,64303,64303,0,mg_furto.csv
+Belo Horizonte,2025,Roubos consumados — geral,5102,5102,0,mg_violentos_2025.csv
+Brasília,2023,Roubos em ambiente residência,219,219,0,df_2023.xlsx
+Brasília,2024,Roubos em ambiente residência,156,156,0,df_2024.xlsx
+Brasília,2025,Roubos em ambiente residência,155,155,0,df_2025.xlsx
+Fortaleza,2025,CVP — geral (roubos),19033,19033,0,ce_cvp_2025.xlsx
+Fortaleza,2025,Furtos — geral,32707,32707,0,ce_furto_2025.xlsx
+Porto Alegre,2023,Furtos — geral,29377,29377,0,rs_2023_completo.xlsx
+Porto Alegre,2023,Roubos — geral,14855,14855,0,rs_2023_completo.xlsx
+Porto Alegre,2024,Furtos — geral,23371,23371,0,rs_2024_completo.xlsx
+Porto Alegre,2024,Roubos — geral,9173,9173,0,rs_2024_completo.xlsx
+Porto Alegre,2025,Furtos — geral,28289,28289,0,rs_2025_completo.xlsx
+Porto Alegre,2025,Roubos — geral,8867,8867,0,rs_2025_completo.xlsx
+Recife,2023,CVP — geral,18655,18655,0,pe_cvp_microdados.xlsx
+Recife,2024,CVP — geral,18765,18765,0,pe_cvp_microdados.xlsx
+Recife,2025,CVP — geral,16732,16732,0,pe_cvp_microdados.xlsx
+Rio de Janeiro,2023,Roubos em ambiente residência,329,329,0,rj_municipios.csv
+Rio de Janeiro,2023,Total de roubos — geral,53553,53553,0,rj_municipios.csv
+Rio de Janeiro,2023,Total de furtos — geral,106678,106678,0,rj_municipios.csv
+Rio de Janeiro,2024,Roubos em ambiente residência,329,329,0,rj_municipios.csv
+Rio de Janeiro,2024,Total de roubos — geral,65501,65501,0,rj_municipios.csv
+Rio de Janeiro,2024,Total de furtos — geral,114175,114175,0,rj_municipios.csv
+Rio de Janeiro,2025,Roubos em ambiente residência,253,253,0,rj_municipios.csv
+Rio de Janeiro,2025,Total de roubos — geral,62132,62132,0,rj_municipios.csv
+Rio de Janeiro,2025,Total de furtos — geral,121706,121706,0,rj_municipios.csv

@@ -1,12 +1,12 @@
 # API Território — tarefas para o quadro
 
-**Status:** somente os pontos 1 e 2 concluídos, no âmbito documental. Pontos 3 a 10 pendentes. Sem implementação, congelamento da edição dos dados ou integração. Hospedagem, limite numérico de chamadas e responsáveis nominais serão definidos na etapa operacional.
+**Status:** pontos 1 e 2 concluídos no âmbito documental; ponto 3 concluído com a edição `territorio-2026-10-28-r1`, validada e congelada com lacunas documentadas. Pontos 4 a 10 pendentes. Sem implementação da API ou integração. Hospedagem, limite numérico de chamadas e responsáveis nominais serão definidos na etapa operacional.
 
 | Ordem | Tarefa curta | Responsável proposto | Pronto quando… |
 |---|---|---|---|
 | 1 — concluído | Fechar consulta, acesso e falhas | Enriquecimento + Pipo | POST/JSON por código IBGE, HTTPS/chave por consumidor, três segundos por tentativa e no máximo uma repetição transitória; continuar sem enriquecimento em caso de falha, sinalizando-a. |
 | 2 — concluído | Finalizar e versionar contrato e catálogo | Enriquecimento + consumidores | Contrato documental 1.0.0, 18 indicadores, campos, períodos, ausências e erros definidos; vendaval corrigido. |
-| 3 — pendente | Validar e congelar a edição inicial dos dados | Enriquecimento | Dez municípios, períodos, valores, fontes, métodos e lacunas conferidos e identificados por edição. |
+| 3 — concluído | Validar e congelar a edição inicial dos dados | Enriquecimento | Edição `territorio-2026-10-28-r1`: 180 pares município/indicador, 153 valores disponíveis, 27 ausências explícitas; 1.925 verificações aprovadas, fontes e hashes registrados. |
 | 4 — pendente | Preparar a base de consulta | Enriquecimento / responsável pela API | Base permitir consultar município e edição sem ler a planilha durante o atendimento; mapeamentos documentados. |
 | 5 — pendente | Construir a API | Responsável pela API | Consulta devolver indicadores e metadados conforme o contrato, com acesso protegido. |
 | 6 — pendente | Validar dados e comportamentos | Enriquecimento + responsável pela API | Valores conferirem com a edição validada e cenários de lacunas, cobertura e erros passarem. |
@@ -17,13 +17,13 @@
 
 ## Pacote para o Pipo
 
-- [ ] Contrato e especificação técnica final versionados.
+- [x] Contrato documental 1.0.0 versionado; serviço ainda não implementado.
 - [ ] Endereço do ambiente de teste e instruções de acesso; credenciais por canal seguro.
-- [ ] Catálogo, dez municípios/códigos IBGE, períodos, unidades, fontes e limitações.
-- [ ] Edição inicial dos dados e referência para conferir os valores.
-- [ ] Mapeamento do nome antigo de vendaval para o identificador corrigido.
+- [x] Catálogo, dez municípios/códigos IBGE, períodos, unidades, fontes e limitações documentados na edição.
+- [x] Edição inicial dos dados e referência para conferir os valores: `dados/edicoes/territorio-2026-10-28-r1`.
+- [x] Mapeamento do nome antigo de vendaval para o identificador corrigido, em `mapeamento_catalogo.csv`.
 - [ ] Exemplos completos: dados disponíveis, lacunas, município sem cobertura e erros.
-- [ ] Resultado da validação e lista de pendências conhecidas.
+- [x] Validação dos dados e lacunas documentadas; testes da API permanecem pendentes.
 - [ ] Acordo de falhas, limites e contatos de suporte/atualização.
 
 ## Regra de trabalho

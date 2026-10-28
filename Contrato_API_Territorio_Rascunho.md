@@ -1,6 +1,6 @@
 # Território — proposta da API de enriquecimento residencial
 
-**Status:** somente os pontos 1 e 2 concluídos: definições de integração confirmadas pelo Pipo e contrato documental 1.0.0 com catálogo finalizado. A edição dos dados ainda não foi congelada (ponto 3). Sem implementação ou integração ao motor e à Bússola. Hospedagem, endereço do servidor, limite numérico de chamadas e responsáveis nominais permanecem pendentes.
+**Status:** pontos 1, 2 e 3 concluídos: definições de integração confirmadas pelo Pipo, contrato documental 1.0.0 com catálogo finalizado e edição dos dados `territorio-2026-10-28-r1` validada e congelada. Pontos 4 a 10 pendentes. Sem implementação ou integração ao motor e à Bússola. Hospedagem, endereço do servidor, limite numérico de chamadas e responsáveis nominais permanecem pendentes.
 
 ## 1. Objetivo e limites
 
@@ -320,7 +320,22 @@ Resposta com objeto `erro`, contendo `codigo` e `mensagem`, ambos textos. Códig
 ### Versões e reprodutibilidade
 
 - Catálogo inicial: os 18 indicadores da seção 6, incluindo `desastres.protocolos_vendaval`, sem pesos, score ou regras de recomendação.
-- Contrato `1.0.0` descreve formato e significado; edição dos dados será identificada separadamente no congelamento da base, ponto 3.
+- Contrato `1.0.0` descreve formato e significado; a edição inicial dos dados, identificada separadamente no ponto 3, é `territorio-2026-10-28-r1`.
 - Mudanças incompatíveis exigem nova versão principal e alinhamento com consumidores; acréscimos compatíveis são documentados e versionados. Correção de valor exige nova edição dos dados.
 - Na mesma edição, valores e metadados de origem são reproduzíveis; `consultado_em` e a situação operacional de atualização podem mudar entre chamadas.
 - Implementar preferencialmente em uma branch do repositório compartilhado, após verificar sua estrutura e instruções. Hospedagem e limite de chamadas ficam para a publicação. A reunião posterior poderá evoluir o contrato sem bloquear a construção desta primeira interface.
+
+## 17. Edição inicial congelada — ponto 3 concluído
+
+**Edição:** `territorio-2026-10-28-r1`, em `dados/edicoes/territorio-2026-10-28-r1`. O arquivo `LEIA-ME.md` da edição contém relatório, cobertura por município, métodos e limitações. `manifesto.json` e `SHA256SUMS` permitem conferir a integridade dos arquivos.
+
+- Dez municípios, 180 pares município/indicador: 153 valores disponíveis e 27 ausências explícitas. Ausência não foi convertida em zero.
+- 1.925 verificações aprovadas: 151 fontes com tamanho e SHA-256 conferidos, 108 arquivos horários reprocessados, 80 normais conferidas, 60 indicadores Atlas recalculados, sete totais residenciais reextraídos e 49 grupos mensais conciliados.
+- Valores comparados com a planilha entregue, sem alteração numérica. Nomes, unidades e estados normalizados para o catálogo, com mapeamento documentado.
+- Treze totais residenciais e suas treze taxas permanecem ausentes. A outra lacuna é a normal de dias de chuva ≥50 mm de Fortaleza.
+- Goiânia é município coberto, mas a publicação criminal consultada é estadual. Seus indicadores residenciais usam `FONTE_SEM_VALOR`, com explicação da falta do recorte municipal; não recebem valores do estado.
+- Recife mantém 59,0% de completude de chuva e dois arquivos anuais ausentes no acervo. A listagem integral dos ZIPs da coleta anterior não foi preservada; a ausência na listagem oficial não foi reconfirmada nesta auditoria.
+- Datas históricas de coleta têm precisão de dia, sem horário conhecido. A edição preserva essa precisão; a adaptação para os metadados temporais da futura API precisa ser resolvida no ponto 4 sem inventar horários de coleta.
+- Nenhuma nova coleta foi feita. As fontes brutas anteriores permanecem arquivadas localmente e referenciadas por URL/hash; microdados criminais e registros individuais de clientes e imóveis não são publicados na edição.
+
+O congelamento é um snapshot analítico, não uma base operacional de consulta nem uma resposta pronta da API. Os próximos passos continuam no quadro. Qualquer correção ou atualização dos dados deverá gerar outra edição; esta deve permanecer preservada com seus hashes e histórico Git.
