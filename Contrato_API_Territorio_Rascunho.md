@@ -57,7 +57,7 @@ A planilha permanece como referência de conferência e auditoria. A operação 
 - O backend consumidor envia o código IBGE do município do imóvel e, opcionalmente, os indicadores, períodos e a versão da base desejados.
 - A API consulta a base previamente preparada e devolve valores, fontes, períodos e estados de disponibilidade.
 - Os consumidores reconhecem os indicadores por identificadores estáveis, sem depender da posição de colunas de uma planilha.
-- A comunicação será entre backends autorizados, por HTTPS e chave de API exclusiva por consumidor. O ponto 1 está detalhado na seção 13; a compatibilidade da integração depende da confirmação do Pipo. Hospedagem, limite numérico de chamadas e frequência de atualização permanecem pendentes.
+- A comunicação será entre backends autorizados, por HTTPS e chave de API exclusiva por consumidor. Pipo confirmou as definições gerais do ponto 1, registradas na seção 13; a seção 16 detalha os campos para construção. Hospedagem, limite numérico de chamadas e frequência de atualização permanecem pendentes.
 
 Esta proposta define o comportamento esperado. Não estabelece ainda uma URL operacional nem implementa chamadas nos sistemas consumidores.
 
@@ -129,11 +129,13 @@ Valor ausente será `null`, acompanhado de um motivo explícito:
 | `SEM_COBERTURA_TERRITORIAL` | Município fora da cobertura da edição consultada. |
 | `SEM_RECORTE_RESIDENCIAL` | Fonte consultada não permite separar ocorrências residenciais. |
 | `PERIODO_NAO_DISPONIVEL` | Período solicitado não existe na base para aquele indicador e território. |
-| `FONTE_SEM_VALOR` | O recorte existe, mas a fonte não fornece um valor utilizável. |
+| `FONTE_SEM_VALOR` | A fonte consultada não fornece valor utilizável para o indicador, território e período, inclusive quando publica apenas um agregado estadual sem recorte municipal. |
 
 Respostas parciais são permitidas: a ausência de um indicador não elimina os demais. Zero só será usado quando o método e a fonte sustentarem o valor zero. Ausência de dado nunca será convertida automaticamente em zero, baixo risco ou condição favorável.
 
 Dados gerais de criminalidade podem ser mantidos como contexto auxiliar, com identificação própria. Não preencherão os campos residenciais.
+
+Para distinguir os motivos: município fora da edição usa `SEM_COBERTURA_TERRITORIAL`; fonte com recorte municipal, mas sem separação residencial, usa `SEM_RECORTE_RESIDENCIAL`. Goiânia está coberta pela edição, porém a publicação consultada só apresenta totais estaduais: seus indicadores residenciais usam `FONTE_SEM_VALOR`. Esse motivo também cobre a normal anual ausente de Fortaleza. As explicações específicas acompanham cada indicador.
 
 ## 9. Exemplos de comportamento
 
@@ -168,7 +170,7 @@ Exemplos baseados no levantamento consolidado em 28/10/2026; não representam ch
 
 ## 11. Decisões antes da implementação — recomendações para a equipe
 
-A equipe confirmou a proposta geral. A tabela mantém o registro das recomendações e dos detalhes que precisam ser especificados com os responsáveis pelos consumidores. Essa confirmação não significa que hospedagem, credenciais ou formato técnico final já estejam definidos.
+A equipe confirmou a proposta geral e Pipo confirmou as definições do ponto 1. A especificação documental está fechada na seção 16. A tabela mantém o histórico das recomendações e das decisões operacionais ainda necessárias; hospedagem, emissão das credenciais e limite numérico de chamadas permanecem pendentes.
 
 | Decisão | Recomendação para a primeira versão | O que precisamos fechar juntos |
 |---|---|---|
@@ -177,7 +179,7 @@ A equipe confirmou a proposta geral. A tabela mantém o registro das recomendaç
 | Períodos | Fixar normais em 1991–2020; clima observado e desastres em 2015–2025; criminalidade e população em 2025 na primeira edição. | Confirmar esses períodos e o processo de aprovação das próximas edições, sem substituição silenciosa de anos. |
 | Dados ausentes | Retornar `null` com motivo explícito e preservar os demais indicadores disponíveis. | O responsável pelo motor deve definir e documentar seu comportamento para cada ausência, sem convertê-la em zero ou baixo risco. |
 | Uso dos indicadores | Território fornece contexto; motor calcula score; Bússola apresenta a explicação. Contexto municipal não determina diagnóstico do imóvel nem bloqueio de elegibilidade. | Alinhar quais usos são permitidos, as limitações exibidas e as regras de interpretação dos consumidores. |
-| Integração técnica | Adotar a consulta, autenticação e regras da seção 13, apoiadas em base previamente coletada e validada. | Pipo confirma formato e tempo limite; definir hospedagem, limite numérico de chamadas e completar o esquema dos campos. |
+| Integração técnica | Adotar as definições gerais confirmadas pelo Pipo na seção 13 e os campos documentados na seção 16, apoiados em base previamente coletada e validada. | Definir hospedagem e limite numérico de chamadas e validar o comportamento na futura integração. |
 | Atualização e rastreabilidade | Publicar edições reproduzíveis, com fonte, data, método e cobertura; manter a última edição válida em caso de falha, sinalizando a situação. | Atribuir frequência de revisão por fonte e responsável pela publicação e correção de cada edição. |
 | Responsáveis e aceite | Separar responsabilidades de dados, serviço da API e consumidores; validar os três cenários da seção 9. | Nomear os responsáveis e confirmar critérios de aceite antes da primeira integração. |
 
@@ -219,7 +221,7 @@ Pipo confirmou as definições gerais do ponto 1, conforme relato do responsáve
 | Autenticação | HTTPS com chave de API exclusiva por consumidor, armazenada apenas no backend. Credenciais por canal seguro, fora dos arquivos compartilhados e do frontend. |
 | Dados ausentes | HTTP 200, com `null` e motivo explícito para cada ausência; preservar os demais indicadores disponíveis. Município válido sem cobertura também retorna 200. |
 | Tempo limite | Três segundos por tentativa, confirmado pelo Pipo. |
-| Novas tentativas | No máximo uma nova tentativa para falha transitória de conexão, tempo limite ou indisponibilidade temporária. Não repetir erros de entrada ou autenticação. Em 429, respeitar a indicação de espera do serviço, sem repetir imediatamente; o orçamento total de espera será combinado com o Pipo. |
+| Novas tentativas | No máximo uma nova tentativa para falha transitória de conexão, tempo limite ou indisponibilidade temporária. Não repetir erros de entrada ou autenticação. Em 429, respeitar a indicação de espera do serviço, sem repetir imediatamente, dentro do orçamento total de até seis segundos registrado abaixo. |
 
 ### Respostas de erro
 
@@ -252,7 +254,7 @@ A versão do contrato será separada da edição dos dados: a primeira identific
 | Atualização da coleta falhou, mas existe edição válida | Servir a última edição válida, identificando sua data e a falha de atualização. |
 | API indisponível ou chamada excedeu o tempo limite | Consumidor identifica falha técnica; não fabrica uma resposta com indicadores zerados ou motivos de ausência na fonte. |
 
-**Recomendação para os consumidores:** manter o fluxo já existente sem enriquecimento quando a consulta falhar, se isso for compatível com suas regras, e sinalizar que o contexto territorial não foi obtido. Não recalcular indicadores como zero nem tratar a falha como condição favorável. A equipe do motor e o Pipo devem confirmar esse comportamento antes da integração; se o contexto for obrigatório para alguma decisão, essa decisão deve aguardar ou seguir o procedimento de revisão definido por eles.
+**Comportamento confirmado pelo Pipo, conforme relato do responsável:** manter o fluxo já existente sem enriquecimento quando a consulta falhar e sinalizar que o contexto territorial não foi obtido. Não recalcular indicadores como zero nem tratar a falha como condição favorável. A execução desse comportamento será validada na integração com os consumidores. Se uma regra futura tornar o contexto obrigatório para alguma decisão, a exceção deverá ser alinhada e documentada com as equipes antes de ser aplicada.
 
 ## 15. Entrega ao Pipo
 
@@ -292,7 +294,7 @@ Todos os campos listados são obrigatórios; campos explicitamente anuláveis us
 | `versao_base` | Texto, edição dos dados efetivamente utilizada. |
 | `consultado_em` | Data e hora UTC em formato ISO 8601. |
 | `territorio` | Objeto com `codigo_ibge`, `municipio`, `uf` e `abrangencia`, todos textos; abrangência `municipio` ou `distrito_federal`. |
-| `atualizacao` | Objeto com `ultima_coleta_em` (data/hora UTC) e `situacao` (`SEM_FALHA_REGISTRADA` ou `FALHA_NA_ULTIMA_TENTATIVA`). Não significa que a fonte publicou dados hoje. |
+| `atualizacao` | Objeto com `ultima_coleta_em` (texto com a maior data de coleta entre as fontes retornadas, preservando a precisão disponível conforme a regra abaixo; `null` quando não houver fontes aplicáveis) e `situacao` (`SEM_FALHA_REGISTRADA` ou `FALHA_NA_ULTIMA_TENTATIVA`). Não significa que a fonte publicou dados hoje. |
 | `indicadores` | Lista com um objeto por indicador e período solicitado, inclusive os ausentes. |
 
 ### Campos de cada indicador
@@ -305,13 +307,15 @@ Todos os campos listados são obrigatórios; campos explicitamente anuláveis us
 | `periodo` | Objeto com datas `inicio` e `fim` solicitadas ou padrão. Não substituir por outro intervalo disponível. |
 | `disponibilidade` | Texto `DISPONIVEL` ou `AUSENTE`. Completude baixa pode coexistir com valor disponível e deve ser descrita em cobertura e limitações. |
 | `motivo_ausencia` | `null` quando disponível; caso ausente, um dos quatro motivos da seção 8. |
-| `fontes` | Lista de objetos com `instituicao`, `url` e `coletado_em` UTC. Taxas devem referenciar criminalidade e população. Lista vazia apenas quando não há fonte aplicável, como território sem cobertura. |
+| `fontes` | Lista de objetos com `instituicao`, `url` e `coletado_em` (texto com data ou data/hora UTC, conforme a precisão original). Taxas devem referenciar criminalidade e população. Lista vazia apenas quando não há fonte aplicável, como território sem cobertura. |
 | `metodo` | Texto explicando filtros, transformações e recorte; para ausência, explicar a verificação realizada. |
 | `estacao` | Objeto com `codigo` e `nome` (textos), quando aplicável; caso contrário, `null`. Fontes e método distinguem a estação de normais da estação automática. |
 | `cobertura` | Objeto com `numerador` e `denominador` inteiros, `proporcao` numérica entre 0 e 1 e `unidade` textual (`dias`), quando calculável; caso contrário, `null`. |
 | `limitacoes` | Lista de textos, podendo ser vazia; registrar limitações relevantes mesmo quando o valor estiver disponível. |
 
 Cobertura de chuva e rajada, quando disponível, aparece tanto como indicador próprio quanto nos metadados dos indicadores observados pertinentes. Não calcular confiança ou probabilidade individual a partir dessa proporção.
+
+**Precisão das datas de coleta:** `coletado_em` e `ultima_coleta_em` aceitam data `AAAA-MM-DD` quando somente o dia foi registrado, ou data/hora ISO 8601 em UTC quando o instante original for conhecido. Uma data sem horário não deve ser convertida para meia-noite nem receber um fuso presumido. Para `ultima_coleta_em`, comparar primeiro os dias de coleta das fontes retornadas; se alguma fonte do dia mais recente tiver somente data, devolver somente essa data. Se todas as fontes desse dia tiverem instante conhecido, devolver o mais recente em UTC. Na edição inicial, as fontes têm precisão de dia: usar `2026-10-27`, sem horário inventado. `consultado_em` continua sendo o instante real da consulta, em UTC, e não substitui a data da coleta.
 
 ### Formato dos erros
 
@@ -335,7 +339,7 @@ Resposta com objeto `erro`, contendo `codigo` e `mensagem`, ambos textos. Códig
 - Treze totais residenciais e suas treze taxas permanecem ausentes. A outra lacuna é a normal de dias de chuva ≥50 mm de Fortaleza.
 - Goiânia é município coberto, mas a publicação criminal consultada é estadual. Seus indicadores residenciais usam `FONTE_SEM_VALOR`, com explicação da falta do recorte municipal; não recebem valores do estado.
 - Recife mantém 59,0% de completude de chuva e dois arquivos anuais ausentes no acervo. A listagem integral dos ZIPs da coleta anterior não foi preservada; a ausência na listagem oficial não foi reconfirmada nesta auditoria.
-- Datas históricas de coleta têm precisão de dia, sem horário conhecido. A edição preserva essa precisão; a adaptação para os metadados temporais da futura API precisa ser resolvida no ponto 4 sem inventar horários de coleta.
+- Datas históricas de coleta têm precisão de dia, sem horário conhecido. A edição permanece preservada; os campos da futura API aceitarão essa precisão conforme a seção 16, sem inventar horários de coleta.
 - Nenhuma nova coleta foi feita. As fontes brutas anteriores permanecem arquivadas localmente e referenciadas por URL/hash; microdados criminais e registros individuais de clientes e imóveis não são publicados na edição.
 
 O congelamento é um snapshot analítico, não uma base operacional de consulta nem uma resposta pronta da API. Os próximos passos continuam no quadro. Qualquer correção ou atualização dos dados deverá gerar outra edição; esta deve permanecer preservada com seus hashes e histórico Git.
