@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# JavaScript
+node_modules/
+dist/
+build/
+
+# Configurações e credenciais locais
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+
+# Temporários e resultados locais
+/tmp/
+/temp/
+/resultados_reproduzidos/
+/testes_consolidacao/
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+*.swp
+
+# CSVs, ZIPs e documentação versionados são mantidos.
