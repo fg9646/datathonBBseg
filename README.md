@@ -1,8 +1,8 @@
-# Banco de Dados e API Território - Time Vector
+# Base de Dados Residenciais - Time Vector
 
 Datathon Proteção Inteligente - Ibmec / BB Seguros / Brasilseg. Desafio escolhido: Seguro Residencial.
 
-Este repositório reúne a preparação da base residencial e uma API de contexto territorial. São componentes independentes: o pacote residencial v2 permanece preservado, enquanto a API é um extra funcional validado localmente. O motor de recomendação e a jornada Bússola estão no [repositório do MVP](https://github.com/tmzhenrique/BBDW-X-IBMEC).
+Esta documentação trata exclusivamente da preparação e consolidação dos dados residenciais. O motor de recomendação e a jornada Bússola estão no [repositório do MVP](https://github.com/tmzhenrique/BBDW-X-IBMEC).
 
 ## 1. Base residencial vigente
 
@@ -56,63 +56,20 @@ python entregas/02_Scripts/verificar_ajustes.py --script entregas/02_Scripts/con
 
 Para comparação byte a byte, use a mesma data de consolidação indicada no relatório de qualidade. As verificações do pacote demonstram integridade da preparação dos dados; não certificam as decisões do motor de seguros.
 
-## 4. API de contexto territorial
+## 4. Uso e limitações dos dados
 
-A [API Território](https://github.com/fg9646/datathonBBseg/blob/main/api_territorio/README.md) permite consultar contexto municipal de clima, desastres e criminalidade, com fonte, período, método e limitações junto dos valores.
+Os dados do desafio são sintéticos. Município, UF e código IBGE são referências reais; os demais componentes do endereço são fictícios ou perturbados. Ausência não equivale a zero, resposta negativa ou condição de inelegibilidade.
 
-- Contrato JSON 1.0.0, por `POST /v1/enriquecimento/consulta`.
-- Edição `territorio-2026-10-28-r1`: 10 municípios, 18 indicadores e 180 registros, com 153 valores e 27 ausências explícitas.
-- SQLite local preparado a partir dos dados versionados. A consulta não acessa planilhas nem fontes externas em tempo real.
-- Fontes documentadas: INMET, Atlas Digital de Desastres, IBGE e órgãos estaduais de segurança.
-- Autenticação por consumidor e HTTPS fora do modo de desenvolvimento em loopback. Nenhuma chave real acompanha a entrega.
+Estimativas recebidas da fonte permanecem identificadas com suas limitações. Declarações do cliente não são laudos nem confiança estatística de 100%. O seguro cadastrado no nível do cliente não comprova seguro no mesmo imóvel.
 
-Os testes foram locais. Publicação, capacidade, latência de rede e integração com o motor são evoluções futuras. A API não participa das decisões do motor/Bússola nesta versão, e não há benefício de score comprovado por seu uso.
+As tabelas consolidadas são insumos. Plano, faixas e templates de resultado são saídas do motor e devem ser avaliados por suas próprias versões e evidências.
 
-## 5. Executar e testar a API
+## 5. Documentação da base
 
-A API tem ambiente próprio e dependências fixadas. **Python 3.12.14 foi testado**; as dependências atuais exigem no mínimo Python 3.11. Consulte a [execução local em PowerShell](https://github.com/fg9646/datathonBBseg/blob/main/api_territorio/docs/EXECUCAO_LOCAL.md) para a sequência completa, incluindo credencial temporária e inicialização do servidor.
+O guia, o dicionário de colunas, o mapeamento das fontes, a política de validação, o schema e os relatórios de qualidade estão em entregas/. A documentação da API territorial é independente e fica em api_territorio/; suas instruções não fazem parte deste guia de dados.
 
-Preparação básica no Windows:
+## 6. Uso de IA e alterações
 
-```powershell
-py -3.12 -m venv .venv
-$python = Join-Path $PWD '.venv\Scripts\python.exe'
-& $python -m pip install -r api_territorio/requirements-dev.txt
-& $python -m pip check
-& $python -m api_territorio.preparar_base
-```
+ChatGPT apoiou a estruturação da base, scripts, documentação e verificações. A equipe deve compreender, revisar, executar e defender a solução. Registrar fonte, método, versão e evidências de novas mudanças.
 
-Conferências locais:
-
-```powershell
-& $python -m unittest discover -s tests -v
-& $python -X utf8 auditoria/validar_congelar_base.py --verificar-integridade dados/edicoes/territorio-2026-10-28-r1
-```
-
-O teste HTTPS utiliza OpenSSL CLI para um certificado temporário; sem esse recurso, o teste é ignorado e a limitação deve ser registrada. Segredos gerados para demonstração não devem ser gravados em commits, PDFs ou logs.
-
-## 6. Limitações, segurança e integração
-
-Município, UF e código IBGE são referências reais do desafio. CEP, endereço e coordenadas são fictícios ou perturbados. A API usa o município e não identifica domicílios, comunidades ou elegibilidade individual.
-
-Ausências são explícitas e não equivalem a zero ou baixo risco. Indicadores territoriais não são probabilidades de sinistro. Os períodos e métodos das fontes variam, e não há atualização automática.
-
-O cadastro de seguro no nível do cliente não comprova seguro para cada imóvel. Declarações do cliente não são laudos nem confiança estatística de 100%. Regras e saídas de negócio devem permanecer explicáveis e associadas à versão dos dados utilizada.
-
-Os CSVs consolidados são entradas de trabalho. Os templates oficiais de resultado e coberturas são saídas do motor, disponibilizadas e avaliadas no contexto do MVP e da pasta de entrega.
-
-## 7. Documentação de referência
-
-- [Contrato da API](https://github.com/fg9646/datathonBBseg/blob/main/api_territorio/docs/CONTRATO.md)
-- [Fontes, indicadores e métodos](https://github.com/fg9646/datathonBBseg/blob/main/api_territorio/docs/DADOS.md)
-- [Validação técnica e limites dos testes](https://github.com/fg9646/datathonBBseg/blob/main/api_territorio/docs/VALIDACAO.md)
-- [Implantação opcional](https://github.com/fg9646/datathonBBseg/blob/main/api_territorio/docs/IMPLANTACAO.md)
-- [Documentos e arquivos da entrega](https://drive.google.com/drive/folders/1JlDkNCBysBYXLBWHecneTqgFvjT-70qe)
-
-Documentos de histórico e propostas anteriores são preservados como referência e não substituem automaticamente os contratos vigentes. Condições contratuais e orientações oficiais da Brasilseg/BB Seguros prevalecem em conflitos de produto.
-
-## 8. Uso de IA e registro de alterações
-
-ChatGPT apoiou a estruturação da base, elaboração e revisão de scripts, documentação, verificações e conversão documental. A equipe deve compreender, revisar, executar e defender a solução. Novas mudanças devem registrar fonte, método, versão e evidências.
-
-Este README foi atualizado para a entrega documental de **29/10/2026**, esclarecendo as frentes de dados e API e os caminhos atuais do repositório. Não houve alteração dos CSVs da v2, dos indicadores territoriais, dos cálculos ou das regras do motor nesta atualização.
+Atualização documental de 29/10/2026: organização e instruções da base v2, com separação explícita da documentação da API. Nenhum CSV, cálculo, indicador ou regra do motor foi alterado.
