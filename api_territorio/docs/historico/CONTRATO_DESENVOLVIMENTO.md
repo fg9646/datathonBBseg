@@ -1,12 +1,16 @@
-# Território — proposta da API de enriquecimento residencial
+> **Registro histórico.** Preserva decisões, resultados e linguagem da época; não define o estado atual nem exige novas aprovações. Os guias atuais começam no [README da API](../../README.md). Os links foram ajustados para esta localização.
 
-**Status:** pontos 1 a 5 concluídos na feature da API: contrato 1.0.0, edição congelada, SQLite e endpoint HTTP autenticado implementados. Pontos 6 a 10 permanecem pendentes. Serviço testado localmente, ainda sem URL externa, credenciais de produção ou integração ao motor/Bússola. A construção não exige serviços pagos; hospedagem deverá ser gratuita e ainda será definida.
+# Território — contrato da API de enriquecimento residencial, extra validado localmente
+
+**Status em 29/10/2026:** API entregue como **extra funcional e documentado no GitHub, validado localmente com 53 testes aprovados**. Contrato 1.0.0, edição congelada, SQLite, endpoint autenticado, exemplos e evidências estão disponíveis. A configuração do Render Free foi integrada à `main` pelo PR #7, com publicação automática desligada, mas nenhum serviço foi publicado. Não há URL externa, credenciais de produção ou integração ao motor/Bússola. Publicação e integração são evoluções futuras, fora do escopo da entrega atual; não são pendências que impeçam apresentar o extra. A execução local não exige serviços pagos.
+
+**Decisão de escopo:** a seção 22 registra a decisão atual e prevalece sobre o cronograma histórico. As definições técnicas e os critérios para uma eventual integração permanecem documentados para reutilização, sem compromisso de executá-los nesta entrega.
 
 ## 1. Objetivo e limites
 
-Fornecer contexto municipal de clima, desastres e criminalidade para apoiar a personalização do seguro residencial.
+Disponibilizar, como extra validado localmente, contexto municipal de clima, desastres e criminalidade para demonstrar uma possível evolução da personalização do seguro residencial.
 
-A API entrega indicadores e suas limitações. As decisões de pontuação, recomendação de plano e elegibilidade pertencem aos sistemas consumidores.
+A API entrega indicadores e suas limitações. Nesta entrega, seus resultados não são usados pelo motor ou pela Bússola e não alteram pontuação, planos ou elegibilidade. O uso por consumidores dependerá de integração e validação futuras.
 
 Como os CEPs, endereços e coordenadas dos dados do desafio são fictícios ou mascarados, a unidade de consulta será o **município do imóvel, identificado pelo código IBGE real**. Não será possível atribuir risco ao endereço, bairro ou imóvel específico. Brasília representa todo o Distrito Federal, código 5300108.
 
@@ -39,25 +43,25 @@ A identificação de favelas ou comunidades fica fora desta versão, enquanto a 
 
 As fontes são oficiais, mas **a API Território será um serviço da equipe, não uma API governamental**. Parte dos órgãos publica arquivos, sem uma API própria adequada ao uso. Licenças e condições de redistribuição deverão ser respeitadas por fonte.
 
-## 3. Onde a API entra
+## 3. Onde a API poderá entrar — evolução futura
 
-Há dois fluxos separados:
+Os fluxos abaixo descrevem a arquitetura para eventual evolução. Na entrega atual, a base já preparada é consultada localmente; não há coleta programada implementada, publicação externa ou chamadas do motor/Bússola.
 
-**Atualização dos dados:** fontes oficiais → coleta programada → validação e padronização → base de dados versionada → API Território.
+**Atualização futura dos dados:** fontes oficiais → coleta programada → validação e padronização → base de dados versionada → API Território.
 
-**Consulta durante o atendimento:** backend consumidor → API Território → indicadores municipais → uso pelo motor e pela Bússola, conforme as regras de cada equipe.
+**Consulta futura durante o atendimento:** backend consumidor → API Território → indicadores municipais → uso pelo motor e pela Bússola, conforme as regras de cada equipe.
 
 Em termos simples: primeiro preparamos uma base confiável; depois a API permite consultá-la. O atendimento não dependerá de baixar arquivos governamentais naquele momento.
 
 A planilha permanece como referência de conferência e auditoria. A operação proposta consulta a base de dados por meio da API, sem depender da leitura da planilha a cada atendimento.
 
-## 4. Como entra tecnicamente
+## 4. Funcionamento local e integração futura
 
-- Um serviço de backend da equipe disponibiliza a API por HTTP e responde em JSON.
-- O backend consumidor envia o código IBGE do município do imóvel e, opcionalmente, os indicadores, períodos e a versão da base desejados.
+- O serviço HTTP já implementado pode ser executado localmente e responde em JSON, conforme as instruções em `api_territorio/HTTP.md`.
+- Em uma integração futura, o backend consumidor enviará o código IBGE do município do imóvel e, opcionalmente, os indicadores, períodos e a versão da base desejados.
 - A API consulta a base previamente preparada e devolve valores, fontes, períodos e estados de disponibilidade.
 - Os consumidores reconhecem os indicadores por identificadores estáveis, sem depender da posição de colunas de uma planilha.
-- A comunicação será entre backends autorizados, por HTTPS e chave de API exclusiva por consumidor. Pipo confirmou as definições gerais do ponto 1, registradas na seção 13; a seção 16 detalha os campos para construção. Hospedagem, limite numérico de chamadas e frequência de atualização permanecem pendentes.
+- A comunicação futura será entre backends autorizados, por HTTPS e chave de API exclusiva por consumidor. Pipo confirmou as definições gerais do ponto 1, registradas na seção 13; a seção 16 fixa a interface implementada. O limite local inicial é de 60 chamadas/minuto por consumidor. Hospedagem efetiva, capacidade e atualização periódica ficam para eventual retomada.
 
 Esta proposta define o comportamento esperado. Não estabelece ainda uma URL operacional nem implementa chamadas nos sistemas consumidores.
 
@@ -141,7 +145,7 @@ Para distinguir os motivos: município fora da edição usa `SEM_COBERTURA_TERRI
 
 ## 9. Exemplos de comportamento
 
-Exemplos baseados no levantamento consolidado em 28/10/2026; não representam chamadas a uma API já implementada.
+Exemplos analíticos baseados no levantamento consolidado em 28/10/2026. A API já está implementada e validada localmente; exemplos JSON gerados pela implementação estão em `api_territorio/exemplos/`. Não há chamadas a um serviço público nesta entrega.
 
 ### Exemplo A — recorte disponível
 
@@ -170,9 +174,9 @@ Exemplos baseados no levantamento consolidado em 28/10/2026; não representam ch
 - Entrada malformada ou indicador desconhecido gera erro de consulta. Edição inexistente gera erro de versão. Serviço sem edição utilizável informa indisponibilidade.
 - A frequência de coleta será definida por fonte, conforme sua publicação; não se presume atualização em tempo real.
 
-## 11. Decisões antes da implementação — recomendações para a equipe
+## 11. Histórico de decisões e recomendações para evolução futura
 
-A equipe confirmou a proposta geral e Pipo confirmou as definições do ponto 1. A especificação documental está fechada na seção 16. A tabela mantém o histórico das recomendações e das decisões operacionais ainda necessárias; hospedagem, emissão das credenciais e limite numérico de chamadas permanecem pendentes.
+A equipe confirmou a proposta geral e Pipo confirmou as definições do ponto 1. A especificação documental está fechada na seção 16 e implementada localmente. A tabela mantém o histórico das recomendações e dos alinhamentos que serão necessários se a integração for retomada. Eles não bloqueiam a entrega atual do extra nem significam que os consumidores já utilizam a API.
 
 | Decisão | Recomendação para a primeira versão | O que precisamos fechar juntos |
 |---|---|---|
@@ -185,7 +189,7 @@ A equipe confirmou a proposta geral e Pipo confirmou as definições do ponto 1.
 | Atualização e rastreabilidade | Publicar edições reproduzíveis, com fonte, data, método e cobertura; manter a última edição válida em caso de falha, sinalizando a situação. | Atribuir frequência de revisão por fonte e responsável pela publicação e correção de cada edição. |
 | Responsáveis e aceite | Separar responsabilidades de dados, serviço da API e consumidores; validar os três cenários da seção 9. | Nomear os responsáveis e confirmar critérios de aceite antes da primeira integração. |
 
-**Prioridade de alinhamento:** fechar primeiro o catálogo, o tratamento de lacunas e a interpretação pelo motor. Essas decisões orientam o formato final do contrato.
+**Em eventual retomada:** partir do catálogo e das regras de lacunas já definidos; alinhar os usos e a interpretação pelos consumidores antes de integrar. Alterações na interface seguem o controle de mudanças, sem modificar silenciosamente o contrato atual.
 
 ### Responsabilidades propostas
 
@@ -202,11 +206,11 @@ A equipe confirmou a proposta geral e Pipo confirmou as definições do ponto 1.
 - **Reprodutibilidade:** a mesma consulta na mesma edição deve devolver os mesmos indicadores e valores.
 - **Falha do serviço:** consumidores devem seguir um comportamento previamente combinado, distinguindo falha técnica de ausência de dado na fonte.
 
-## 12. Escopo desta etapa
+## 12. Escopo da entrega atual
 
-Este documento registra a proposta e as recomendações para alinhamento. A escolha de responsáveis e as decisões técnicas pendentes serão concluídas com a equipe antes da implementação.
+O escopo atual é entregar o extra no GitHub com código executável localmente, contrato, dados versionados, exemplos e evidências de validação. São **53 testes locais aprovados**: 43 da API/base/inicialização/HTTPS e dez da preparação Render. Os registros dos pontos 6 e 7 preservam as referências e limitações de cada execução.
 
-**O ponto 4 entrega a camada local de dados e o ponto 5 implementa o endpoint e a autenticação. Publicação e integração permanecem pendentes. Motor e Bússola seguem sem alterações nesta frente.**
+**Publicação, entrega de acesso operacional, integração com Pipo e manutenção de serviço hospedado ficam para evolução futura.** Não há compromisso de hospedagem nesta entrega nem comprovação de impacto do enriquecimento nas decisões do motor/Bússola. A edição congelada e `entregas/` permanecem preservadas; a nova classificação do extra não altera a interface 1.0.0.
 
 ## 13. Fechamento técnico e controle de mudanças
 
@@ -258,9 +262,9 @@ A versão do contrato será separada da edição dos dados: a primeira identific
 
 **Comportamento confirmado pelo Pipo, conforme relato do responsável:** manter o fluxo já existente sem enriquecimento quando a consulta falhar e sinalizar que o contexto territorial não foi obtido. Não recalcular indicadores como zero nem tratar a falha como condição favorável. A execução desse comportamento será validada na integração com os consumidores. Se uma regra futura tornar o contexto obrigatório para alguma decisão, a exceção deverá ser alinhada e documentada com as equipes antes de ser aplicada.
 
-## 15. Entrega ao Pipo
+## 15. Documentação disponível e futura entrega ao Pipo
 
-A entrega para integração deverá conter:
+Contrato, catálogo, dados, código, exemplos e relatórios já estão disponíveis no GitHub para consulta e execução local pela equipe. Se houver retomada da integração, o pacote operacional ao Pipo deverá conter:
 
 1. Contrato e especificação técnica final, com versões e histórico de alterações.
 2. Endereço do ambiente de teste, instruções de acesso e credenciais enviadas por canal seguro, fora dos documentos compartilhados.
@@ -270,7 +274,7 @@ A entrega para integração deverá conter:
 6. Resultado da validação dos valores e do comportamento da API, com pendências conhecidas.
 7. Acordo sobre tempo limite, novas tentativas e continuidade sem enriquecimento, além dos responsáveis por suporte, atualização e integração.
 
-Os itens de publicação e integração ainda são entregáveis futuros. A camada local de consulta está preparada conforme a seção 18; não há serviço HTTP publicado. Pipo integra os consumidores; nossa frente permanece responsável pelo enriquecimento e pela entrega da API conforme o contrato.
+Endereço, credenciais de produção, suporte e integração são entregáveis de uma eventual fase futura; não são necessários para apresentar o extra atual. A camada local de consulta está preparada conforme a seção 18; não há serviço HTTP publicado. Papéis, responsáveis e prazo dessa fase deverão ser alinhados quando ela for retomada, sem atribuir uma nova obrigação ao Pipo nesta entrega.
 
 ## 16. Especificação documental 1.0.0 — ponto 2 finalizado
 
@@ -367,18 +371,34 @@ Na `feat/api-territorio`, `POST /v1/enriquecimento/consulta` recebe e responde J
 - **Verificação do serviço:** `/health` sem dados territoriais; `/ready` autenticado verifica a base. Documentação web não fica exposta; OpenAPI é entregue como arquivo.
 - **Gratuidade:** Python/SQLite, FastAPI e Uvicorn, sem licença paga, provedor externo de autenticação ou cobrança por consulta. Nenhuma infraestrutura paga foi provisionada. A publicação externa deverá usar opção gratuita ainda a definir.
 
-Instalação, geração segura de chaves, inicialização, limites e testes estão em `api_territorio/HTTP.md`. A edição congelada e o pacote em `entregas/` permanecem inalterados. A validação de aceite com a equipe, publicação e integração continuam nos pontos 6 a 9; implementar o endpoint não significa que ele já esteja publicado.
+Instalação, geração segura de chaves, inicialização, limites e testes estão em `api_territorio/HTTP.md`. A edição congelada e o pacote em `entregas/` permanecem inalterados. A validação técnica foi consolidada no ponto 6; publicação e integração, previstas originalmente nos pontos 7 a 9, passaram a evoluções futuras conforme a seção 22. Implementar o endpoint não significa que ele esteja publicado.
 
 ## 20. Validação técnica consolidada — ponto 6
 
-O [relatório de validação](api_territorio/VALIDACAO.md) e o [registro de evidências](api_territorio/validacao/evidencias-ponto-6.json) documentam a execução local sobre o código integrado pelo PR #5: **43 testes aprovados**, sem falhas, erros ou testes ignorados, além de cinco conferências complementares. Os 180 registros, as 27 ausências e os metadados foram preservados. A integridade da edição congelada e os hashes de `entregas/` foram reconferidos; a auditoria histórica completa das fontes não foi reexecutada.
+O [relatório de validação](VALIDACAO_INICIAL.md) e o [registro de evidências](../../validacao/evidencias-ponto-6.json) documentam a execução local sobre o código integrado pelo PR #5: **43 testes aprovados**, sem falhas, erros ou testes ignorados, além de cinco conferências complementares. Os 180 registros, as 27 ausências e os metadados foram preservados. A integridade da edição congelada e os hashes de `entregas/` foram reconferidos; a auditoria histórica completa das fontes não foi reexecutada.
 
-A validação técnica está concluída; o [checklist de aceite da equipe](api_territorio/ACEITE_EQUIPE.md) permanece sem aprovações humanas registradas. Nenhuma decisão de Pipo ou da equipe é presumida. Publicação HTTPS gratuita, acesso externo, entrega das credenciais, integração e manutenção continuam nos pontos 7 a 10, com suas verificações próprias. Esta etapa não altera o código executável, o contrato 1.0.0, os dados, o motor ou a Bússola e não realiza merge.
+A validação técnica está concluída; o [checklist de aceite da equipe](ACEITE_EQUIPE.md) preserva o registro de aprovações humanas ainda não recebidas. Nenhuma aprovação técnica do Pipo é presumida. Esse checklist organiza uma possível revisão da equipe, sem constituir exigência externa ou bloqueio para a entrega do extra. Publicação, acesso externo, integração e manutenção ficam para evolução futura; os registros históricos de teste permanecem preservados.
 
-## 21. Preparação do ambiente gratuito — ponto 7 ainda sem publicação
+## 21. Configuração de publicação preparada — preservada para uso futuro
 
-Configuração em [PUBLICACAO_RENDER.md](api_territorio/PUBLICACAO_RENDER.md) e `api_territorio/render.yaml`: um Web Service Render Free, Python 3.12.14, uma instância, sem disco/banco pago, previews ou publicação automática. O SQLite é preparado antes de o serviço escutar e recriado a partir da edição quando o arquivo efêmero está ausente. Nenhuma fonte nova é consultada no start.
+Configuração em [PUBLICACAO_RENDER.md](../exemplos/RENDER.md) e `api_territorio/render.yaml`: um Web Service Render Free, Python 3.12.14, uma instância, sem disco/banco pago, previews ou publicação automática. O SQLite é preparado antes de o serviço escutar e recriado a partir da edição quando o arquivo efêmero está ausente. Nenhuma fonte nova é consultada no start.
 
 O Render termina o TLS na borda e encaminha HTTP internamente. O perfil exclusivo `servidor_render.py` depende do isolamento dessa origem no plano Free, valida metadados e hostname `onrender.com`, representa como HTTPS o tráfego dessa borda e descarta cabeçalhos encaminhados. Não confia em curingas de proxy nem habilita HTTP local. Os metadados não são prova de origem: o perfil não deve ser usado fora dessa infraestrutura. O servidor genérico preserva suas regras de TLS/proxy com IP explícito. Formato e significado da interface 1.0.0 permanecem iguais; detalhes e verificações externas estão no guia de publicação.
 
-Hibernação do plano gratuito pode exceder o tempo limite de três segundos do consumidor; não há promessa de SLA nem alteração automática da política de Pipo. Autorização do repositório pelo Garrido, criação do serviço, URL, HTTPS externo, credenciais e aceite externo permanecem pendentes. Nenhum deploy, merge, contratação ou integração foi realizado nesta preparação. A edição congelada e `entregas/` permanecem preservadas.
+Hibernação do plano gratuito pode exceder o tempo limite de três segundos do consumidor; não há promessa de SLA nem alteração automática da política de Pipo. A preparação foi integrada à `main` pelo PR #7, sem deploy ou contratação, e permanece inativa. Autorização do repositório pelo Garrido, criação do serviço, URL, HTTPS externo, credenciais e verificações externas só serão necessários se a publicação for retomada. A decisão atual não exige aguardar essa autorização. A edição congelada e `entregas/` permanecem preservadas.
+
+## 22. Decisão atual — extra validado localmente, sem publicação ou integração
+
+**Registrada em 29/10/2026 por orientação do responsável:** diante do prazo da entrega, a API Território será apresentada como extra funcional e documentado no GitHub. Publicação externa e integração com o motor/Bússola saem do escopo atual e ficam como evoluções futuras, sem data ou contratação assumidas.
+
+| Entrega atual | Evolução futura, fora do escopo atual |
+|---|---|
+| Código da API e SQLite executáveis localmente, com autenticação e contrato 1.0.0. | Serviço hospedado, URL operacional, credenciais de produção e validação externa. |
+| Dez municípios, 18 indicadores por município: 153 valores e 27 ausências explícitas, fontes, períodos e limitações documentados. | Novas coletas ou edições, com validação e versionamento próprios. |
+| Evidências de 53 testes locais aprovados e exemplos de consulta/resposta. | Validação real da hospedagem, capacidade, latência e comportamento dos consumidores. |
+| Configuração Render Free preservada, com auto-deploy desligado; nenhum serviço publicado. | Publicação gratuita após decisão explícita de retomada e conferência das condições do provedor. |
+| Relatórios e checklist disponíveis para revisão da equipe. | Entrega de acesso operacional ao Pipo, integração, suporte e manutenção do serviço. |
+
+**Forma de apresentação:** “API de enriquecimento territorial desenvolvida e validada localmente, com documentação, dados versionados e configuração preparada para futura publicação e integração.”
+
+A API não participa das decisões do motor ou da Bússola nesta entrega. Não apresentar o extra como serviço público, integração concluída, benefício de score comprovado ou solução pronta para produção. Preservam-se o acervo, a edição congelada, `entregas/`, o código e os testes; esta atualização é documental. O quadro reflete os pontos 7 a 10 como evolução futura, sem impedir a entrega do extra. Se houver retomada, manter a solução gratuita e realizar as verificações previstas antes de ativá-la.

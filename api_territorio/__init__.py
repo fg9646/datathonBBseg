@@ -1,1 +1,1 @@
-"""Camada local de dados da API Território; serviço HTTP ainda não implementado."""
+"""API Território: consulta municipal local e endpoint HTTP autenticado."""

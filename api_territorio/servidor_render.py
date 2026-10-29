@@ -2,7 +2,7 @@
 
 Não usar este perfil como servidor HTTP público fora da plataforma. Os metadados
 validam a configuração, não autenticam a origem de uma requisição. A fronteira de
-confiança é a infraestrutura Render documentada em PUBLICACAO_RENDER.md.
+confiança é a infraestrutura Render documentada em docs/exemplos/RENDER.md.
 """
 import os
 from pathlib import Path
