@@ -1,6 +1,6 @@
 # Território — proposta da API de enriquecimento residencial
 
-**Status:** pontos 1, 2 e 3 concluídos: definições de integração confirmadas pelo Pipo, contrato documental 1.0.0 com catálogo finalizado e edição dos dados `territorio-2026-10-28-r1` validada e congelada. Pontos 4 a 10 pendentes. Sem implementação ou integração ao motor e à Bússola. Hospedagem, endereço do servidor, limite numérico de chamadas e responsáveis nominais permanecem pendentes.
+**Status:** pontos 1 a 4 concluídos: contrato documental 1.0.0, edição `territorio-2026-10-28-r1` congelada e camada local de consulta em SQLite preparada. Pontos 5 a 10 pendentes. Serviço HTTP, autenticação e integração ao motor/Bússola ainda não implementados. Hospedagem, endereço do servidor, limite numérico de chamadas e responsáveis nominais permanecem pendentes.
 
 ## 1. Objetivo e limites
 
@@ -204,7 +204,7 @@ A equipe confirmou a proposta geral e Pipo confirmou as definições do ponto 1.
 
 Este documento registra a proposta e as recomendações para alinhamento. A escolha de responsáveis e as decisões técnicas pendentes serão concluídas com a equipe antes da implementação.
 
-**Nenhuma implementação, alteração no motor ou integração à Bússola faz parte desta entrega.**
+**O ponto 4 implementa somente a camada local de dados; o serviço HTTP ainda não existe. Motor e Bússola permanecem sem alterações nesta frente.**
 
 ## 13. Fechamento técnico e controle de mudanças
 
@@ -268,7 +268,7 @@ A entrega para integração deverá conter:
 6. Resultado da validação dos valores e do comportamento da API, com pendências conhecidas.
 7. Acordo sobre tempo limite, novas tentativas e continuidade sem enriquecimento, além dos responsáveis por suporte, atualização e integração.
 
-Esses itens são entregáveis futuros. Nesta etapa, apenas o contrato e o planejamento estão sendo atualizados. Pipo integra os consumidores; nossa frente permanece responsável pelo enriquecimento e pela entrega da API conforme o contrato.
+Os itens de publicação e integração ainda são entregáveis futuros. A camada local de consulta está preparada conforme a seção 18; não há serviço HTTP publicado. Pipo integra os consumidores; nossa frente permanece responsável pelo enriquecimento e pela entrega da API conforme o contrato.
 
 ## 16. Especificação documental 1.0.0 — ponto 2 finalizado
 
@@ -343,3 +343,13 @@ Resposta com objeto `erro`, contendo `codigo` e `mensagem`, ambos textos. Códig
 - Nenhuma nova coleta foi feita. As fontes brutas anteriores permanecem arquivadas localmente e referenciadas por URL/hash; microdados criminais e registros individuais de clientes e imóveis não são publicados na edição.
 
 O congelamento é um snapshot analítico, não uma base operacional de consulta nem uma resposta pronta da API. Os próximos passos continuam no quadro. Qualquer correção ou atualização dos dados deverá gerar outra edição; esta deve permanecer preservada com seus hashes e histórico Git.
+
+## 18. Base de consulta preparada — ponto 4 concluído
+
+A camada em `api_territorio/` importa a edição congelada para SQLite, resolve fontes e permite consulta local indexada por código IBGE, edição, indicador e período. O arquivo operacional é regenerável, fica fora do versionamento e é preparado antes do atendimento; as consultas não leem planilha nem acessam fontes externas.
+
+O cadastro auxiliar da API de Localidades do IBGE distingue código inexistente de município válido sem cobertura. Essa coleta auxiliar está documentada separadamente e não muda nenhum indicador ou arquivo do snapshot congelado. Valores, períodos, cobertura, métodos e as 27 ausências foram preservados.
+
+A preparação recusa origem divergente para uma edição já importada. A primeira edição torna-se ativa; importações posteriores não alteram a ativa silenciosamente. O repositório de consulta abre o banco somente para leitura. Documentação, comandos de preparação, testes e limites estão em `api_territorio/README.md`.
+
+Não há endpoint, chave de acesso emitida ou URL operacional. Isso pertence ao ponto 5 e às etapas seguintes. Esta entrega não altera `entregas/`, o motor ou a Bússola.
