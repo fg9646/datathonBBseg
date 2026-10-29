@@ -1,0 +1,20 @@
+{
+  "observacao": "Gerado localmente pela implementação; não representa publicação na internet.",
+  "requisicao": {
+    "metodo": "POST",
+    "caminho": "/v1/enriquecimento/consulta",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "corpo": {
+      "codigo_ibge": "3550308"
+    }
+  },
+  "http_status": 401,
+  "resposta": {
+    "erro": {
+      "codigo": "CREDENCIAL_INVALIDA",
+      "mensagem": "Credencial ausente ou inválida."
+    }
+  }
+}

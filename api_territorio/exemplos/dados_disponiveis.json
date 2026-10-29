@@ -1,0 +1,663 @@
+{
+  "observacao": "Gerado localmente pela implementação; não representa publicação na internet.",
+  "requisicao": {
+    "metodo": "POST",
+    "caminho": "/v1/enriquecimento/consulta",
+    "headers": {
+      "Content-Type": "application/json",
+      "X-API-Key": "<chave-do-consumidor>"
+    },
+    "corpo": {
+      "codigo_ibge": "3550308"
+    }
+  },
+  "http_status": 200,
+  "resposta": {
+    "versao_contrato": "1.0.0",
+    "versao_base": "territorio-2026-10-28-r1",
+    "consultado_em": "2026-10-29T00:52:08.099225+00:00",
+    "territorio": {
+      "codigo_ibge": "3550308",
+      "municipio": "São Paulo",
+      "uf": "SP",
+      "abrangencia": "municipio"
+    },
+    "atualizacao": {
+      "ultima_coleta_em": "2026-10-27",
+      "situacao": "SEM_FALHA_REGISTRADA"
+    },
+    "indicadores": [
+      {
+        "id": "clima.chuva_normal",
+        "valor": 1658.3,
+        "unidade": "mm/ano",
+        "periodo": {
+          "inicio": "1991-01-01",
+          "fim": "2020-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/normais/Normal-Climatologica-PREC.xlsx",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+        "estacao": {
+          "codigo": "83781",
+          "nome": "São Paulo–Mirante"
+        },
+        "cobertura": null,
+        "limitacoes": [
+          "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+        ]
+      },
+      {
+        "id": "clima.cobertura_chuva",
+        "valor": 0.9696366351418616,
+        "unidade": "fracao",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2015.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2016.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2017.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2018.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2019.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2020.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2021.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2022.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2023.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2024.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2025.zip",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+        "estacao": {
+          "codigo": "A701",
+          "nome": "São Paulo–Mirante"
+        },
+        "cobertura": {
+          "numerador": 3896,
+          "denominador": 4018,
+          "proporcao": 0.9696366351418616,
+          "unidade": "dias"
+        },
+        "limitacoes": [
+          "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+        ]
+      },
+      {
+        "id": "clima.cobertura_rajada",
+        "valor": 0.9748631159780986,
+        "unidade": "fracao",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2015.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2016.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2017.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2018.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2019.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2020.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2021.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2022.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2023.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2024.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2025.zip",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+        "estacao": {
+          "codigo": "A701",
+          "nome": "São Paulo–Mirante"
+        },
+        "cobertura": {
+          "numerador": 3917,
+          "denominador": 4018,
+          "proporcao": 0.9748631159780986,
+          "unidade": "dias"
+        },
+        "limitacoes": [
+          "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+        ]
+      },
+      {
+        "id": "clima.dias_chuva_ge50_normal",
+        "valor": 4.0,
+        "unidade": "dias/ano",
+        "periodo": {
+          "inicio": "1991-01-01",
+          "fim": "2020-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/normais/Normal-Climatologica-PRENDIA50.xlsx",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+        "estacao": {
+          "codigo": "83781",
+          "nome": "São Paulo–Mirante"
+        },
+        "cobertura": null,
+        "limitacoes": [
+          "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+        ]
+      },
+      {
+        "id": "clima.dias_minima_le10_normal",
+        "valor": 14.0,
+        "unidade": "dias/ano",
+        "periodo": {
+          "inicio": "1991-01-01",
+          "fim": "2020-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/normais/Normal-Climatologica-TMINNDIA10.xlsx",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+        "estacao": {
+          "codigo": "83781",
+          "nome": "São Paulo–Mirante"
+        },
+        "cobertura": null,
+        "limitacoes": [
+          "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+        ]
+      },
+      {
+        "id": "clima.maxima_media_normal",
+        "valor": 26.1,
+        "unidade": "°C",
+        "periodo": {
+          "inicio": "1991-01-01",
+          "fim": "2020-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/normais/Normal-Climatologica-TMAX.xlsx",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+        "estacao": {
+          "codigo": "83781",
+          "nome": "São Paulo–Mirante"
+        },
+        "cobertura": null,
+        "limitacoes": [
+          "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+        ]
+      },
+      {
+        "id": "clima.minima_media_normal",
+        "valor": 16.4,
+        "unidade": "°C",
+        "periodo": {
+          "inicio": "1991-01-01",
+          "fim": "2020-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/normais/Normal-Climatologica-TMIN.xlsx",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Normal INMET 1991–2020; valor anual publicado da estação convencional.",
+        "estacao": {
+          "codigo": "83781",
+          "nome": "São Paulo–Mirante"
+        },
+        "cobertura": null,
+        "limitacoes": [
+          "Normal da estação, não média espacial do município. Estação convencional distinta da série automática recente."
+        ]
+      },
+      {
+        "id": "clima.rajada_max_observada",
+        "valor": 90.0,
+        "unidade": "km/h",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2015.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2016.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2017.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2018.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2019.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2020.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2021.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2022.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2023.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2024.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2025.zip",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+        "estacao": {
+          "codigo": "A701",
+          "nome": "São Paulo–Mirante"
+        },
+        "cobertura": {
+          "numerador": 3917,
+          "denominador": 4018,
+          "proporcao": 0.9748631159780986,
+          "unidade": "dias"
+        },
+        "limitacoes": [
+          "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto."
+        ]
+      },
+      {
+        "id": "desastres.protocolos_alagamento",
+        "valor": 0,
+        "unidade": "protocolos",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "Atlas Digital de Desastres no Brasil",
+            "url": "https://atlasdigital.mdr.gov.br/arquivos/2026/BD_Atlas_1991_2025_v1.1_2026.08.06_Consolidado.csv",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12300. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+        ]
+      },
+      {
+        "id": "desastres.protocolos_chuva_intensa",
+        "valor": 4,
+        "unidade": "protocolos",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "Atlas Digital de Desastres no Brasil",
+            "url": "https://atlasdigital.mdr.gov.br/arquivos/2026/BD_Atlas_1991_2025_v1.1_2026.08.06_Consolidado.csv",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13214. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+        ]
+      },
+      {
+        "id": "desastres.protocolos_enxurrada",
+        "valor": 0,
+        "unidade": "protocolos",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "Atlas Digital de Desastres no Brasil",
+            "url": "https://atlasdigital.mdr.gov.br/arquivos/2026/BD_Atlas_1991_2025_v1.1_2026.08.06_Consolidado.csv",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12200. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+        ]
+      },
+      {
+        "id": "desastres.protocolos_granizo",
+        "valor": 0,
+        "unidade": "protocolos",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "Atlas Digital de Desastres no Brasil",
+            "url": "https://atlasdigital.mdr.gov.br/arquivos/2026/BD_Atlas_1991_2025_v1.1_2026.08.06_Consolidado.csv",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13213. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+        ]
+      },
+      {
+        "id": "desastres.protocolos_inundacao",
+        "valor": 0,
+        "unidade": "protocolos",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "Atlas Digital de Desastres no Brasil",
+            "url": "https://atlasdigital.mdr.gov.br/arquivos/2026/BD_Atlas_1991_2025_v1.1_2026.08.06_Consolidado.csv",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 12100. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+        ]
+      },
+      {
+        "id": "desastres.protocolos_vendaval",
+        "valor": 0,
+        "unidade": "protocolos",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "Atlas Digital de Desastres no Brasil",
+            "url": "https://atlasdigital.mdr.gov.br/arquivos/2026/BD_Atlas_1991_2025_v1.1_2026.08.06_Consolidado.csv",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Protocolos únicos por código IBGE, data do evento inclusiva e COBRADE 13215. Zero significa nenhum protocolo encontrado, não ausência do fenômeno.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Protocolos administrativos no Atlas. Zero não comprova ausência do fenômeno; sem risco por CEP."
+        ]
+      },
+      {
+        "id": "seguranca.furto_residencial",
+        "valor": 5193,
+        "unidade": "ocorrencias",
+        "periodo": {
+          "inicio": "2025-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "SSP-SP",
+            "url": "https://www.ssp.sp.gov.br/assets/estatistica/transparencia/spDados/SPDadosCriminais_2025.xlsx",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "NOME_MUNICIPIO_CIRCUNSCRICAO=S.PAULO; DESCR_TIPOLOCAL=Residência; NATUREZA_APURADA em FURTO - OUTROS, ROUBO - OUTROS; ANO_ESTATISTICA=2025; deduplicação por delegacia de registro+NUM_BO+ANO_BO+natureza; NATUREZA_APURADA=FURTO - OUTROS; classificação residencial da fonte; unidade de registro varia por órgão.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Extração própria de microdados. Unidade: combinação boletim/natureza. Pode divergir do total estatístico oficial por atualização, local ignorado e metodologia. Categoria residencial não garante arrombamento. Não há CEP nos microdados."
+        ]
+      },
+      {
+        "id": "seguranca.roubo_residencial",
+        "valor": 657,
+        "unidade": "ocorrencias",
+        "periodo": {
+          "inicio": "2025-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "SSP-SP",
+            "url": "https://www.ssp.sp.gov.br/assets/estatistica/transparencia/spDados/SPDadosCriminais_2025.xlsx",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "NOME_MUNICIPIO_CIRCUNSCRICAO=S.PAULO; DESCR_TIPOLOCAL=Residência; NATUREZA_APURADA em FURTO - OUTROS, ROUBO - OUTROS; ANO_ESTATISTICA=2025; deduplicação por delegacia de registro+NUM_BO+ANO_BO+natureza; NATUREZA_APURADA=ROUBO - OUTROS; classificação residencial da fonte; unidade de registro varia por órgão.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Extração própria de microdados. Unidade: combinação boletim/natureza. Pode divergir do total estatístico oficial por atualização, local ignorado e metodologia. Categoria residencial não garante arrombamento. Não há CEP nos microdados."
+        ]
+      },
+      {
+        "id": "seguranca.taxa_furto_residencial",
+        "valor": 43.62047049125151,
+        "unidade": "ocorrencias/100mil_habitantes",
+        "periodo": {
+          "inicio": "2025-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "IBGE/SIDRA",
+            "url": "https://apisidra.ibge.gov.br/values/t/6579/n6/3550308,4106902/v/9324/p/2025",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "SSP-SP",
+            "url": "https://www.ssp.sp.gov.br/assets/estatistica/transparencia/spDados/SPDadosCriminais_2025.xlsx",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "NOME_MUNICIPIO_CIRCUNSCRICAO=S.PAULO; DESCR_TIPOLOCAL=Residência; NATUREZA_APURADA em FURTO - OUTROS, ROUBO - OUTROS; ANO_ESTATISTICA=2025; deduplicação por delegacia de registro+NUM_BO+ANO_BO+natureza; NATUREZA_APURADA=FURTO - OUTROS; quantidade/população IBGE 2025 (11904961) × 100000.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Taxa por moradores, não domicílios ou probabilidade de sinistro. Extração própria de microdados. Unidade: combinação boletim/natureza. Pode divergir do total estatístico oficial por atualização, local ignorado e metodologia. Categoria residencial não garante arrombamento. Não há CEP nos microdados."
+        ]
+      },
+      {
+        "id": "seguranca.taxa_roubo_residencial",
+        "valor": 5.518707705132339,
+        "unidade": "ocorrencias/100mil_habitantes",
+        "periodo": {
+          "inicio": "2025-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "IBGE/SIDRA",
+            "url": "https://apisidra.ibge.gov.br/values/t/6579/n6/3550308,4106902/v/9324/p/2025",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "SSP-SP",
+            "url": "https://www.ssp.sp.gov.br/assets/estatistica/transparencia/spDados/SPDadosCriminais_2025.xlsx",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "NOME_MUNICIPIO_CIRCUNSCRICAO=S.PAULO; DESCR_TIPOLOCAL=Residência; NATUREZA_APURADA em FURTO - OUTROS, ROUBO - OUTROS; ANO_ESTATISTICA=2025; deduplicação por delegacia de registro+NUM_BO+ANO_BO+natureza; NATUREZA_APURADA=ROUBO - OUTROS; quantidade/população IBGE 2025 (11904961) × 100000.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Taxa por moradores, não domicílios ou probabilidade de sinistro. Extração própria de microdados. Unidade: combinação boletim/natureza. Pode divergir do total estatístico oficial por atualização, local ignorado e metodologia. Categoria residencial não garante arrombamento. Não há CEP nos microdados."
+        ]
+      }
+    ]
+  }
+}
