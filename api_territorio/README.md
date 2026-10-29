@@ -1,65 +1,33 @@
-# Território — base de consulta (ponto 4)
+# Território — contexto para o seguro residencial
 
-**Entregue no ponto 4:** importação validada em SQLite e consultas locais indexadas por edição, município, indicador e período. O ponto 5 acrescentou endpoint HTTP e autenticação, documentados em [HTTP.md](HTTP.md). A hospedagem continua pendente. Esta camada não altera o motor, a Bússola ou o pacote em `entregas/`.
+**Extra funcional e documentado, validado localmente. Publicação e integração são evoluções futuras.** Não há serviço externo publicado, credenciais de produção ou participação nas decisões do motor/Bússola.
 
-## Preparar e conferir
+A API permite consultar contexto municipal de clima, desastres e criminalidade com fonte, período, método e limitações junto de cada valor. Pode apoiar uma futura personalização do seguro, desde que o consumidor defina como interpretar esses dados. Não há benefício de score comprovado nesta entrega.
 
-Na raiz do repositório, com Python 3.10 ou superior e sem instalar pacotes adicionais:
+## O que está disponível
 
-```bash
-python -m api_territorio.preparar_base
-python -m unittest tests.test_base_territorio -v
-```
+- Interface JSON `1.0.0`: `POST /v1/enriquecimento/consulta`, com chave por consumidor e HTTPS fora do modo de desenvolvimento em loopback.
+- Dez municípios e 18 indicadores: **180 registros, 153 valores e 27 ausências explícitas** na edição `territorio-2026-10-28-r1`.
+- SQLite local, preparado a partir de dados versionados; a consulta não lê planilha nem chama fontes externas.
+- Fontes oficiais: INMET, Atlas Digital de Desastres, IBGE e órgãos estaduais de segurança. A API Território é da equipe; não é uma API governamental.
+- Código, testes, OpenAPI, exemplos e configuração opcional de hospedagem. Execução sem licença paga, autenticação terceirizada ou cobrança por consulta.
 
-O primeiro comando cria `api_territorio/var/territorio.sqlite3`. O banco é um artefato regenerável e não é versionado: cada ambiente executa esse comando durante a preparação, antes do atendimento. As fontes de entrada e o importador são versionados. Reexecutar a importação da mesma edição é idempotente; origem divergente para a mesma edição é rejeitada.
+## Como ler e reutilizar
 
-O comando também aceita `--edicao`, `--destino` e `--cadastro`. O destino não pode ficar dentro da edição congelada. A primeira edição importada torna-se a ativa; importações posteriores não trocam silenciosamente essa escolha. Procedimento de ativação de outras edições ficará para a manutenção.
-
-## O que está no banco
-
-| Componente | Conteúdo e uso |
+| Preciso entender… | Documento |
 |---|---|
-| `edicoes` | Identificador da edição, versão do contrato e hashes do manifesto e cadastro usados na importação. |
-| `municipios` | Cadastro IBGE por edição, com nome, UF e sinalização de cobertura dos indicadores. |
-| `catalogo` | Dezoito IDs estáveis, unidades e períodos padrão por edição. |
-| `indicadores` | 180 registros com valores ou ausências, períodos, métodos, estações, cobertura, limitações e fontes resolvidas. Índice composto para consulta. |
-| `configuracao` | Identificação da edição ativa. |
+| Entrada, resposta, ausências, erros e exemplos | [Contrato](docs/CONTRATO.md) e [OpenAPI completo](openapi.json) |
+| Indicadores, municípios, fontes e métodos | [Dados](docs/DADOS.md) |
+| Como executar e testar no Windows | [Execução local em PowerShell](docs/EXECUCAO_LOCAL.md) |
+| O que foi verificado e seus limites | [Validação](docs/VALIDACAO.md) |
+| Como preparar uma infraestrutura própria no futuro | [Implantação](docs/IMPLANTACAO.md) |
 
-O endpoint usa `Repositorio.consultar`, desta camada, com código IBGE e, opcionalmente, edição e lista de consultas no formato do contrato. O resultado organiza os dados e metadados previstos no contrato 1.0.0. A função local permanece separada do serviço HTTP e da autenticação.
+## Limites essenciais
 
-As consultas abrem o SQLite em modo somente leitura. Não leem Excel, CSVs de origem, JSONs de referência ou fontes externas durante a consulta. Não contêm dados individuais de clientes ou imóveis.
+CEPs, endereços e coordenadas do desafio são mascarados. A entrada usa **código IBGE real do município**, cuja correspondência deve ser validada pelo consumidor. Brasília abrange todo o DF. Não é possível localizar um imóvel, identificar favela/comunidade ou comprovar risco e elegibilidade por estes indicadores.
 
-## Preservação e lacunas
+Períodos e classificações variam por tema e estado. Ausência permanece `null` com motivo; não vira zero ou baixo risco. Estação meteorológica não representa todos os bairros; protocolos de desastres e taxas criminais não são probabilidades de sinistro.
 
-- Edição importada: `territorio-2026-10-28-r1`, com 10 municípios, 153 valores disponíveis e 27 ausências explícitas. Snapshot original preservado byte a byte.
-- Antes de importar, são verificados o manifesto, os hashes, a lista de arquivos, as chaves, o catálogo e as correspondências com o cadastro IBGE. Importação dos registros ocorre em transação, sem sobrescrever edições já registradas.
-- Cada indicador recebe instituição, URL e data de coleta de suas fontes; a precisão original de dia permanece `2026-10-27`, sem horário inventado.
-- Goiânia continua sem os quatro valores residenciais, com `FONTE_SEM_VALOR`. Recife mantém a completude original e as lacunas documentadas. Nenhum valor é estimado ou substituído por média estadual.
-- Município válido fora da cobertura: indicadores ausentes com `SEM_COBERTURA_TERRITORIAL`. Código inexistente no cadastro: erro distinto. Intervalo válido não processado: `PERIODO_NAO_DISPONIVEL`, preservando o período solicitado.
-- No intervalo sem dados processados, não há fonte aplicável de valor: `fontes` vazia, sem substituir o período pelo padrão. Os outros indicadores da consulta continuam disponíveis.
-- `SEM_FALHA_REGISTRADA` descreve a importação inicial válida. Não existe coletor periódico nem monitor de atualização implementado nesta etapa.
+Os testes são locais. Hospedagem, capacidade, latência de rede e uso real nos consumidores não foram validados. Não há atualização automática das fontes. A edição congelada e o pacote residencial em `entregas/` são preservados, em frentes distintas.
 
-## Cadastro auxiliar oficial
-
-Para distinguir município válido sem cobertura de código inexistente, foi coletado um cadastro auxiliar de **5.571 municípios** da [API de Localidades do IBGE](https://servicodados.ibge.gov.br/api/v1/localidades/municipios?orderBy=id). A origem, o instante real de coleta, a transformação e os hashes estão em `referencias/municipios_ibge.fonte.json`.
-
-Esse cadastro pertence à preparação operacional e não altera a edição congelada de clima, desastres e criminalidade. Só nome, código e UF foram selecionados. Ele também fica armazenado por edição no banco para preservar consultas históricas. A consulta não chama o IBGE em tempo real. Códigos novos ou mudanças cadastrais posteriores exigirão revisão do cadastro e nova edição operacional, sem sobrescrever a origem registrada para a edição atual.
-
-## Tratamento de erros no serviço HTTP
-
-| Exceção da camada | Mapeamento previsto pelo contrato |
-|---|---|
-| `EntradaInvalida` | HTTP 400. |
-| `MunicipioInexistente` | HTTP 404, `MUNICIPIO_INEXISTENTE`. |
-| `EdicaoInexistente` | HTTP 404, `EDICAO_INEXISTENTE`. |
-| `BaseIndisponivel` | Falha técnica; HTTP 503, sem transformar em risco zero. |
-
-O ponto 5 implementa esse mapeamento HTTP e a autenticação. A camada usa parâmetros SQL e consultas somente leitura. O arquivo SQLite deve ser acessível somente ao serviço autorizado, sem expor um caminho de banco como parâmetro de requisição.
-
-## Evidência de aceite
-
-Nesta entrega, 16 testes passaram. Eles cobrem os 180 registros, SP e taxas, Recife/Goiânia, DF, município válido sem cobertura versus inexistente, períodos ausentes, entradas inválidas, edição inexistente, base indisponível ou com JSON corrompido, ausência de rede/arquivos externos na consulta, importação idempotente, rejeição de snapshot adulterado, bloqueio de sobrescrita, consulta por edição e preservação da edição ativa, índice SQL e precisão das datas. Os testes não exigem rede nem bibliotecas externas e usam bancos temporários.
-
-O serviço HTTP está implementado, com detalhes de inicialização e segurança em [HTTP.md](HTTP.md). O [relatório do ponto 6](VALIDACAO.md) consolida a validação técnica local; o [checklist da equipe](ACEITE_EQUIPE.md) registra separadamente o aceite humano pendente. Ainda não há URL externa publicada para o Pipo conectar.
-
-A [preparação do Render Free](PUBLICACAO_RENDER.md), ponto 7, inclui Blueprint e inicializador próprios, sem nova dependência, deploy ou merge. A publicação depende da autorização do repositório pelo Garrido e da verificação externa documentada.
+Decisões por etapas e registros antigos ficam no [histórico](docs/historico/README.md); sua leitura não é necessária para executar ou avaliar a API.

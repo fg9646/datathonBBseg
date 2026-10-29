@@ -1,3 +1,5 @@
+> **Registro histórico.** Preserva decisões, resultados e linguagem da época; não define o estado atual nem exige novas aprovações. Os guias atuais começam no [README da API](../../README.md). Os links foram ajustados para esta localização.
+
 # API Território — quadro do extra validado localmente
 
 **Decisão de escopo em 29/10/2026:** entregar a API como **extra funcional, documentado no GitHub e validado localmente com 53 testes aprovados**. Os pontos 1 a 6 técnicos e a preparação do Render Free estão integrados à `main`. Publicação externa e integração com motor/Bússola ficam como evolução futura, sem prazo assumido; não bloqueiam a entrega atual. Nenhum serviço foi publicado ou integrado. A execução local não exige serviços pagos; uma eventual publicação também deverá continuar gratuita.

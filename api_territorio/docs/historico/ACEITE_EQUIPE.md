@@ -1,6 +1,8 @@
+> **Registro histórico.** Preserva decisões, resultados e linguagem da época; não define o estado atual nem exige novas aprovações. Os guias atuais começam no [README da API](../../README.md). Os links foram ajustados para esta localização.
+
 # Território — checklist de aceite da equipe
 
-**Ponto 6: validação técnica concluída; aceite humano pendente.** Este documento acompanha o [relatório de validação](VALIDACAO.md) e o [registro das evidências](validacao/evidencias-ponto-6.json). Marcar uma verificação técnica não equivale à aprovação de uma pessoa.
+**Ponto 6: validação técnica concluída; aceite humano pendente.** Este documento acompanha o [relatório de validação](VALIDACAO_INICIAL.md) e o [registro das evidências](../../validacao/evidencias-ponto-6.json). Marcar uma verificação técnica não equivale à aprovação de uma pessoa.
 
 Referência: contrato `1.0.0`, edição `territorio-2026-10-28-r1`, código validado `f1adf83c7b56464dd7b53203a88212fe7a786735`. As mudanças desta etapa são documentais. A equipe pode registrar a decisão neste arquivo ou no PR; neste último caso, incluir aqui o link da revisão quando o aceite for consolidado.
 

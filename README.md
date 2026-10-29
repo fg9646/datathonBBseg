@@ -27,7 +27,7 @@ Os resultados do motor permanecem reservados na v2. A preparação dos dados nã
 
 ## Base de consulta territorial
 
-A base SQLite da API Território está em [api_territorio/README.md](api_territorio/README.md). O endpoint autenticado, HTTPS, instalação e testes do ponto 5 estão em [api_territorio/HTTP.md](api_territorio/HTTP.md). A construção não exige serviços pagos; publicação externa ainda pendente. Essa frente é separada do pacote residencial em `entregas/`, que permanece preservado.
+A [API Território](api_territorio/README.md) é um extra funcional validado localmente: contexto municipal de clima, desastres e criminalidade, com dados versionados, fontes e limitações. A documentação orienta avaliação e reutilização técnica. Publicação e integração são evoluções futuras; a API não participa das decisões do motor/Bússola. Execução sem serviços pagos, em frente separada do pacote residencial preservado em `entregas/`.
 
 ## Uso de IA e documentação
 

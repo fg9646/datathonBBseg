@@ -1,3 +1,5 @@
+> **Registro histórico.** Preserva decisões, resultados e linguagem da época; não define o estado atual nem exige novas aprovações. Os guias atuais começam no [README da API](../../README.md). Os links foram ajustados para esta localização.
+
 # Território — relatório de validação do ponto 6
 
 **Resultado: validação técnica local aprovada.** O checklist de aceite está preparado; a aprovação humana da equipe ainda não foi registrada. Publicação e integração continuam nos pontos 7 a 9.
@@ -8,7 +10,7 @@
 - Código: commit `f1adf83c7b56464dd7b53203a88212fe7a786735`, merge do [PR #5](https://github.com/fg9646/datathonBBseg/pull/5) na `main`, incorporado à `feat/api-territorio` antes desta documentação.
 - Contrato: `1.0.0`; edição: `territorio-2026-10-28-r1`.
 - Ambiente: Windows, Python **3.12.14**, dependências instaladas iguais às versões de `constraints.txt`; `pip check` aprovado.
-- Evidência detalhada: [registro JSON](validacao/evidencias-ponto-6.json), com os nomes e resultados dos testes, versões, contagens e hashes. Não contém chaves ou registros de clientes.
+- Evidência detalhada: [registro JSON](../../validacao/evidencias-ponto-6.json), com os nomes e resultados dos testes, versões, contagens e hashes. Não contém chaves ou registros de clientes.
 
 Este PR altera apenas documentação e evidências da API. O código executável e os testes são os do commit validado.
 
@@ -31,7 +33,7 @@ Este PR altera apenas documentação e evidências da API. O código executável
 | Saúde e exemplos | `/health` e `/ready` verificados. Quatro exemplos versionados coincidiram com novas respostas locais, desconsiderando apenas o instante dinâmico `consultado_em`. |
 | Importação e isolamento | Reimportação idempotente, rejeição de edição adulterada e preservação da edição ativa aprovadas. Consulta local indexada, sem acesso às fontes externas ou à planilha. |
 
-Os cenários da suíte estão em [base](../tests/test_base_territorio.py), [HTTP](../tests/test_http_territorio.py), [inicialização](../tests/test_servidor_territorio.py) e [HTTPS](../tests/test_https_territorio.py). As cinco conferências complementares foram executadas na sessão local e estão descritas no JSON; não constituem novos testes versionados.
+Os cenários da suíte estão em [base](../../../tests/test_base_territorio.py), [HTTP](../../../tests/test_http_territorio.py), [inicialização](../../../tests/test_servidor_territorio.py) e [HTTPS](../../../tests/test_https_territorio.py). As cinco conferências complementares foram executadas na sessão local e estão descritas no JSON; não constituem novos testes versionados.
 
 ### Cobertura por município
 
@@ -75,7 +77,7 @@ Não foram adicionadas dependências, serviços pagos, infraestrutura, credencia
 
 ## Reprodução e decisão
 
-Na raiz do repositório, com o ambiente de [HTTP.md](HTTP.md) preparado:
+Na raiz do repositório, com o ambiente de [HTTP.md](../EXECUCAO_LOCAL.md) preparado:
 
 ```bash
 python -m unittest discover -s tests -v

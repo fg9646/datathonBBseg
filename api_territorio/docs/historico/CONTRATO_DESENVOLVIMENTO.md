@@ -1,3 +1,5 @@
+> **Registro histórico.** Preserva decisões, resultados e linguagem da época; não define o estado atual nem exige novas aprovações. Os guias atuais começam no [README da API](../../README.md). Os links foram ajustados para esta localização.
+
 # Território — contrato da API de enriquecimento residencial, extra validado localmente
 
 **Status em 29/10/2026:** API entregue como **extra funcional e documentado no GitHub, validado localmente com 53 testes aprovados**. Contrato 1.0.0, edição congelada, SQLite, endpoint autenticado, exemplos e evidências estão disponíveis. A configuração do Render Free foi integrada à `main` pelo PR #7, com publicação automática desligada, mas nenhum serviço foi publicado. Não há URL externa, credenciais de produção ou integração ao motor/Bússola. Publicação e integração são evoluções futuras, fora do escopo da entrega atual; não são pendências que impeçam apresentar o extra. A execução local não exige serviços pagos.
@@ -373,13 +375,13 @@ Instalação, geração segura de chaves, inicialização, limites e testes est�
 
 ## 20. Validação técnica consolidada — ponto 6
 
-O [relatório de validação](api_territorio/VALIDACAO.md) e o [registro de evidências](api_territorio/validacao/evidencias-ponto-6.json) documentam a execução local sobre o código integrado pelo PR #5: **43 testes aprovados**, sem falhas, erros ou testes ignorados, além de cinco conferências complementares. Os 180 registros, as 27 ausências e os metadados foram preservados. A integridade da edição congelada e os hashes de `entregas/` foram reconferidos; a auditoria histórica completa das fontes não foi reexecutada.
+O [relatório de validação](VALIDACAO_INICIAL.md) e o [registro de evidências](../../validacao/evidencias-ponto-6.json) documentam a execução local sobre o código integrado pelo PR #5: **43 testes aprovados**, sem falhas, erros ou testes ignorados, além de cinco conferências complementares. Os 180 registros, as 27 ausências e os metadados foram preservados. A integridade da edição congelada e os hashes de `entregas/` foram reconferidos; a auditoria histórica completa das fontes não foi reexecutada.
 
-A validação técnica está concluída; o [checklist de aceite da equipe](api_territorio/ACEITE_EQUIPE.md) preserva o registro de aprovações humanas ainda não recebidas. Nenhuma aprovação técnica do Pipo é presumida. Esse checklist organiza uma possível revisão da equipe, sem constituir exigência externa ou bloqueio para a entrega do extra. Publicação, acesso externo, integração e manutenção ficam para evolução futura; os registros históricos de teste permanecem preservados.
+A validação técnica está concluída; o [checklist de aceite da equipe](ACEITE_EQUIPE.md) preserva o registro de aprovações humanas ainda não recebidas. Nenhuma aprovação técnica do Pipo é presumida. Esse checklist organiza uma possível revisão da equipe, sem constituir exigência externa ou bloqueio para a entrega do extra. Publicação, acesso externo, integração e manutenção ficam para evolução futura; os registros históricos de teste permanecem preservados.
 
 ## 21. Configuração de publicação preparada — preservada para uso futuro
 
-Configuração em [PUBLICACAO_RENDER.md](api_territorio/PUBLICACAO_RENDER.md) e `api_territorio/render.yaml`: um Web Service Render Free, Python 3.12.14, uma instância, sem disco/banco pago, previews ou publicação automática. O SQLite é preparado antes de o serviço escutar e recriado a partir da edição quando o arquivo efêmero está ausente. Nenhuma fonte nova é consultada no start.
+Configuração em [PUBLICACAO_RENDER.md](../exemplos/RENDER.md) e `api_territorio/render.yaml`: um Web Service Render Free, Python 3.12.14, uma instância, sem disco/banco pago, previews ou publicação automática. O SQLite é preparado antes de o serviço escutar e recriado a partir da edição quando o arquivo efêmero está ausente. Nenhuma fonte nova é consultada no start.
 
 O Render termina o TLS na borda e encaminha HTTP internamente. O perfil exclusivo `servidor_render.py` depende do isolamento dessa origem no plano Free, valida metadados e hostname `onrender.com`, representa como HTTPS o tráfego dessa borda e descarta cabeçalhos encaminhados. Não confia em curingas de proxy nem habilita HTTP local. Os metadados não são prova de origem: o perfil não deve ser usado fora dessa infraestrutura. O servidor genérico preserva suas regras de TLS/proxy com IP explícito. Formato e significado da interface 1.0.0 permanecem iguais; detalhes e verificações externas estão no guia de publicação.
 

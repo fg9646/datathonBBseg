@@ -1,18 +1,18 @@
-# Território — preparação do Render Free (ponto 7)
+# Render Free — exemplo opcional de implantação futura
 
-**Configuração preparada na `feat/api-territorio`; API ainda não publicada.** Não houve criação de serviço, contratação, emissão de chave de produção ou merge. A autorização do aplicativo Render no repositório privado depende do Garrido.
+**Configuração disponível no repositório, integrada à `main`, sem serviço publicado.** Este exemplo é opcional; publicação e integração estão fora da entrega atual do extra. Não houve criação de serviço, contratação ou emissão de chave de produção. Para outras infraestruturas, começar pelo [guia de implantação](../IMPLANTACAO.md).
 
 ## Arquivos e escolhas
 
-- [render.yaml](render.yaml): Blueprint de um único Web Service **Free**, Python 3.12.14, uma instância, sem banco externo ou disco persistente. Usa sintaxe JSON, que também é YAML válido, para permitir conferência com a biblioteca padrão. Estrutura validada contra o [schema oficial do Render](https://render.com/schema/render.yaml.json).
-- [servidor_render.py](servidor_render.py): inicializador exclusivo da origem isolada pelo Render Free. Prepara/verifica o SQLite antes de abrir a porta; se o arquivo efêmero desaparecer, recria a base a partir da edição congelada no próximo início.
-- [test_render_territorio.py](../tests/test_render_territorio.py): testes do perfil, proteção dos destinos, limites da configuração, recriação da base, autenticação, fidelidade dos 180 registros e processo local real.
+- [render.yaml](../../render.yaml): Blueprint de um único Web Service **Free**, Python 3.12.14, uma instância, sem banco externo ou disco persistente. Usa sintaxe JSON, que também é YAML válido, para permitir conferência com a biblioteca padrão. Estrutura validada contra o [schema oficial do Render](https://render.com/schema/render.yaml.json).
+- [servidor_render.py](../../servidor_render.py): inicializador exclusivo da origem isolada pelo Render Free. Prepara/verifica o SQLite antes de abrir a porta; se o arquivo efêmero desaparecer, recria a base a partir da edição congelada no próximo início.
+- [test_render_territorio.py](../../../tests/test_render_territorio.py): testes do perfil, proteção dos destinos, limites da configuração, recriação da base, autenticação, fidelidade dos 180 registros e processo local real.
 
-Publicação automática e previews estão desligados. O Blueprint aponta para `main`, mas esses novos arquivos só estarão nela após revisão e merge autorizado. Nesta etapa eles permanecem na feature; não criar o serviço antes de liberar essa etapa.
+Publicação automática e previews estão desligados. O Blueprint aponta para `main`; a configuração já foi incorporada. Isso não criou serviço nem habilitou publicação. Retomar a implantação exige decisão própria e conferência do ambiente.
 
 ## Como conectar e configurar depois da autorização
 
-O Garrido deve instalar/autorizar o aplicativo Render para `fg9646/datathonBBseg`. Como o repositório é privado, a opção de URL pública não atende. Depois, verificar se ele aparece nas credenciais Git da conta Render responsável pela publicação.
+O proprietário do repositório deve instalar/autorizar o aplicativo Render para `fg9646/datathonBBseg`. Como o repositório é privado, a opção de URL pública não atende. Depois, verificar se ele aparece nas credenciais Git da conta Render responsável pela publicação.
 
 Há dois caminhos equivalentes; usar somente um para evitar serviços duplicados:
 
@@ -23,7 +23,7 @@ Há dois caminhos equivalentes; usar somente um para evitar serviços duplicados
 |---|---|
 | Nome sugerido | `api-territorio` (URL definitiva será a atribuída pelo Render) |
 | Runtime / Language | Python 3 |
-| Branch | `main`, somente quando esta configuração estiver revisada e integrada |
+| Branch | `main`, com o commit escolhido e revisado para uma futura publicação |
 | Root Directory | Deixar em branco: executar na raiz do repositório, pois a API precisa de `dados/edicoes/` |
 | Build Command | `python -m pip install -r api_territorio/requirements.txt` |
 | Start Command | `python -m api_territorio.servidor_render` |
@@ -37,7 +37,7 @@ Variáveis para os dois caminhos:
 | Variável | Valor / origem |
 |---|---|
 | `PYTHON_VERSION` | `3.12.14`, versão testada; não depender do Python padrão do provedor |
-| `TERRITORIO_CONSUMIDORES` | JSON com nomes e hashes SHA-256, produzido conforme [HTTP.md](HTTP.md); preencher no painel, fora do Git |
+| `TERRITORIO_CONSUMIDORES` | JSON com nomes e hashes SHA-256, produzido conforme [execução local](../EXECUCAO_LOCAL.md); preencher no painel, fora do Git |
 | `TERRITORIO_LIMITE_MINUTO` | `60` por consumidor |
 | `TERRITORIO_HTTP_LOCAL` | `0` |
 | `FORWARDED_ALLOW_IPS` | Vazio; o inicializador desliga a interpretação desses cabeçalhos explicitamente |
@@ -45,13 +45,13 @@ Variáveis para os dois caminhos:
 | `RENDER`, `RENDER_SERVICE_TYPE`, `RENDER_EXTERNAL_HOSTNAME`, `RENDER_EXTERNAL_URL` | Metadados fornecidos pela plataforma; não preencher manualmente para imitar o Render |
 | `TERRITORIO_BASE` | Omitir; o padrão é `api_territorio/var/territorio.sqlite3`, regenerável e fora do Git |
 
-Gerar a chave original apenas no momento autorizado de configurar os consumidores. O servidor recebe seu hash; Pipo recebe a chave por canal seguro. O Blueprint não contém credencial, hash padrão nem segredo gerado automaticamente. Alterar uma variável `sync: false` em um serviço já criado exige edição manual no painel.
+Gerar a chave original apenas no momento autorizado de configurar os consumidores. O servidor recebe seu hash; o responsável pelo backend consumidor recebe a chave por canal seguro. O Blueprint não contém credencial, hash padrão nem segredo gerado automaticamente. Alterar uma variável `sync: false` em um serviço já criado exige edição manual no painel.
 
 ## HTTPS e fronteira de confiança
 
 O [Render termina TLS na borda e encaminha HTTP para o processo](https://render.com/docs/web-services#connecting-from-the-public-internet). A plataforma também [redireciona HTTP público para HTTPS](https://render.com/docs/tls). O plano Free [não recebe tráfego pela rede privada](https://render.com/docs/free). Esse isolamento é a premissa do perfil preparado aqui.
 
-O servidor genérico `servidor.py` continua exigindo TLS, proxy com IP explícito ou desenvolvimento em loopback. O novo perfil não habilita seu modo HTTP local nem passa `*` ao Uvicorn, mesmo que o provedor defina `FORWARDED_ALLOW_IPS=*` por padrão.
+O servidor genérico `servidor.py` continua exigindo TLS, proxy com IP explícito ou desenvolvimento em loopback. O perfil não habilita seu modo HTTP local nem passa `*` ao Uvicorn, mesmo que o provedor defina `FORWARDED_ALLOW_IPS=*` por padrão.
 
 O inicializador Render:
 
@@ -76,14 +76,14 @@ Conferido em **29/10/2026** na [documentação oficial do plano gratuito](https:
 
 - Usar **Free**, sem cartão cadastrado e sem complementos pagos. O YAML não controla cobranças de outros serviços existentes na conta; conferir o painel antes de criar.
 - A franquia é de **750 horas por workspace/mês**, compartilhada entre serviços gratuitos. Sem meio de pagamento, exceder tráfego/build pode suspender serviços ou novos builds; não contratar excedentes.
-- Após **15 minutos** sem tráfego, o serviço hiberna. Reativação pode levar cerca de **um minuto**, excedendo as tentativas de três segundos combinadas com Pipo. O consumidor deve seguir o comportamento de falha já definido. Aquecimento antes de uma demonstração é uma ação manual, sem prometer disponibilidade contínua.
+- Após **15 minutos** sem tráfego, o serviço hiberna. Reativação pode levar cerca de **um minuto**, excedendo as tentativas de três segundos previstas para o consumidor. O consumidor deve seguir o comportamento de falha já definido. Aquecimento antes de uma demonstração é uma ação manual, sem prometer disponibilidade contínua.
 - O disco local é efêmero; a base é preparada no start. Não usar Postgres gratuito com prazo de expiração nem disco pago.
 - Limite em memória reinicia com o processo e exige uma única instância. Capacidade, latência externa e cotas não foram homologadas.
 
-## Checklist antes de publicar e aceite externo
+## Verificações para uma futura publicação
 
-- [ ] Garrido autoriza o aplicativo; conta Render da publicação consegue selecionar o repositório.
-- [ ] Revisão/merge desta preparação autorizado; conferir commit e branch escolhidos no painel.
+- [ ] Proprietário autoriza o aplicativo; conta Render da publicação consegue selecionar o repositório.
+- [ ] Conferir commit revisado e branch escolhidos no painel; configuração integrada não significa serviço publicado.
 - [ ] Plano Free, ausência de cartão/complementos, uma instância, auto-deploy Off e variáveis conferidos.
 - [ ] Hashes dos consumidores configurados no painel; chaves originais entregues fora dos documentos.
 - [ ] Autorizar separadamente a criação do serviço. Nenhum deploy foi realizado nesta preparação.
@@ -92,12 +92,15 @@ Conferido em **29/10/2026** na [documentação oficial do plano gratuito](https:
 - [ ] `/health` 200, `/ready` autenticado 200, consulta sem chave 401, host inesperado rejeitado; testar cabeçalhos encaminhados sem afetar acesso/autenticação.
 - [ ] Conferir consulta completa, lacunas e município sem cobertura contra a edição congelada; guardar somente respostas sem segredos.
 - [ ] Verificar reinício/reativação e preparar a demonstração considerando hibernação. Não declarar SLA de três segundos.
-- [ ] Atualizar o quadro para ponto 7 publicado apenas após esses resultados; entrega e integração com Pipo continuam nos pontos 8 e 9.
+- [ ] Registrar o resultado real da publicação apenas após essas verificações; acesso operacional e integração serão validados separadamente pelos responsáveis.
 
 ## Testes locais desta preparação
 
-**Resultado em 29/10/2026: 53 testes aprovados, zero falhas/erros/ignorados** (43 anteriores e dez do perfil Render). `pip check`, integridade dos 21 arquivos congelados, hashes de `entregas/` e validação do Blueprint contra o schema oficial também conferidos. Registro da preparação em [validacao/preparacao-render-2026-10-29.json](validacao/preparacao-render-2026-10-29.json); as evidências históricas do ponto 6 permanecem com sua referência original.
+**Registro histórico da preparação em 29/10/2026: 53 testes aprovados, zero falhas/erros/ignorados** (43 anteriores e dez do perfil Render). `pip check`, integridade dos 21 arquivos congelados, hashes de `entregas/` e validação do Blueprint contra o schema oficial também conferidos. Registro da preparação em [validacao/preparacao-render-2026-10-29.json](../../validacao/preparacao-render-2026-10-29.json); as evidências históricas do ponto 6 permanecem com sua referência original.
 
-Reprodução: `python -m unittest discover -s tests -v`, no ambiente descrito em [HTTP.md](HTTP.md). O processo real de teste simula os metadados Render e escuta somente em loopback; não acessa a conta Render nem publica serviço. TLS público, autorização do repositório e limites reais do provedor permanecem sem teste externo.
+Reprodução: `python -m unittest discover -s tests -v`, no ambiente descrito em [execução local](../EXECUCAO_LOCAL.md). O processo real de teste simula os metadados Render e escuta somente em loopback; não acessa a conta Render nem publica serviço. TLS público, autorização do repositório e limites reais do provedor permanecem sem teste externo.
 
 Referências adicionais: [Blueprint](https://render.com/docs/blueprint-spec), [variáveis padrão](https://render.com/docs/environment-variables), [Python](https://render.com/docs/python-version), [health checks](https://render.com/docs/health-checks). Consultar novamente as condições gratuitas antes do deploy.
+
+
+O [relatório atual](../VALIDACAO.md) distingue novas execuções desses registros históricos. As condições do provedor acima foram consultadas na data indicada; reconferi-las antes de eventual uso.
