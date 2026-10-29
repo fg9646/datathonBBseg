@@ -37,6 +37,14 @@ Comece pelo [LEIA-ME da v2](https://github.com/fg9646/datathonBBseg/blob/main/en
 
 Requer **Python 3.10 ou superior**. Este componente utiliza somente a biblioteca padrão; suas dependências estão documentadas separadamente das da API.
 
+No Windows/PowerShell, habilite UTF-8 na sessão antes de executar os comandos abaixo:
+
+```powershell
+$env:PYTHONUTF8 = '1'
+```
+
+Essa configuração também é herdada pelos processos Python iniciados pelos testes e evita falhas na leitura dos relatórios com acentos. Ela vale apenas para a sessão atual.
+
 Na raiz do repositório, coloque os dois ZIPs originais recebidos da organização na pasta `originais/`, sem modificar seus arquivos:
 
 - Seguro_Residencial_Desenvolvimento.zip
