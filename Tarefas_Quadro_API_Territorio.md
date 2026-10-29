@@ -1,6 +1,6 @@
-# API Território — tarefas para o quadro
+# API Território — quadro do extra validado localmente
 
-**Status:** pontos 1 a 6 técnicos integrados à `main`; o checklist registra separadamente a confirmação humana ainda pendente. Ponto 7 com configuração do Render Free preparada na `feat/api-territorio`, sem publicação ou merge desta preparação. Autorização do repositório pelo Garrido e validação externa pendentes. Pontos 8 a 10 pendentes. A API deve continuar gratuita, inclusive na hospedagem.
+**Decisão de escopo em 29/10/2026:** entregar a API como **extra funcional, documentado no GitHub e validado localmente com 53 testes aprovados**. Os pontos 1 a 6 técnicos e a preparação do Render Free estão integrados à `main`. Publicação externa e integração com motor/Bússola ficam como evolução futura, sem prazo assumido; não bloqueiam a entrega atual. Nenhum serviço foi publicado ou integrado. A execução local não exige serviços pagos; uma eventual publicação também deverá continuar gratuita.
 
 | Ordem | Tarefa curta | Responsável proposto | Pronto quando… |
 |---|---|---|---|
@@ -9,27 +9,37 @@
 | 3 — concluído | Validar e congelar a edição inicial dos dados | Enriquecimento | Edição `territorio-2026-10-28-r1`: 180 pares município/indicador, 153 valores disponíveis, 27 ausências explícitas; 1.925 verificações aprovadas, fontes e hashes registrados. |
 | 4 — concluído | Preparar a base de consulta | Enriquecimento / responsável pela API | SQLite regenerável com 180 registros, consultas indexadas por município/edição, fontes resolvidas, lacunas preservadas e cadastro auxiliar IBGE. Importação e testes documentados em `api_territorio/README.md`. |
 | 5 — concluído | Construir a API | Responsável pela API | Endpoint POST/JSON implementado com chave por consumidor, HTTPS, validação, limites e erros; testes e exemplos em `api_territorio/HTTP.md`. Sem publicação ou integração. |
-| 6 — técnico concluído; aceite pendente | Validar dados e comportamentos | Enriquecimento + responsável pela API; revisão da equipe | 43 testes aprovados e evidências em `api_territorio/VALIDACAO.md`; equipe registra decisão em `api_territorio/ACEITE_EQUIPE.md` ou no PR vinculado. |
-| 7 — preparado; não publicado | Publicar ambiente de teste | Responsável pela API; autorização do repositório pelo Garrido | Render Free configurado conforme `api_territorio/PUBLICACAO_RENDER.md`; criar serviço somente após liberação, registrar URL e passar verificações externas. |
-| 8 — pendente | Entregar pacote ao Pipo | Enriquecimento + responsável pela API | Lista abaixo entregue, com pendências e responsáveis registrados. |
-| 9 — pendente | Validar integração com Pipo | Pipo + equipes do motor/Bússola; apoio do enriquecimento | Consumidores respeitarem unidades, períodos, lacunas e falhas, sem atribuir precisão de endereço aos dados municipais. |
-| 10 — pendente | Registrar manutenção e mudanças | Responsáveis pela base, API e consumidores | Frequência de revisão por fonte, suporte e processo de mudanças definidos. |
+| 6 — técnico concluído | Validar dados e comportamentos localmente | Enriquecimento + responsável pela API | 43 testes da validação inicial e dez da preparação Render aprovados; relatórios e checklist disponíveis, sem presumir aceite humano ou integração. |
+| 7 — evolução futura; configuração pronta | Publicar ambiente gratuito | Responsável a alinhar na retomada; acesso ao repositório pelo Garrido | Se retomado: conferir condições gratuitas, autorizar publicação, registrar URL e passar verificações externas de `api_territorio/PUBLICACAO_RENDER.md`. |
+| 8 — evolução futura | Entregar acesso operacional ao Pipo | Responsáveis a alinhar na retomada | Se retomado: entregar URL, instruções e credenciais por canal seguro, além dos documentos já disponíveis. |
+| 9 — evolução futura | Integrar e validar com os consumidores | Pipo + equipes do motor/Bússola, se a integração for retomada | Validar uso dos indicadores, lacunas, tempo limite e falhas nos consumidores; sem atribuir precisão de endereço aos dados municipais. |
+| 10 — evolução futura | Definir manutenção do serviço | Responsáveis a alinhar na retomada | Se retomado: definir suporte, frequência de revisão das fontes e processo de novas edições; nenhuma coleta automática atual. |
 
-## Pacote para o Pipo
+## Entrega atual do extra — disponível no GitHub
 
-- [x] Contrato 1.0.0 e implementação HTTP na feature; publicação ainda pendente.
-- [ ] Endereço do ambiente de teste e instruções de acesso; credenciais por canal seguro.
+- [x] Contrato 1.0.0, implementação HTTP autenticada, SQLite e instruções de execução local.
 - [x] Catálogo, dez municípios/códigos IBGE, períodos, unidades, fontes e limitações documentados na edição.
 - [x] Edição inicial dos dados e referência para conferir os valores: `dados/edicoes/territorio-2026-10-28-r1`.
 - [x] Mapeamento do nome antigo de vendaval para o identificador corrigido, em `mapeamento_catalogo.csv`.
 - [x] Exemplos completos gerados pela implementação: dados disponíveis, lacunas, município sem cobertura e credencial ausente; esquema OpenAPI entregue como arquivo.
 - [x] Relatório consolidado do ponto 6, com 43 testes locais aprovados, cinco conferências complementares e preservação documentada em `api_territorio/VALIDACAO.md`.
 - [x] Checklist de aceite da equipe preparado em `api_territorio/ACEITE_EQUIPE.md`.
-- [ ] Aceite humano da equipe registrado; não confundir evidência técnica com aprovação dos responsáveis.
-- [ ] Acordo de falhas, limites e contatos de suporte/atualização.
+- [x] Configuração Render Free e dez testes adicionais preparados; **53 testes locais aprovados** no total, com evidência em `api_territorio/validacao/preparacao-render-2026-10-29.json`.
+- [x] Extra delimitado: sem URL pública, credenciais de produção, integração ou impacto comprovado nas decisões do motor/Bússola.
+
+O checklist humano permanece disponível para eventual revisão da equipe; não registra aprovações que não recebemos e não é uma exigência externa nem bloqueio para a entrega deste extra. As evidências históricas dos pontos 6 e 7 continuam preservadas, com os resultados de cada execução.
+
+## Evolução futura — fora do escopo desta entrega
+
+- [ ] Retomar a publicação apenas por nova decisão de escopo, mantendo gratuidade, uma instância e sem complementos pagos. Auto-deploy permanece desligado.
+- [ ] Se houver retomada, obter a autorização do repositório pelo Garrido, configurar a hospedagem/credenciais e validar HTTPS, reinício, hibernação e acesso externo.
+- [ ] Entregar ao Pipo o acesso operacional e alinhar responsáveis/limites/suporte, quando a integração for planejada.
+- [ ] Integrar e testar os consumidores antes de afirmar qualquer uso dos dados em pontuação, planos, elegibilidade ou explicações da Bússola.
+
+Estes itens compõem um roteiro de evolução; não são tarefas a executar agora nem dependências para concluir a entrega local.
 
 ## Regra de trabalho
 
-Pipo pode ajustar a implementação interna preservando o contrato. Alterações no significado dos dados ou na interface devem ser combinadas, documentadas e versionadas com as equipes afetadas. Falha técnica e ausência de dado são situações distintas; nenhuma delas significa risco zero.
+Em eventual retomada, Pipo pode ajustar a implementação interna preservando o contrato. Alterações no significado dos dados ou na interface devem ser combinadas, documentadas e versionadas com as equipes afetadas. Falha técnica e ausência de dado são situações distintas; nenhuma delas significa risco zero.
 
-**Escopo atual:** ponto 6 integrado à `main`; ponto 7 preparado na feature, sem deploy nem merge desta etapa. Aceite humano, publicação gratuita e integração continuam pendentes; motor, Bússola, pacote em `entregas/` e edição congelada não foram alterados.
+**Escopo atual:** extra desenvolvido, documentado e validado localmente. Publicação e integração futuras. Esta atualização muda apenas contrato e quadro na `feat/api-territorio`; não altera código, configuração, testes, edição congelada, `entregas/`, motor ou Bússola e não realiza deploy ou merge.
