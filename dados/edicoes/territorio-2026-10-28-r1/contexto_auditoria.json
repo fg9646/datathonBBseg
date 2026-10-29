@@ -1,0 +1,15 @@
+{
+  "planilha_referencia": {
+    "arquivo": "Enriquecimento_10_Municipios.xlsx",
+    "sha256": "8c6efed77d0a2c0380bc38086505c16eb5b082441d5c3872b6a954f7a8c9d8d2"
+  },
+  "consolidado_referencia": {
+    "arquivo": "dados_consolidados.json",
+    "sha256": "d354a62fcdd0bd1063006e6dad69225f8db94415de0e33ade78774ce5ce5c69d"
+  },
+  "coleta_nova_realizada": false,
+  "precisao_datas_coleta": "dia; horários originais não registrados, não inventados",
+  "metodo_lacunas_goiania": "SEM_RECORTE_MUNICIPAL -> FONTE_SEM_VALOR: fonte estadual não fornece valor para o município; não classificar município coberto como fora da cobertura territorial",
+  "evidencia_ausencia_a301": "Ausência dos arquivos no acervo arquivado, conforme coleta anterior. Listagem integral dos ZIPs 2024/2025 não foi arquivada: ausência no ZIP não foi reconfirmada nesta auditoria.",
+  "reproducao_bruta": "151 fontes locais externas à edição, localizadas no inventário original. Os hashes e URLs são publicados; microdados criminais e dados de clientes não são redistribuídos nesta edição."
+}

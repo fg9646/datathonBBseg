@@ -1,0 +1,1 @@
+# Consolidação v2: somente biblioteca padrão do Python >= 3.10.

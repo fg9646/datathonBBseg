@@ -1,0 +1,3 @@
+# Preservar exatamente os bytes dos snapshots e seus hashes em qualquer sistema.
+dados/edicoes/** -text whitespace=cr-at-eol
+auditoria/*.py text eol=lf
