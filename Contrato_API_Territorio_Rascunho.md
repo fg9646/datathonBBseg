@@ -368,3 +368,9 @@ Na `feat/api-territorio`, `POST /v1/enriquecimento/consulta` recebe e responde J
 - **Gratuidade:** Python/SQLite, FastAPI e Uvicorn, sem licença paga, provedor externo de autenticação ou cobrança por consulta. Nenhuma infraestrutura paga foi provisionada. A publicação externa deverá usar opção gratuita ainda a definir.
 
 Instalação, geração segura de chaves, inicialização, limites e testes estão em `api_territorio/HTTP.md`. A edição congelada e o pacote em `entregas/` permanecem inalterados. A validação de aceite com a equipe, publicação e integração continuam nos pontos 6 a 9; implementar o endpoint não significa que ele já esteja publicado.
+
+## 20. Validação técnica consolidada — ponto 6
+
+O [relatório de validação](api_territorio/VALIDACAO.md) e o [registro de evidências](api_territorio/validacao/evidencias-ponto-6.json) documentam a execução local sobre o código integrado pelo PR #5: **43 testes aprovados**, sem falhas, erros ou testes ignorados, além de cinco conferências complementares. Os 180 registros, as 27 ausências e os metadados foram preservados. A integridade da edição congelada e os hashes de `entregas/` foram reconferidos; a auditoria histórica completa das fontes não foi reexecutada.
+
+A validação técnica está concluída; o [checklist de aceite da equipe](api_territorio/ACEITE_EQUIPE.md) permanece sem aprovações humanas registradas. Nenhuma decisão de Pipo ou da equipe é presumida. Publicação HTTPS gratuita, acesso externo, entrega das credenciais, integração e manutenção continuam nos pontos 7 a 10, com suas verificações próprias. Esta etapa não altera o código executável, o contrato 1.0.0, os dados, o motor ou a Bússola e não realiza merge.

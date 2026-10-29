@@ -1,0 +1,397 @@
+{
+  "etapa": 6,
+  "conclusao": "VALIDACAO_TECNICA_LOCAL_APROVADA_ACEITE_HUMANO_PENDENTE",
+  "executado_em_utc": "2026-10-29T01:02:03.122027+00:00",
+  "executado_em_sao_paulo": "2026-10-28T22:02:03.122027-03:00",
+  "commit_codigo_validado": "f1adf83c7b56464dd7b53203a88212fe7a786735",
+  "branch": "feat/api-territorio",
+  "python": "3.12.14",
+  "plataforma": "Windows",
+  "versao_contrato": "1.0.0",
+  "versao_base": "territorio-2026-10-28-r1",
+  "suite": {
+    "comando_reproducao": "python -m unittest discover -s tests -v",
+    "executados": 43,
+    "aprovados": 43,
+    "falhas": 0,
+    "erros": 0,
+    "ignorados": 0,
+    "casos": [
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_consulta_nao_le_fontes_planilha_ou_rede",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_consulta_utiliza_indice_composto",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_df_representa_distrito_federal",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_edicao_inexistente_e_base_ausente",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_entradas_invalidas_e_consultas_duplicadas",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_importacao_idempotente",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_json_operacional_corrompido_e_falha_tecnica",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_lacunas_recife_e_goiania",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_mesma_edicao_com_cadastro_diferente_nao_sobrescreve",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_municipio_valido_sem_cobertura_e_codigo_inexistente_sao_distintos",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_nova_edicao_nao_muda_ativa_e_consulta_explicita_e_preservada",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_periodo_valido_ausente_nao_substitui_ano",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_rejeita_snapshot_adulterado_e_preserva_edicao_existente",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_sao_paulo_totais_e_taxas",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_todos_os_180_valores_periodos_lacunas_e_metadados_preservados",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_base_territorio.BaseTerritorioTests.test_ultima_coleta_preserva_precisao",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_base_ausente_e_indisponibilidade_sao_503",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_campos_desconhecidos_tipos_e_null_sao_400",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_chave_ausente_incorreta_ou_duplicada",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_chave_valida_sem_permissao",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_codigo_e_edicao_inexistentes",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_corpo_excessivo_e_content_type",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_falha_inesperada_nao_expoe_detalhes",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_geracao_de_chave_e_configuracao_por_hash",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_http_e_header_de_proxy_nao_confiavel_sao_rejeitados",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_http_local_exige_opt_in_e_cliente_loopback",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_http_preserva_os_180_registros_dos_dez_municipios",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_janela_de_limite_expira_sem_sleep",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_json_invalido_duplicado_nao_finito_ou_profundo",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_lacunas_e_sem_cobertura_sao_200_nao_404",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_limitacao_por_consumidor_com_retry_after",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_openapi_documenta_resposta_e_autenticacao_sem_chaves",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_periodo_valido_sem_dado_preserva_intervalo",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_resposta_completa_autenticada_preserva_contrato",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_rotas_metodos_e_documentacao_nao_exposta",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_sem_credenciais_ou_chaves_repetidas_nao_inicia",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_socket_real_com_uvicorn_em_http_local",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_http_territorio.HTTPTests.test_timeout_de_consulta_e_503",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_https_territorio.TLSRealTests.test_servidor_cli_https_com_certificado_validado",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_servidor_territorio.InicializacaoTests.test_modo_local_nao_confia_em_headers_de_proxy",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_servidor_territorio.InicializacaoTests.test_nao_abre_servidor_sem_consumidores",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_servidor_territorio.InicializacaoTests.test_proxy_confiavel_e_worker_unico_explicitos",
+        "resultado": "APROVADO"
+      },
+      {
+        "teste": "test_servidor_territorio.InicializacaoTests.test_recusa_configuracoes_de_transporte_inseguras",
+        "resultado": "APROVADO"
+      }
+    ]
+  },
+  "conferencias_complementares": [
+    {
+      "id": "comparacao_http_integral",
+      "resultado": "APROVADO",
+      "registros": 180,
+      "campos": [
+        "valor",
+        "unidade",
+        "periodo",
+        "disponibilidade",
+        "motivo_ausencia",
+        "metodo",
+        "estacao",
+        "cobertura",
+        "limitacoes",
+        "urls_e_datas_das_fontes"
+      ]
+    },
+    {
+      "id": "limite_pares",
+      "resultado": "APROVADO",
+      "cem_pares": 200,
+      "cento_e_um_pares": 400
+    },
+    {
+      "id": "openapi_versionado",
+      "resultado": "APROVADO",
+      "comparacao": "igual ao schema gerado, retirando o 422 automatico conforme gerador"
+    },
+    {
+      "id": "quatro_exemplos_versionados",
+      "resultado": "APROVADO",
+      "quantidade": 4,
+      "campo_dinamico_excluido": "consultado_em"
+    },
+    {
+      "id": "prazo_recebimento_corpo",
+      "resultado": "APROVADO",
+      "http_status": 408,
+      "metodo": "chamada ASGI direta, prazo reduzido por patch a 1 ms; sem medicao de rede real"
+    }
+  ],
+  "integridade_edicao": {
+    "integridade": "CONFERIDA",
+    "edicao": "territorio-2026-10-28-r1",
+    "arquivos": 21,
+    "indicadores": 180
+  },
+  "preservacao": [
+    {
+      "caminho": "dados/edicoes/territorio-2026-10-28-r1",
+      "arvore_git_main": "df17da987013eff027e352788a98cb68b1646f57",
+      "arvore_git_validada": "df17da987013eff027e352788a98cb68b1646f57",
+      "resultado": "IDENTICA"
+    },
+    {
+      "caminho": "entregas",
+      "arvore_git_main": "3b702720e8dde39616d37f97c83bc4d2ddd06768",
+      "arvore_git_validada": "3b702720e8dde39616d37f97c83bc4d2ddd06768",
+      "resultado": "IDENTICA"
+    }
+  ],
+  "entregas": {
+    "itens_manifesto_sha256_conferidos": 32,
+    "zip_sha256": "5039ab35224fe2e209f814166847dbf4cf0b041ffecac98dbd71dcb53a180c3f",
+    "manifesto_sha256": "56b0501657cc0e86951af33b47ff719c65f917064bba39e09b8db1cb67961e09"
+  },
+  "indicadores": {
+    "total": 180,
+    "disponiveis": 153,
+    "ausentes": 27,
+    "motivos_ausencia": {
+      "FONTE_SEM_VALOR": 5,
+      "SEM_RECORTE_RESIDENCIAL": 22
+    },
+    "municipios": [
+      {
+        "codigo_ibge": "2304400",
+        "municipio": "Fortaleza",
+        "uf": "CE",
+        "abrangencia": "municipio",
+        "total": 18,
+        "disponiveis": 13,
+        "ausentes": 5
+      },
+      {
+        "codigo_ibge": "2611606",
+        "municipio": "Recife",
+        "uf": "PE",
+        "abrangencia": "municipio",
+        "total": 18,
+        "disponiveis": 14,
+        "ausentes": 4
+      },
+      {
+        "codigo_ibge": "2927408",
+        "municipio": "Salvador",
+        "uf": "BA",
+        "abrangencia": "municipio",
+        "total": 18,
+        "disponiveis": 16,
+        "ausentes": 2
+      },
+      {
+        "codigo_ibge": "3106200",
+        "municipio": "Belo Horizonte",
+        "uf": "MG",
+        "abrangencia": "municipio",
+        "total": 18,
+        "disponiveis": 14,
+        "ausentes": 4
+      },
+      {
+        "codigo_ibge": "3304557",
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "abrangencia": "municipio",
+        "total": 18,
+        "disponiveis": 16,
+        "ausentes": 2
+      },
+      {
+        "codigo_ibge": "3550308",
+        "municipio": "São Paulo",
+        "uf": "SP",
+        "abrangencia": "municipio",
+        "total": 18,
+        "disponiveis": 18,
+        "ausentes": 0
+      },
+      {
+        "codigo_ibge": "4106902",
+        "municipio": "Curitiba",
+        "uf": "PR",
+        "abrangencia": "municipio",
+        "total": 18,
+        "disponiveis": 18,
+        "ausentes": 0
+      },
+      {
+        "codigo_ibge": "4314902",
+        "municipio": "Porto Alegre",
+        "uf": "RS",
+        "abrangencia": "municipio",
+        "total": 18,
+        "disponiveis": 14,
+        "ausentes": 4
+      },
+      {
+        "codigo_ibge": "5208707",
+        "municipio": "Goiânia",
+        "uf": "GO",
+        "abrangencia": "municipio",
+        "total": 18,
+        "disponiveis": 14,
+        "ausentes": 4
+      },
+      {
+        "codigo_ibge": "5300108",
+        "municipio": "Brasília",
+        "uf": "DF",
+        "abrangencia": "distrito_federal",
+        "total": 18,
+        "disponiveis": 16,
+        "ausentes": 2
+      }
+    ]
+  },
+  "dependencias": {
+    "pip_check": "No broken requirements found.",
+    "versoes_instaladas_conferidas_com_constraints": {
+      "annotated-doc": "0.0.5",
+      "annotated-types": "0.8.0",
+      "anyio": "4.15.1",
+      "certifi": "2026.10.23",
+      "click": "8.5.0",
+      "fastapi": "0.162.0",
+      "h11": "0.16.0",
+      "httpcore": "1.0.9",
+      "httpx": "0.28.1",
+      "idna": "3.20",
+      "opentelemetry-api": "1.45.1",
+      "pydantic": "2.14.1",
+      "pydantic_core": "2.50.1",
+      "starlette": "1.10.0",
+      "typing-inspection": "0.4.4",
+      "typing_extensions": "4.16.0",
+      "uvicorn": "0.54.0"
+    }
+  },
+  "limites_da_validacao": [
+    "Execucao local, sem publicacao ou integracao com consumidores.",
+    "A auditoria historica de 1925 verificacoes das fontes nao foi reexecutada; foi conferida a integridade dos 21 arquivos congelados.",
+    "Aviso de depreciacao do TestClient com httpx; nao houve falha e nao foram trocadas dependencias.",
+    "Nenhum teste de carga, SLA de hospedagem, proxy real, atualizacao automatica ou comportamento interno de motor/Bussola.",
+    "Conferencias complementares executadas em sessao local; os 43 testes sao a suite versionada reproduzivel.",
+    "Aceite humano nao foi solicitado por mensagem nem presumido."
+  ],
+  "gratuidade": {
+    "novas_dependencias": false,
+    "servico_pago_provisionado": false,
+    "hospedagem_publica": "PENDENTE_PONTO_7"
+  }
+}

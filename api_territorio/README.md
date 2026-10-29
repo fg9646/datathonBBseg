@@ -60,4 +60,4 @@ O ponto 5 implementa esse mapeamento HTTP e a autenticação. A camada usa parâ
 
 Nesta entrega, 16 testes passaram. Eles cobrem os 180 registros, SP e taxas, Recife/Goiânia, DF, município válido sem cobertura versus inexistente, períodos ausentes, entradas inválidas, edição inexistente, base indisponível ou com JSON corrompido, ausência de rede/arquivos externos na consulta, importação idempotente, rejeição de snapshot adulterado, bloqueio de sobrescrita, consulta por edição e preservação da edição ativa, índice SQL e precisão das datas. Os testes não exigem rede nem bibliotecas externas e usam bancos temporários.
 
-O serviço HTTP está implementado, com detalhes de inicialização e segurança em [HTTP.md](HTTP.md). Ainda não há URL externa publicada para o Pipo conectar.
+O serviço HTTP está implementado, com detalhes de inicialização e segurança em [HTTP.md](HTTP.md). O [relatório do ponto 6](VALIDACAO.md) consolida a validação técnica local; o [checklist da equipe](ACEITE_EQUIPE.md) registra separadamente o aceite humano pendente. Ainda não há URL externa publicada para o Pipo conectar.

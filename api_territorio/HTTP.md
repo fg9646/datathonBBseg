@@ -103,4 +103,4 @@ python -m tests.gerar_exemplos_http
 
 Nesta entrega, **43 testes passaram**: os 16 da base e 27 de endpoint/autenticação, comparação dos 180 registros por HTTP, limites, validação, erros, inicialização, OpenAPI e conexões reais HTTP/HTTPS. O teste TLS real exige OpenSSL local (inclusive o que acompanha o Git no Windows); sem ele, esse único teste é explicitamente marcado como não executado. Nenhuma dependência de OpenSSL CLI é exigida para executar a API; o teste precisa dela apenas para gerar seu certificado temporário.
 
-Os testes não publicam serviço externo, não emitem credenciais reais e não alteram a edição congelada ou o pacote residencial. A validação integral para o uso da equipe e publicação continuam como pontos 6 e 7.
+Os testes não publicam serviço externo, não emitem credenciais reais e não alteram a edição congelada ou o pacote residencial. A validação técnica do ponto 6 está consolidada em [VALIDACAO.md](VALIDACAO.md), com [checklist de aceite humano](ACEITE_EQUIPE.md) ainda a confirmar pela equipe. Publicação gratuita e integração continuam pendentes nos pontos 7 a 9.
