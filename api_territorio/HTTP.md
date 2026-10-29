@@ -58,6 +58,8 @@ Também é possível usar um proxy que termine HTTPS: informar seu IP com `--pro
 
 O serviço não inicia sem TLS, proxy explícito ou modo local autorizado. Certificados e chaves privadas ficam fora do Git. O teste HTTPS usa certificado temporário confiado somente pelo cliente do teste, valida TLS e nome do servidor e apaga os arquivos ao terminar; não usa `verify=False`.
 
+O ponto 7 prepara um inicializador separado para a borda HTTPS gerenciada do Render Free, descrito em [PUBLICACAO_RENDER.md](PUBLICACAO_RENDER.md). Esse perfil depende do isolamento da origem pelo provedor, usa somente o hostname `onrender.com` atribuído e ignora cabeçalhos de proxy enviados pelo cliente. Não é um modo HTTP público genérico; o inicializador acima permanece com as mesmas restrições. A configuração está na feature, sem publicação.
+
 ## Consulta
 
 - Método/caminho: `POST /v1/enriquecimento/consulta`.

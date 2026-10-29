@@ -1,6 +1,6 @@
 # API Território — tarefas para o quadro
 
-**Status:** pontos 1 a 5 concluídos e integrados à `main`. Ponto 6 com validação técnica concluída, relatório consolidado e checklist de aceite preparado na `feat/api-territorio`; confirmação humana da equipe ainda pendente. Pontos 7 a 10 pendentes. Publicação externa e integração ainda não realizadas. A API deve continuar gratuita, inclusive na escolha da hospedagem.
+**Status:** pontos 1 a 6 técnicos integrados à `main`; o checklist registra separadamente a confirmação humana ainda pendente. Ponto 7 com configuração do Render Free preparada na `feat/api-territorio`, sem publicação ou merge desta preparação. Autorização do repositório pelo Garrido e validação externa pendentes. Pontos 8 a 10 pendentes. A API deve continuar gratuita, inclusive na hospedagem.
 
 | Ordem | Tarefa curta | Responsável proposto | Pronto quando… |
 |---|---|---|---|
@@ -10,7 +10,7 @@
 | 4 — concluído | Preparar a base de consulta | Enriquecimento / responsável pela API | SQLite regenerável com 180 registros, consultas indexadas por município/edição, fontes resolvidas, lacunas preservadas e cadastro auxiliar IBGE. Importação e testes documentados em `api_territorio/README.md`. |
 | 5 — concluído | Construir a API | Responsável pela API | Endpoint POST/JSON implementado com chave por consumidor, HTTPS, validação, limites e erros; testes e exemplos em `api_territorio/HTTP.md`. Sem publicação ou integração. |
 | 6 — técnico concluído; aceite pendente | Validar dados e comportamentos | Enriquecimento + responsável pela API; revisão da equipe | 43 testes aprovados e evidências em `api_territorio/VALIDACAO.md`; equipe registra decisão em `api_territorio/ACEITE_EQUIPE.md` ou no PR vinculado. |
-| 7 — pendente | Publicar ambiente de teste | Responsável pela API | Hospedagem, limite de chamadas e acesso definidos; endereço acessível ao backend do Pipo. |
+| 7 — preparado; não publicado | Publicar ambiente de teste | Responsável pela API; autorização do repositório pelo Garrido | Render Free configurado conforme `api_territorio/PUBLICACAO_RENDER.md`; criar serviço somente após liberação, registrar URL e passar verificações externas. |
 | 8 — pendente | Entregar pacote ao Pipo | Enriquecimento + responsável pela API | Lista abaixo entregue, com pendências e responsáveis registrados. |
 | 9 — pendente | Validar integração com Pipo | Pipo + equipes do motor/Bússola; apoio do enriquecimento | Consumidores respeitarem unidades, períodos, lacunas e falhas, sem atribuir precisão de endereço aos dados municipais. |
 | 10 — pendente | Registrar manutenção e mudanças | Responsáveis pela base, API e consumidores | Frequência de revisão por fonte, suporte e processo de mudanças definidos. |
@@ -32,4 +32,4 @@
 
 Pipo pode ajustar a implementação interna preservando o contrato. Alterações no significado dos dados ou na interface devem ser combinadas, documentadas e versionadas com as equipes afetadas. Falha técnica e ausência de dado são situações distintas; nenhuma delas significa risco zero.
 
-**Escopo atual:** ponto 5 integrado à `main`; ponto 6 documentado na feature para revisão, sem merge desta etapa. Aceite humano, publicação gratuita e integração continuam pendentes; motor, Bússola, pacote em `entregas/` e edição congelada não foram alterados.
+**Escopo atual:** ponto 6 integrado à `main`; ponto 7 preparado na feature, sem deploy nem merge desta etapa. Aceite humano, publicação gratuita e integração continuam pendentes; motor, Bússola, pacote em `entregas/` e edição congelada não foram alterados.
