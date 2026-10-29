@@ -1,0 +1,19 @@
+indicador_original,id,unidade_original,unidade
+Chuva anual normal,clima.chuva_normal,mm/ano,mm/ano
+Dias completos para chuva,clima.cobertura_chuva,%,fracao
+Dias completos para rajadas,clima.cobertura_rajada,%,fracao
+Chuva ≥ 50 mm: normal,clima.dias_chuva_ge50_normal,dias/ano,dias/ano
+Dias com mínima ≤ 10 °C: normal,clima.dias_minima_le10_normal,dias/ano,dias/ano
+Média das máximas diárias,clima.maxima_media_normal,°C,°C
+Média das mínimas diárias,clima.minima_media_normal,°C,°C
+Maior rajada observada,clima.rajada_max_observada,km/h,km/h
+Alagamentos: protocolos Atlas,desastres.protocolos_alagamento,registros,protocolos
+Chuvas intensas: protocolos Atlas,desastres.protocolos_chuva_intensa,registros,protocolos
+Enxurradas: protocolos Atlas,desastres.protocolos_enxurrada,registros,protocolos
+Granizo: protocolos Atlas,desastres.protocolos_granizo,registros,protocolos
+Inundações: protocolos Atlas,desastres.protocolos_inundacao,registros,protocolos
+Vendavais e ciclones: protocolos Atlas,desastres.protocolos_vendaval,registros,protocolos
+Furtos em ambiente residência,seguranca.furto_residencial,registros,ocorrencias
+Roubos em ambiente residência,seguranca.roubo_residencial,registros,ocorrencias
+Furtos em ambiente residência: taxa contextual,seguranca.taxa_furto_residencial,por 100 mil moradores,ocorrencias/100mil_habitantes
+Roubos em ambiente residência: taxa contextual,seguranca.taxa_roubo_residencial,por 100 mil moradores,ocorrencias/100mil_habitantes

@@ -1,0 +1,92 @@
+[
+  {
+    "codigo_ibge": "3106200",
+    "municipio": "Belo Horizonte",
+    "uf": "MG",
+    "estacao_automatica": "A521",
+    "estacao_convencional": "83587",
+    "local_automatica": "Pampulha",
+    "local_convencional": "Belo Horizonte"
+  },
+  {
+    "codigo_ibge": "5300108",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "estacao_automatica": "A001",
+    "estacao_convencional": "83377",
+    "local_automatica": "Brasília",
+    "local_convencional": "Brasília"
+  },
+  {
+    "codigo_ibge": "4106902",
+    "municipio": "Curitiba",
+    "uf": "PR",
+    "estacao_automatica": "A807",
+    "estacao_convencional": "83842",
+    "local_automatica": "Curitiba",
+    "local_convencional": "Curitiba"
+  },
+  {
+    "codigo_ibge": "2304400",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "estacao_automatica": "A305",
+    "estacao_convencional": "82397",
+    "local_automatica": "Fortaleza",
+    "local_convencional": "Fortaleza"
+  },
+  {
+    "codigo_ibge": "5208707",
+    "municipio": "Goiânia",
+    "uf": "GO",
+    "estacao_automatica": "A002",
+    "estacao_convencional": "83423",
+    "local_automatica": "Goiânia",
+    "local_convencional": "Goiânia"
+  },
+  {
+    "codigo_ibge": "4314902",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "estacao_automatica": "A801",
+    "estacao_convencional": "83967",
+    "local_automatica": "Jardim Botânico",
+    "local_convencional": "Porto Alegre"
+  },
+  {
+    "codigo_ibge": "2611606",
+    "municipio": "Recife",
+    "uf": "PE",
+    "estacao_automatica": "A301",
+    "estacao_convencional": "82900",
+    "local_automatica": "Recife",
+    "local_convencional": "Recife (Curado)"
+  },
+  {
+    "codigo_ibge": "3304557",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "estacao_automatica": "A621",
+    "estacao_convencional": "83007",
+    "local_automatica": "Vila Militar",
+    "local_convencional": "Alto da Boa Vista"
+  },
+  {
+    "codigo_ibge": "2927408",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "estacao_automatica": "A401",
+    "estacao_convencional": "83229",
+    "local_automatica": "Salvador",
+    "local_convencional": "Salvador (Ondina)"
+  },
+  {
+    "codigo_ibge": "3550308",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "estacao_automatica": "A701",
+    "estacao_convencional": "83781",
+    "local_automatica": "São Paulo–Mirante",
+    "local_convencional": "São Paulo–Mirante"
+  }
+]

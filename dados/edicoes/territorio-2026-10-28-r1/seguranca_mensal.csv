@@ -1,0 +1,589 @@
+﻿codigo_ibge,municipio,uf,ano,mes,indicador,quantidade,recorte_crime,arquivo_original
+3550308,São Paulo,SP,2023,1,FURTO - OUTROS,19236,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,2,FURTO - OUTROS,19882,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,3,FURTO - OUTROS,22297,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,4,FURTO - OUTROS,19185,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,5,FURTO - OUTROS,21436,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,6,FURTO - OUTROS,21287,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,7,FURTO - OUTROS,20700,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,8,FURTO - OUTROS,21429,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,9,FURTO - OUTROS,21810,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,10,FURTO - OUTROS,21438,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,11,FURTO - OUTROS,20939,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,12,FURTO - OUTROS,21186,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,1,ROUBO - OUTROS,11768,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,2,ROUBO - OUTROS,10931,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,3,ROUBO - OUTROS,12471,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,4,ROUBO - OUTROS,10540,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,5,ROUBO - OUTROS,10940,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,6,ROUBO - OUTROS,10341,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,7,ROUBO - OUTROS,10334,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,8,ROUBO - OUTROS,10706,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,9,ROUBO - OUTROS,10006,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,10,ROUBO - OUTROS,11056,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,11,ROUBO - OUTROS,10619,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2023,12,ROUBO - OUTROS,10787,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,1,FURTO - OUTROS,18723,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,2,FURTO - OUTROS,20201,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,3,FURTO - OUTROS,20180,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,4,FURTO - OUTROS,19344,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,5,FURTO - OUTROS,20226,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,6,FURTO - OUTROS,20438,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,7,FURTO - OUTROS,19995,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,8,FURTO - OUTROS,20215,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,9,FURTO - OUTROS,20292,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,10,FURTO - OUTROS,21154,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,11,FURTO - OUTROS,20289,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,12,FURTO - OUTROS,20312,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,1,ROUBO - OUTROS,10157,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,2,ROUBO - OUTROS,9850,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,3,ROUBO - OUTROS,10265,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,4,ROUBO - OUTROS,9690,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,5,ROUBO - OUTROS,9455,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,6,ROUBO - OUTROS,9057,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,7,ROUBO - OUTROS,9491,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,8,ROUBO - OUTROS,8787,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,9,ROUBO - OUTROS,8324,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,10,ROUBO - OUTROS,9314,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,11,ROUBO - OUTROS,8843,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2024,12,ROUBO - OUTROS,9681,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,1,FURTO - OUTROS,20172,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,2,FURTO - OUTROS,19886,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,3,FURTO - OUTROS,21771,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,4,FURTO - OUTROS,20883,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,5,FURTO - OUTROS,21015,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,6,FURTO - OUTROS,20007,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,7,FURTO - OUTROS,21070,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,8,FURTO - OUTROS,22001,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,9,FURTO - OUTROS,22171,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,10,FURTO - OUTROS,21085,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,11,FURTO - OUTROS,20489,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,12,FURTO - OUTROS,19618,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,1,ROUBO - OUTROS,9013,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,2,ROUBO - OUTROS,8317,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,3,ROUBO - OUTROS,8966,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,4,ROUBO - OUTROS,8258,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,5,ROUBO - OUTROS,8050,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,6,ROUBO - OUTROS,7755,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,7,ROUBO - OUTROS,8472,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,8,ROUBO - OUTROS,8233,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,9,ROUBO - OUTROS,7823,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,10,ROUBO - OUTROS,7444,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,11,ROUBO - OUTROS,7091,GERAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,12,ROUBO - OUTROS,7216,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,1,Furtos consumados — geral,4141,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,2,Furtos consumados — geral,3956,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,3,Furtos consumados — geral,4120,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,4,Furtos consumados — geral,3932,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,5,Furtos consumados — geral,3916,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,6,Furtos consumados — geral,3941,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,7,Furtos consumados — geral,4005,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,8,Furtos consumados — geral,3844,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,9,Furtos consumados — geral,3856,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,10,Furtos consumados — geral,3986,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,11,Furtos consumados — geral,3817,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,12,Furtos consumados — geral,3551,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,1,Furtos consumados — geral,3562,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,2,Furtos consumados — geral,3541,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,3,Furtos consumados — geral,3771,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,4,Furtos consumados — geral,3957,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,5,Furtos consumados — geral,4101,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,6,Furtos consumados — geral,3561,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,7,Furtos consumados — geral,3802,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,8,Furtos consumados — geral,4317,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,9,Furtos consumados — geral,4324,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,10,Furtos consumados — geral,4550,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,11,Furtos consumados — geral,4140,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,12,Furtos consumados — geral,4085,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,1,Roubos consumados — geral,644,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,2,Roubos consumados — geral,647,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,3,Roubos consumados — geral,614,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,4,Roubos consumados — geral,601,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,5,Roubos consumados — geral,610,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,6,Roubos consumados — geral,633,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,7,Roubos consumados — geral,564,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,8,Roubos consumados — geral,508,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,9,Roubos consumados — geral,570,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,10,Roubos consumados — geral,712,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,11,Roubos consumados — geral,557,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,12,Roubos consumados — geral,545,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,1,Roubos consumados — geral,604,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,2,Roubos consumados — geral,475,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,3,Roubos consumados — geral,502,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,4,Roubos consumados — geral,492,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,5,Roubos consumados — geral,505,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,6,Roubos consumados — geral,512,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,7,Roubos consumados — geral,517,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,8,Roubos consumados — geral,519,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,9,Roubos consumados — geral,428,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,10,Roubos consumados — geral,439,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,11,Roubos consumados — geral,463,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,12,Roubos consumados — geral,473,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,1,Furtos em ambiente residência,284,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,2,Furtos em ambiente residência,253,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,3,Furtos em ambiente residência,234,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,4,Furtos em ambiente residência,209,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,5,Furtos em ambiente residência,223,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,6,Furtos em ambiente residência,254,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,7,Furtos em ambiente residência,289,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,8,Furtos em ambiente residência,253,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,9,Furtos em ambiente residência,266,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,10,Furtos em ambiente residência,259,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,11,Furtos em ambiente residência,265,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,12,Furtos em ambiente residência,287,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,1,Furtos em ambiente residência,285,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,2,Furtos em ambiente residência,265,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,3,Furtos em ambiente residência,269,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,4,Furtos em ambiente residência,276,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,5,Furtos em ambiente residência,314,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,6,Furtos em ambiente residência,251,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,7,Furtos em ambiente residência,252,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,8,Furtos em ambiente residência,279,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,9,Furtos em ambiente residência,259,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,10,Furtos em ambiente residência,244,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,11,Furtos em ambiente residência,252,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,12,Furtos em ambiente residência,276,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,1,Roubos em ambiente residência,17,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,2,Roubos em ambiente residência,30,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,3,Roubos em ambiente residência,14,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,4,Roubos em ambiente residência,21,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,5,Roubos em ambiente residência,16,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,6,Roubos em ambiente residência,24,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,7,Roubos em ambiente residência,18,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,8,Roubos em ambiente residência,27,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,9,Roubos em ambiente residência,12,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,10,Roubos em ambiente residência,25,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,11,Roubos em ambiente residência,19,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2024,12,Roubos em ambiente residência,21,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,1,Roubos em ambiente residência,12,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,2,Roubos em ambiente residência,24,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,3,Roubos em ambiente residência,19,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,4,Roubos em ambiente residência,18,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,5,Roubos em ambiente residência,20,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,6,Roubos em ambiente residência,20,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,7,Roubos em ambiente residência,10,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,8,Roubos em ambiente residência,17,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,9,Roubos em ambiente residência,15,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,10,Roubos em ambiente residência,18,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,11,Roubos em ambiente residência,16,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2025,12,Roubos em ambiente residência,19,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,1,Furtos em ambiente residência,540,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,2,Furtos em ambiente residência,412,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,3,Furtos em ambiente residência,421,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,4,Furtos em ambiente residência,431,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,5,Furtos em ambiente residência,440,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,6,Furtos em ambiente residência,425,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,7,Furtos em ambiente residência,450,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,8,Furtos em ambiente residência,401,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,9,Furtos em ambiente residência,454,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,10,Furtos em ambiente residência,399,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,11,Furtos em ambiente residência,399,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,12,Furtos em ambiente residência,421,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,1,Roubos em ambiente residência,52,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,2,Roubos em ambiente residência,58,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,3,Roubos em ambiente residência,64,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,4,Roubos em ambiente residência,48,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,5,Roubos em ambiente residência,71,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,6,Roubos em ambiente residência,57,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,7,Roubos em ambiente residência,50,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,8,Roubos em ambiente residência,50,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,9,Roubos em ambiente residência,46,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,10,Roubos em ambiente residência,60,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,11,Roubos em ambiente residência,47,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3550308,São Paulo,SP,2025,12,Roubos em ambiente residência,54,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,1,Furtos consumados — geral,4071,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,2,Furtos consumados — geral,3932,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,3,Furtos consumados — geral,4733,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,4,Furtos consumados — geral,4384,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,5,Furtos consumados — geral,4785,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,6,Furtos consumados — geral,4431,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,7,Furtos consumados — geral,4508,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,8,Furtos consumados — geral,4185,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,9,Furtos consumados — geral,4037,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,10,Furtos consumados — geral,4081,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,11,Furtos consumados — geral,4031,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,12,Furtos consumados — geral,3590,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,1,Roubos consumados — geral,1027,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,2,Roubos consumados — geral,835,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,3,Roubos consumados — geral,1001,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,4,Roubos consumados — geral,931,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,5,Roubos consumados — geral,834,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,6,Roubos consumados — geral,690,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,7,Roubos consumados — geral,634,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,8,Roubos consumados — geral,659,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,9,Roubos consumados — geral,796,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,10,Roubos consumados — geral,803,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,11,Roubos consumados — geral,688,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,12,Roubos consumados — geral,559,GERAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,1,Furtos em ambiente residência,323,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,2,Furtos em ambiente residência,279,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,3,Furtos em ambiente residência,325,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,4,Furtos em ambiente residência,309,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,5,Furtos em ambiente residência,327,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,6,Furtos em ambiente residência,335,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,7,Furtos em ambiente residência,351,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,8,Furtos em ambiente residência,304,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,9,Furtos em ambiente residência,286,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,10,Furtos em ambiente residência,321,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,11,Furtos em ambiente residência,291,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,12,Furtos em ambiente residência,257,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,1,Roubos em ambiente residência,36,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,2,Roubos em ambiente residência,24,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,3,Roubos em ambiente residência,43,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,4,Roubos em ambiente residência,40,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,5,Roubos em ambiente residência,28,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,6,Roubos em ambiente residência,25,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,7,Roubos em ambiente residência,21,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,8,Roubos em ambiente residência,27,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,9,Roubos em ambiente residência,25,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,10,Roubos em ambiente residência,26,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,11,Roubos em ambiente residência,28,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+4106902,Curitiba,PR,2023,12,Roubos em ambiente residência,15,RESIDENCIAL,ver seguranca_anual: fonte preservada do piloto
+3106200,Belo Horizonte,MG,2023,1,Furtos consumados — geral,6076,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2023,2,Furtos consumados — geral,7248,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2023,3,Furtos consumados — geral,6503,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2023,4,Furtos consumados — geral,6177,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2023,5,Furtos consumados — geral,6625,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2023,6,Furtos consumados — geral,5672,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2023,7,Furtos consumados — geral,6170,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2023,8,Furtos consumados — geral,6328,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2023,9,Furtos consumados — geral,5858,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2023,10,Furtos consumados — geral,6233,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2023,11,Furtos consumados — geral,5859,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2023,12,Furtos consumados — geral,5634,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2023,1,Roubos consumados — geral,622,GERAL,mg_violentos_2023.csv
+3106200,Belo Horizonte,MG,2023,2,Roubos consumados — geral,578,GERAL,mg_violentos_2023.csv
+3106200,Belo Horizonte,MG,2023,3,Roubos consumados — geral,634,GERAL,mg_violentos_2023.csv
+3106200,Belo Horizonte,MG,2023,4,Roubos consumados — geral,562,GERAL,mg_violentos_2023.csv
+3106200,Belo Horizonte,MG,2023,5,Roubos consumados — geral,607,GERAL,mg_violentos_2023.csv
+3106200,Belo Horizonte,MG,2023,6,Roubos consumados — geral,573,GERAL,mg_violentos_2023.csv
+3106200,Belo Horizonte,MG,2023,7,Roubos consumados — geral,609,GERAL,mg_violentos_2023.csv
+3106200,Belo Horizonte,MG,2023,8,Roubos consumados — geral,661,GERAL,mg_violentos_2023.csv
+3106200,Belo Horizonte,MG,2023,9,Roubos consumados — geral,524,GERAL,mg_violentos_2023.csv
+3106200,Belo Horizonte,MG,2023,10,Roubos consumados — geral,542,GERAL,mg_violentos_2023.csv
+3106200,Belo Horizonte,MG,2023,11,Roubos consumados — geral,576,GERAL,mg_violentos_2023.csv
+3106200,Belo Horizonte,MG,2023,12,Roubos consumados — geral,585,GERAL,mg_violentos_2023.csv
+3106200,Belo Horizonte,MG,2024,1,Furtos consumados — geral,5837,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2024,2,Furtos consumados — geral,6473,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2024,3,Furtos consumados — geral,5218,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2024,4,Furtos consumados — geral,5395,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2024,5,Furtos consumados — geral,5618,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2024,6,Furtos consumados — geral,5558,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2024,7,Furtos consumados — geral,6114,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2024,8,Furtos consumados — geral,5605,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2024,9,Furtos consumados — geral,5602,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2024,10,Furtos consumados — geral,5688,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2024,11,Furtos consumados — geral,5430,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2024,12,Furtos consumados — geral,5306,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2024,1,Roubos consumados — geral,520,GERAL,mg_violentos_2024.csv
+3106200,Belo Horizonte,MG,2024,2,Roubos consumados — geral,482,GERAL,mg_violentos_2024.csv
+3106200,Belo Horizonte,MG,2024,3,Roubos consumados — geral,466,GERAL,mg_violentos_2024.csv
+3106200,Belo Horizonte,MG,2024,4,Roubos consumados — geral,507,GERAL,mg_violentos_2024.csv
+3106200,Belo Horizonte,MG,2024,5,Roubos consumados — geral,557,GERAL,mg_violentos_2024.csv
+3106200,Belo Horizonte,MG,2024,6,Roubos consumados — geral,668,GERAL,mg_violentos_2024.csv
+3106200,Belo Horizonte,MG,2024,7,Roubos consumados — geral,649,GERAL,mg_violentos_2024.csv
+3106200,Belo Horizonte,MG,2024,8,Roubos consumados — geral,627,GERAL,mg_violentos_2024.csv
+3106200,Belo Horizonte,MG,2024,9,Roubos consumados — geral,582,GERAL,mg_violentos_2024.csv
+3106200,Belo Horizonte,MG,2024,10,Roubos consumados — geral,601,GERAL,mg_violentos_2024.csv
+3106200,Belo Horizonte,MG,2024,11,Roubos consumados — geral,571,GERAL,mg_violentos_2024.csv
+3106200,Belo Horizonte,MG,2024,12,Roubos consumados — geral,547,GERAL,mg_violentos_2024.csv
+3106200,Belo Horizonte,MG,2025,1,Furtos consumados — geral,5580,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2025,2,Furtos consumados — geral,6278,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2025,3,Furtos consumados — geral,6796,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2025,4,Furtos consumados — geral,5219,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2025,5,Furtos consumados — geral,5356,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2025,6,Furtos consumados — geral,4794,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2025,7,Furtos consumados — geral,5364,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2025,8,Furtos consumados — geral,5547,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2025,9,Furtos consumados — geral,5056,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2025,10,Furtos consumados — geral,5162,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2025,11,Furtos consumados — geral,4609,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2025,12,Furtos consumados — geral,4542,GERAL,mg_furto.csv
+3106200,Belo Horizonte,MG,2025,1,Roubos consumados — geral,487,GERAL,mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,2025,2,Roubos consumados — geral,430,GERAL,mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,2025,3,Roubos consumados — geral,537,GERAL,mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,2025,4,Roubos consumados — geral,523,GERAL,mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,2025,5,Roubos consumados — geral,439,GERAL,mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,2025,6,Roubos consumados — geral,382,GERAL,mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,2025,7,Roubos consumados — geral,391,GERAL,mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,2025,8,Roubos consumados — geral,397,GERAL,mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,2025,9,Roubos consumados — geral,383,GERAL,mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,2025,10,Roubos consumados — geral,358,GERAL,mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,2025,11,Roubos consumados — geral,378,GERAL,mg_violentos_2025.csv
+3106200,Belo Horizonte,MG,2025,12,Roubos consumados — geral,397,GERAL,mg_violentos_2025.csv
+5300108,Brasília,DF,2023,1,Roubos em ambiente residência,25,RESIDENCIAL,df_2023.xlsx
+5300108,Brasília,DF,2023,2,Roubos em ambiente residência,21,RESIDENCIAL,df_2023.xlsx
+5300108,Brasília,DF,2023,3,Roubos em ambiente residência,19,RESIDENCIAL,df_2023.xlsx
+5300108,Brasília,DF,2023,4,Roubos em ambiente residência,11,RESIDENCIAL,df_2023.xlsx
+5300108,Brasília,DF,2023,5,Roubos em ambiente residência,12,RESIDENCIAL,df_2023.xlsx
+5300108,Brasília,DF,2023,6,Roubos em ambiente residência,17,RESIDENCIAL,df_2023.xlsx
+5300108,Brasília,DF,2023,7,Roubos em ambiente residência,28,RESIDENCIAL,df_2023.xlsx
+5300108,Brasília,DF,2023,8,Roubos em ambiente residência,14,RESIDENCIAL,df_2023.xlsx
+5300108,Brasília,DF,2023,9,Roubos em ambiente residência,21,RESIDENCIAL,df_2023.xlsx
+5300108,Brasília,DF,2023,10,Roubos em ambiente residência,16,RESIDENCIAL,df_2023.xlsx
+5300108,Brasília,DF,2023,11,Roubos em ambiente residência,20,RESIDENCIAL,df_2023.xlsx
+5300108,Brasília,DF,2023,12,Roubos em ambiente residência,15,RESIDENCIAL,df_2023.xlsx
+5300108,Brasília,DF,2024,1,Roubos em ambiente residência,10,RESIDENCIAL,df_2024.xlsx
+5300108,Brasília,DF,2024,2,Roubos em ambiente residência,17,RESIDENCIAL,df_2024.xlsx
+5300108,Brasília,DF,2024,3,Roubos em ambiente residência,16,RESIDENCIAL,df_2024.xlsx
+5300108,Brasília,DF,2024,4,Roubos em ambiente residência,16,RESIDENCIAL,df_2024.xlsx
+5300108,Brasília,DF,2024,5,Roubos em ambiente residência,14,RESIDENCIAL,df_2024.xlsx
+5300108,Brasília,DF,2024,6,Roubos em ambiente residência,7,RESIDENCIAL,df_2024.xlsx
+5300108,Brasília,DF,2024,7,Roubos em ambiente residência,8,RESIDENCIAL,df_2024.xlsx
+5300108,Brasília,DF,2024,8,Roubos em ambiente residência,15,RESIDENCIAL,df_2024.xlsx
+5300108,Brasília,DF,2024,9,Roubos em ambiente residência,13,RESIDENCIAL,df_2024.xlsx
+5300108,Brasília,DF,2024,10,Roubos em ambiente residência,12,RESIDENCIAL,df_2024.xlsx
+5300108,Brasília,DF,2024,11,Roubos em ambiente residência,11,RESIDENCIAL,df_2024.xlsx
+5300108,Brasília,DF,2024,12,Roubos em ambiente residência,17,RESIDENCIAL,df_2024.xlsx
+5300108,Brasília,DF,2025,1,Roubos em ambiente residência,22,RESIDENCIAL,df_2025.xlsx
+5300108,Brasília,DF,2025,2,Roubos em ambiente residência,14,RESIDENCIAL,df_2025.xlsx
+5300108,Brasília,DF,2025,3,Roubos em ambiente residência,10,RESIDENCIAL,df_2025.xlsx
+5300108,Brasília,DF,2025,4,Roubos em ambiente residência,8,RESIDENCIAL,df_2025.xlsx
+5300108,Brasília,DF,2025,5,Roubos em ambiente residência,11,RESIDENCIAL,df_2025.xlsx
+5300108,Brasília,DF,2025,6,Roubos em ambiente residência,18,RESIDENCIAL,df_2025.xlsx
+5300108,Brasília,DF,2025,7,Roubos em ambiente residência,10,RESIDENCIAL,df_2025.xlsx
+5300108,Brasília,DF,2025,8,Roubos em ambiente residência,6,RESIDENCIAL,df_2025.xlsx
+5300108,Brasília,DF,2025,9,Roubos em ambiente residência,12,RESIDENCIAL,df_2025.xlsx
+5300108,Brasília,DF,2025,10,Roubos em ambiente residência,15,RESIDENCIAL,df_2025.xlsx
+5300108,Brasília,DF,2025,11,Roubos em ambiente residência,15,RESIDENCIAL,df_2025.xlsx
+5300108,Brasília,DF,2025,12,Roubos em ambiente residência,14,RESIDENCIAL,df_2025.xlsx
+2304400,Fortaleza,CE,2025,1,CVP — geral (roubos),1569,CVP_GERAL,ce_cvp_2025.xlsx
+2304400,Fortaleza,CE,2025,2,CVP — geral (roubos),1468,CVP_GERAL,ce_cvp_2025.xlsx
+2304400,Fortaleza,CE,2025,3,CVP — geral (roubos),1716,CVP_GERAL,ce_cvp_2025.xlsx
+2304400,Fortaleza,CE,2025,4,CVP — geral (roubos),1682,CVP_GERAL,ce_cvp_2025.xlsx
+2304400,Fortaleza,CE,2025,5,CVP — geral (roubos),1832,CVP_GERAL,ce_cvp_2025.xlsx
+2304400,Fortaleza,CE,2025,6,CVP — geral (roubos),1769,CVP_GERAL,ce_cvp_2025.xlsx
+2304400,Fortaleza,CE,2025,7,CVP — geral (roubos),1630,CVP_GERAL,ce_cvp_2025.xlsx
+2304400,Fortaleza,CE,2025,8,CVP — geral (roubos),1597,CVP_GERAL,ce_cvp_2025.xlsx
+2304400,Fortaleza,CE,2025,9,CVP — geral (roubos),1556,CVP_GERAL,ce_cvp_2025.xlsx
+2304400,Fortaleza,CE,2025,10,CVP — geral (roubos),1650,CVP_GERAL,ce_cvp_2025.xlsx
+2304400,Fortaleza,CE,2025,11,CVP — geral (roubos),1301,CVP_GERAL,ce_cvp_2025.xlsx
+2304400,Fortaleza,CE,2025,12,CVP — geral (roubos),1263,CVP_GERAL,ce_cvp_2025.xlsx
+2304400,Fortaleza,CE,2025,1,Furtos — geral,2857,GERAL,ce_furto_2025.xlsx
+2304400,Fortaleza,CE,2025,2,Furtos — geral,2861,GERAL,ce_furto_2025.xlsx
+2304400,Fortaleza,CE,2025,3,Furtos — geral,2605,GERAL,ce_furto_2025.xlsx
+2304400,Fortaleza,CE,2025,4,Furtos — geral,2653,GERAL,ce_furto_2025.xlsx
+2304400,Fortaleza,CE,2025,5,Furtos — geral,2707,GERAL,ce_furto_2025.xlsx
+2304400,Fortaleza,CE,2025,6,Furtos — geral,2491,GERAL,ce_furto_2025.xlsx
+2304400,Fortaleza,CE,2025,7,Furtos — geral,2854,GERAL,ce_furto_2025.xlsx
+2304400,Fortaleza,CE,2025,8,Furtos — geral,2587,GERAL,ce_furto_2025.xlsx
+2304400,Fortaleza,CE,2025,9,Furtos — geral,2621,GERAL,ce_furto_2025.xlsx
+2304400,Fortaleza,CE,2025,10,Furtos — geral,2907,GERAL,ce_furto_2025.xlsx
+2304400,Fortaleza,CE,2025,11,Furtos — geral,2670,GERAL,ce_furto_2025.xlsx
+2304400,Fortaleza,CE,2025,12,Furtos — geral,2894,GERAL,ce_furto_2025.xlsx
+4314902,Porto Alegre,RS,2023,1,Furtos — geral,2281,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,2,Furtos — geral,2105,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,3,Furtos — geral,2801,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,4,Furtos — geral,2252,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,5,Furtos — geral,2478,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,6,Furtos — geral,2376,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,7,Furtos — geral,2197,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,8,Furtos — geral,2633,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,9,Furtos — geral,2328,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,10,Furtos — geral,2918,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,11,Furtos — geral,2561,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,12,Furtos — geral,2447,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,1,Roubos — geral,1227,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,2,Roubos — geral,1117,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,3,Roubos — geral,1373,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,4,Roubos — geral,1374,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,5,Roubos — geral,1635,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,6,Roubos — geral,1278,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,7,Roubos — geral,1310,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,8,Roubos — geral,1286,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,9,Roubos — geral,1154,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,10,Roubos — geral,1163,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,11,Roubos — geral,987,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2023,12,Roubos — geral,951,GERAL,rs_2023_completo.xlsx
+4314902,Porto Alegre,RS,2024,1,Furtos — geral,2198,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,2,Furtos — geral,2270,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,3,Furtos — geral,2320,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,4,Furtos — geral,2076,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,5,Furtos — geral,1231,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,6,Furtos — geral,1547,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,7,Furtos — geral,1618,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,8,Furtos — geral,1796,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,9,Furtos — geral,2031,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,10,Furtos — geral,2237,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,11,Furtos — geral,2031,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,12,Furtos — geral,2016,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,1,Roubos — geral,927,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,2,Roubos — geral,907,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,3,Roubos — geral,960,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,4,Roubos — geral,965,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,5,Roubos — geral,416,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,6,Roubos — geral,571,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,7,Roubos — geral,640,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,8,Roubos — geral,757,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,9,Roubos — geral,808,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,10,Roubos — geral,805,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,11,Roubos — geral,687,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2024,12,Roubos — geral,730,GERAL,rs_2024_completo.xlsx
+4314902,Porto Alegre,RS,2025,1,Furtos — geral,2381,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,2,Furtos — geral,2118,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,3,Furtos — geral,2523,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,4,Furtos — geral,2148,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,5,Furtos — geral,2568,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,6,Furtos — geral,2474,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,7,Furtos — geral,2485,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,8,Furtos — geral,2484,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,9,Furtos — geral,2395,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,10,Furtos — geral,2479,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,11,Furtos — geral,2106,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,12,Furtos — geral,2128,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,1,Roubos — geral,755,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,2,Roubos — geral,734,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,3,Roubos — geral,844,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,4,Roubos — geral,763,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,5,Roubos — geral,786,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,6,Roubos — geral,691,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,7,Roubos — geral,819,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,8,Roubos — geral,865,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,9,Roubos — geral,753,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,10,Roubos — geral,710,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,11,Roubos — geral,612,GERAL,rs_2025_completo.xlsx
+4314902,Porto Alegre,RS,2025,12,Roubos — geral,535,GERAL,rs_2025_completo.xlsx
+2611606,Recife,PE,2023,1,CVP — geral,1588,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2023,2,CVP — geral,1835,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2023,3,CVP — geral,1970,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2023,4,CVP — geral,1863,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2023,5,CVP — geral,1522,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2023,6,CVP — geral,1323,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2023,7,CVP — geral,1264,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2023,8,CVP — geral,1452,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2023,9,CVP — geral,1404,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2023,10,CVP — geral,1268,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2023,11,CVP — geral,1614,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2023,12,CVP — geral,1552,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2024,1,CVP — geral,1559,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2024,2,CVP — geral,1629,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2024,3,CVP — geral,1474,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2024,4,CVP — geral,1574,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2024,5,CVP — geral,1520,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2024,6,CVP — geral,1520,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2024,7,CVP — geral,1697,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2024,8,CVP — geral,1544,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2024,9,CVP — geral,1455,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2024,10,CVP — geral,1588,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2024,11,CVP — geral,1508,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2024,12,CVP — geral,1697,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2025,1,CVP — geral,1662,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2025,2,CVP — geral,1621,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2025,3,CVP — geral,1834,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2025,4,CVP — geral,1564,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2025,5,CVP — geral,1603,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2025,6,CVP — geral,1520,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2025,7,CVP — geral,1598,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2025,8,CVP — geral,1291,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2025,9,CVP — geral,1012,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2025,10,CVP — geral,985,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2025,11,CVP — geral,1039,CVP_GERAL,pe_cvp_microdados.xlsx
+2611606,Recife,PE,2025,12,CVP — geral,1003,CVP_GERAL,pe_cvp_microdados.xlsx
+3304557,Rio de Janeiro,RJ,2023,1,Roubos em ambiente residência,26,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,2,Roubos em ambiente residência,23,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,3,Roubos em ambiente residência,32,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,4,Roubos em ambiente residência,23,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,5,Roubos em ambiente residência,25,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,6,Roubos em ambiente residência,25,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,7,Roubos em ambiente residência,18,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,8,Roubos em ambiente residência,19,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,9,Roubos em ambiente residência,23,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,10,Roubos em ambiente residência,37,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,11,Roubos em ambiente residência,41,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,12,Roubos em ambiente residência,37,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,1,Total de roubos — geral,4552,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,2,Total de roubos — geral,4369,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,3,Total de roubos — geral,5119,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,4,Total de roubos — geral,4565,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,5,Total de roubos — geral,4981,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,6,Total de roubos — geral,4193,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,7,Total de roubos — geral,3667,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,8,Total de roubos — geral,4152,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,9,Total de roubos — geral,4111,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,10,Total de roubos — geral,4490,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,11,Total de roubos — geral,4951,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,12,Total de roubos — geral,4403,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,1,Total de furtos — geral,9143,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,2,Total de furtos — geral,9886,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,3,Total de furtos — geral,8853,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,4,Total de furtos — geral,7781,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,5,Total de furtos — geral,8728,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,6,Total de furtos — geral,7938,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,7,Total de furtos — geral,7976,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,8,Total de furtos — geral,9226,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,9,Total de furtos — geral,8937,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,10,Total de furtos — geral,9022,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,11,Total de furtos — geral,10258,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2023,12,Total de furtos — geral,8930,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,1,Roubos em ambiente residência,26,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,2,Roubos em ambiente residência,26,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,3,Roubos em ambiente residência,27,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,4,Roubos em ambiente residência,35,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,5,Roubos em ambiente residência,27,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,6,Roubos em ambiente residência,32,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,7,Roubos em ambiente residência,23,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,8,Roubos em ambiente residência,25,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,9,Roubos em ambiente residência,20,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,10,Roubos em ambiente residência,20,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,11,Roubos em ambiente residência,32,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,12,Roubos em ambiente residência,36,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,1,Total de roubos — geral,4753,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,2,Total de roubos — geral,5029,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,3,Total de roubos — geral,5377,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,4,Total de roubos — geral,5232,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,5,Total de roubos — geral,5742,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,6,Total de roubos — geral,5134,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,7,Total de roubos — geral,5126,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,8,Total de roubos — geral,5721,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,9,Total de roubos — geral,5987,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,10,Total de roubos — geral,6085,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,11,Total de roubos — geral,5487,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,12,Total de roubos — geral,5828,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,1,Total de furtos — geral,10041,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,2,Total de furtos — geral,10983,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,3,Total de furtos — geral,9245,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,4,Total de furtos — geral,9613,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,5,Total de furtos — geral,10147,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,6,Total de furtos — geral,8587,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,7,Total de furtos — geral,8712,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,8,Total de furtos — geral,9231,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,9,Total de furtos — geral,10200,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,10,Total de furtos — geral,9104,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,11,Total de furtos — geral,8629,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2024,12,Total de furtos — geral,9683,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,1,Roubos em ambiente residência,30,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,2,Roubos em ambiente residência,22,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,3,Roubos em ambiente residência,22,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,4,Roubos em ambiente residência,19,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,5,Roubos em ambiente residência,21,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,6,Roubos em ambiente residência,22,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,7,Roubos em ambiente residência,15,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,8,Roubos em ambiente residência,22,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,9,Roubos em ambiente residência,20,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,10,Roubos em ambiente residência,20,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,11,Roubos em ambiente residência,16,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,12,Roubos em ambiente residência,24,RESIDENCIAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,1,Total de roubos — geral,6071,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,2,Total de roubos — geral,5574,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,3,Total de roubos — geral,5692,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,4,Total de roubos — geral,4863,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,5,Total de roubos — geral,4936,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,6,Total de roubos — geral,4960,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,7,Total de roubos — geral,5084,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,8,Total de roubos — geral,4781,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,9,Total de roubos — geral,5022,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,10,Total de roubos — geral,4641,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,11,Total de roubos — geral,4829,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,12,Total de roubos — geral,5679,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,1,Total de furtos — geral,10291,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,2,Total de furtos — geral,10282,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,3,Total de furtos — geral,11863,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,4,Total de furtos — geral,8909,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,5,Total de furtos — geral,10693,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,6,Total de furtos — geral,9215,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,7,Total de furtos — geral,10291,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,8,Total de furtos — geral,9951,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,9,Total de furtos — geral,10177,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,10,Total de furtos — geral,10045,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,11,Total de furtos — geral,9940,GERAL,rj_municipios.csv
+3304557,Rio de Janeiro,RJ,2025,12,Total de furtos — geral,10049,GERAL,rj_municipios.csv
