@@ -1,0 +1,39 @@
+{
+  "script_testado": "consolidar_original.py",
+  "fase": "essencial",
+  "total": 3,
+  "aprovados": 0,
+  "resultados": [
+    {
+      "caso": "material_e_padrao_vazios",
+      "passou": false,
+      "detalhe": {
+        "material": "DISPONIVEL",
+        "padrao": "DISPONIVEL",
+        "status_relatorio": "VALIDADO"
+      }
+    },
+    {
+      "caso": "probabilidade_fora_intervalo",
+      "passou": false,
+      "detalhe": {
+        "valor": "1.25",
+        "contagem_invalida": null,
+        "status_relatorio": "VALIDADO"
+      }
+    },
+    {
+      "caso": "confianca_nao_reconhecida",
+      "passou": false,
+      "detalhe": {
+        "contagens": {
+          "ALTA": 5,
+          "MEDIA": 0,
+          "BAIXA": 0
+        },
+        "bens": 6,
+        "status_relatorio": "VALIDADO"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "reproducao_byte_a_byte": true,
+  "arquivos_comparados": [
+    "Alertas_Valores_Extremos.csv",
+    "Alinhamento_Integracao.md",
+    "Alteracoes_por_Markdown.md",
+    "Bens_Detalhados_Desenvolvimento.csv",
+    "Bens_Detalhados_Teste_Comum.csv",
+    "Dicionario_Colunas.csv",
+    "Guia_Consolidacao_Seguro_Residencial.md",
+    "LEIA-ME_Pacote.md",
+    "Mapeamento_Origem_Destino.csv",
+    "Ocorrencias_Qualidade_Dados.csv",
+    "Politica_Validacao_Dados.json",
+    "Registro_Proveniencia_Estimativas_e_Area.csv",
+    "Relatorio_Qualidade.json",
+    "Relatorio_Qualidade.md",
+    "Schema_Base_Consolidada.json",
+    "Seguro_Residencial_Desenvolvimento_Consolidado.csv",
+    "Seguro_Residencial_Teste_Comum_Consolidado.csv"
+  ],
+  "registros_proveniencia_verificados": 56988,
+  "copias_verificadas": 28450,
+  "somas_recalculadas": 13580,
+  "reservados_vazios": 14958,
+  "script_sha256": "864fc7c669d5a5d57ce9026281cddc35c9ea8b8e529f5e871ed6f44f96d823a9"
+}

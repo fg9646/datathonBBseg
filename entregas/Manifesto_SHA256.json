@@ -1,0 +1,130 @@
+{
+  "01_Tabelas_Finais/Seguro_Residencial_Desenvolvimento_Consolidado.csv": {
+    "bytes": 6372723,
+    "sha256": "6abae3ad4db868d64b95fcd9ed993f3cfc988e2c18c00b9f1fbe25bfd662b067"
+  },
+  "01_Tabelas_Finais/Seguro_Residencial_Teste_Comum_Consolidado.csv": {
+    "bytes": 349460,
+    "sha256": "861a503ea42e0098c8b61d0e76bf492c73ff31624438f383e0a8e43e6386b0e8"
+  },
+  "02_Scripts/conferir_atualizacao.py": {
+    "bytes": 5924,
+    "sha256": "755d2d36a38512d6aed4d01de77761051ad59dcf4a4a132165841b02d2ae7f16"
+  },
+  "02_Scripts/consolidar_seguro_residencial.py": {
+    "bytes": 93813,
+    "sha256": "864fc7c669d5a5d57ce9026281cddc35c9ea8b8e529f5e871ed6f44f96d823a9"
+  },
+  "02_Scripts/montar_pacote.py": {
+    "bytes": 6706,
+    "sha256": "75eed3cdc39884a915c770d95ce6fe152bcc06174ca89d524674e8daa7945c78"
+  },
+  "02_Scripts/organizar_pacote.py": {
+    "bytes": 8764,
+    "sha256": "ac3d677497653513a1df3730ae5eff30f31cdb658397bd18bf569a4308839779"
+  },
+  "02_Scripts/verificar_ajustes.py": {
+    "bytes": 10822,
+    "sha256": "a74f8aba38daeb422e93a0bb7f2733e5f72c8df3388c56edb90a7e09a6efafa4"
+  },
+  "03_Documentacao/Alinhamento_Integracao.md": {
+    "bytes": 4403,
+    "sha256": "80aab18e64a022889dff1790c55d9d0afe75aa8234c44d162e5cfc86ccfebac7"
+  },
+  "03_Documentacao/Alteracoes_por_Markdown.md": {
+    "bytes": 3372,
+    "sha256": "9373e75d7da67b55d8fc627aa2ad745b11e66332b888839a5268bc083d9fddef"
+  },
+  "03_Documentacao/Dicionario_Colunas.csv": {
+    "bytes": 80437,
+    "sha256": "65b1f3971d33c8c40925f8e7cdc60fa14b8519fcae91cb56469bcf47d23ba3d2"
+  },
+  "03_Documentacao/Guia_Consolidacao_Seguro_Residencial.md": {
+    "bytes": 37639,
+    "sha256": "3d67bcb794815950e0740563e80fe184f44006587aa39935a8c8baa8fef57f5a"
+  },
+  "03_Documentacao/LEIA-ME_Pacote.md": {
+    "bytes": 2173,
+    "sha256": "8dd23d8bb8ca081acbdecbb100d5a7a87b8e32f1cfe5c53495fdc6d0fa16bad6"
+  },
+  "03_Documentacao/Mapeamento_Origem_Destino.csv": {
+    "bytes": 9008,
+    "sha256": "4c3b9dc4ddb2942de733097845383736f525799e339d683301ea77ac31abf500"
+  },
+  "03_Documentacao/Politica_Validacao_Dados.json": {
+    "bytes": 1858,
+    "sha256": "1bba8bf79164a58b91c78ea66db786204d15ca9f83fadda63f960a7b2fda1f94"
+  },
+  "03_Documentacao/Schema_Base_Consolidada.json": {
+    "bytes": 28011,
+    "sha256": "fbdbfe54c48ad74736b8c7ca9b612e7319142905f26b247bc599091c03a2ec62"
+  },
+  "04_Qualidade/Alertas_Valores_Extremos.csv": {
+    "bytes": 2026309,
+    "sha256": "e31268d0099bfc0cfb092a6bcbe96c26d86837e5cc2b9c5027a1ef689d52c481"
+  },
+  "04_Qualidade/Ocorrencias_Qualidade_Dados.csv": {
+    "bytes": 1653750,
+    "sha256": "d83143eb8e218df3ab9a4f0f88351eca7b9d7768377e062764695ca0b93afd3b"
+  },
+  "04_Qualidade/Relatorio_Qualidade.json": {
+    "bytes": 3541775,
+    "sha256": "6c2bf39ed1c989ab43507350f0a455f572bf14b490993adf6987eb6320e1dcef"
+  },
+  "04_Qualidade/Relatorio_Qualidade.md": {
+    "bytes": 3085,
+    "sha256": "435e560c0017246c824f6ed3ff279ea8ccb76fbb966267e794d670b3fd9e373d"
+  },
+  "04_Qualidade/Resultados_Testes_Antes.json": {
+    "bytes": 805,
+    "sha256": "7cc1dc674a3f1550450f80b2ad77e8c44cea323db84a024527bf5b7834f20521"
+  },
+  "04_Qualidade/Resultados_Testes_Regressao.json": {
+    "bytes": 2440,
+    "sha256": "87d09b13150aa55b137dcede23b2e0d9fe391e5c32bd06767d24f0401004c681"
+  },
+  "04_Qualidade/Verificacao_Independente.json": {
+    "bytes": 821,
+    "sha256": "a829b5b0d468d0c9366f1e72d0effa35722df6d40ac45ba2c79268da3d535936"
+  },
+  "04_Qualidade/Verificacao_Independente.md": {
+    "bytes": 2584,
+    "sha256": "cf389fea3a38152d807852f69c8becb923efe889bccbc00763701a1d14cae352"
+  },
+  "04_Qualidade/Verificacao_Reproducibilidade.json": {
+    "bytes": 955,
+    "sha256": "9620423e2770eb971f4570623c01e2874352a24f158d641a33210671941e2748"
+  },
+  "05_Detalhes_e_Proveniencia/Bens_Detalhados_Desenvolvimento.csv": {
+    "bytes": 1422624,
+    "sha256": "0bd0d3cc5a35388a28145687f75cf9a7f36d6f0b04e6307b7a63010b9867a0f0"
+  },
+  "05_Detalhes_e_Proveniencia/Bens_Detalhados_Teste_Comum.csv": {
+    "bytes": 78411,
+    "sha256": "108b9ab3b4b89be3606cb1e46d5abc1db049b9c54519f76ffb84614bc7ca9a03"
+  },
+  "05_Detalhes_e_Proveniencia/Registro_Proveniencia_Estimativas_e_Area.csv": {
+    "bytes": 44673539,
+    "sha256": "c4e5aedc7fffe65920e09ca61e280a79b886e3ae9d7a32b9a99b3aad29cd019a"
+  },
+  "06_Referencias/Checklist_Ajustes_Pacote_Garrido.md": {
+    "bytes": 6204,
+    "sha256": "95d87f10fffa5cf7772bf508dcb1a098d3e9de18d96d0c37d54c12475b9aebbc"
+  },
+  "06_Referencias/Guia_Unificacao_Tabelas_Garrido.md": {
+    "bytes": 14434,
+    "sha256": "5b4c6a1fe4a7f9af6447da71490e2b8faf9ad9f00dc9e9e5411f8098f1c9cc86"
+  },
+  "06_Referencias/Proposta_Integracao_Base_Bussola_Motor_atualizado.md": {
+    "bytes": 30574,
+    "sha256": "8e60a8a09e2a5de1dc8ca754e9d0cf6b08fa7b9835928536fa0f2174d0d35fab"
+  },
+  "07_Historico/consolidar_original.py": {
+    "bytes": 64903,
+    "sha256": "efffb291cab826cd9a6ff2ee89db193bad6e3e982fbafb86f655bb0554fe857f"
+  },
+  "LEIA-ME.md": {
+    "bytes": 3139,
+    "sha256": "3a02e3b3866055d0ffda19654b56b0b5dbfe79c6157bda65bfa8e40ef6033a67"
+  }
+}
