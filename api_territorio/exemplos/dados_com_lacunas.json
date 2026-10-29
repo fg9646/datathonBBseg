@@ -1,0 +1,136 @@
+{
+  "observacao": "Gerado localmente pela implementação; não representa publicação na internet.",
+  "requisicao": {
+    "metodo": "POST",
+    "caminho": "/v1/enriquecimento/consulta",
+    "headers": {
+      "Content-Type": "application/json",
+      "X-API-Key": "<chave-do-consumidor>"
+    },
+    "corpo": {
+      "codigo_ibge": "2611606",
+      "consultas": [
+        {
+          "indicador": "clima.cobertura_chuva"
+        },
+        {
+          "indicador": "seguranca.furto_residencial"
+        }
+      ]
+    }
+  },
+  "http_status": 200,
+  "resposta": {
+    "versao_contrato": "1.0.0",
+    "versao_base": "territorio-2026-10-28-r1",
+    "consultado_em": "2026-10-29T00:52:08.104735+00:00",
+    "territorio": {
+      "codigo_ibge": "2611606",
+      "municipio": "Recife",
+      "uf": "PE",
+      "abrangencia": "municipio"
+    },
+    "atualizacao": {
+      "ultima_coleta_em": "2026-10-27",
+      "situacao": "SEM_FALHA_REGISTRADA"
+    },
+    "indicadores": [
+      {
+        "id": "clima.cobertura_chuva",
+        "valor": 0.5900945744151319,
+        "unidade": "fracao",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "DISPONIVEL",
+        "motivo_ausencia": null,
+        "fontes": [
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2015.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2016.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2017.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2018.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2019.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2020.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2021.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2022.zip",
+            "coletado_em": "2026-10-27"
+          },
+          {
+            "instituicao": "INMET",
+            "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2023.zip",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Dias UTC completos exigem 24 horas válidas por variável; ausências não imputadas. Rajada máxima usa todas as horas válidas, inclusive de dias incompletos; cobertura é completude diária, não filtro do máximo.",
+        "estacao": {
+          "codigo": "A301",
+          "nome": "Recife"
+        },
+        "cobertura": {
+          "numerador": 2371,
+          "denominador": 4018,
+          "proporcao": 0.5900945744151319,
+          "unidade": "dias"
+        },
+        "limitacoes": [
+          "Uma estação por município. Dias UTC completos por variável. Lacunas podem ocultar extremos. Rajada máxima observada não é vento de projeto. Estação A301: arquivos de 2024 e 2025 ausentes no acervo consultado; não substituídos por outra estação."
+        ]
+      },
+      {
+        "id": "seguranca.furto_residencial",
+        "valor": null,
+        "unidade": "ocorrencias",
+        "periodo": {
+          "inicio": "2025-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_RECORTE_RESIDENCIAL",
+        "fontes": [
+          {
+            "instituicao": "SDS-PE",
+            "url": "https://www.sds.pe.gov.br/images/ESTAT%C3%8DSTICAS/GACE/Microdados_de_CVP_-_Dispon%C3%ADvel_janeiro_de_2014_a_setembro_de_2026.xlsx",
+            "coletado_em": "2026-10-27"
+          }
+        ],
+        "metodo": "Recorte verificado nos campos publicados; classificação residencial da fonte; unidade de registro varia por órgão.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Recorte residencial não disponível nos arquivos públicos extraídos; categoria geral ou CVP não substitui esse indicador."
+        ]
+      }
+    ]
+  }
+}

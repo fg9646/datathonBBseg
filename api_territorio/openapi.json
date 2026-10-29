@@ -1,0 +1,627 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Território — enriquecimento residencial",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/v1/enriquecimento/consulta": {
+      "post": {
+        "summary": "Consulta",
+        "operationId": "consulta_v1_enriquecimento_consulta_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Pedido"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespostaConsulta"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Entrada inválida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespostaErro"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Credencial inválida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespostaErro"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Acesso negado ou HTTPS obrigatório",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespostaErro"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Município ou edição inexistente",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespostaErro"
+                }
+              }
+            }
+          },
+          "408": {
+            "description": "Tempo de recebimento excedido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespostaErro"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Corpo excessivo",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespostaErro"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Content-Type inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespostaErro"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Limite excedido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespostaErro"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Falha interna",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespostaErro"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Serviço indisponível",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespostaErro"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Atualizacao": {
+        "properties": {
+          "ultima_coleta_em": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ultima Coleta Em"
+          },
+          "situacao": {
+            "type": "string",
+            "enum": [
+              "SEM_FALHA_REGISTRADA",
+              "FALHA_NA_ULTIMA_TENTATIVA"
+            ],
+            "title": "Situacao"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "ultima_coleta_em",
+          "situacao"
+        ],
+        "title": "Atualizacao"
+      },
+      "Cobertura": {
+        "properties": {
+          "numerador": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Numerador"
+          },
+          "denominador": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Denominador"
+          },
+          "proporcao": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Proporcao"
+          },
+          "unidade": {
+            "type": "string",
+            "const": "dias",
+            "title": "Unidade"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "numerador",
+          "denominador",
+          "proporcao",
+          "unidade"
+        ],
+        "title": "Cobertura"
+      },
+      "Consulta": {
+        "properties": {
+          "indicador": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 1,
+            "title": "Indicador"
+          },
+          "periodo": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Periodo"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "indicador"
+        ],
+        "title": "Consulta"
+      },
+      "DetalheErro": {
+        "properties": {
+          "codigo": {
+            "type": "string",
+            "title": "Codigo"
+          },
+          "mensagem": {
+            "type": "string",
+            "title": "Mensagem"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "codigo",
+          "mensagem"
+        ],
+        "title": "DetalheErro"
+      },
+      "Estacao": {
+        "properties": {
+          "codigo": {
+            "type": "string",
+            "title": "Codigo"
+          },
+          "nome": {
+            "type": "string",
+            "title": "Nome"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "codigo",
+          "nome"
+        ],
+        "title": "Estacao"
+      },
+      "Fonte": {
+        "properties": {
+          "instituicao": {
+            "type": "string",
+            "title": "Instituicao"
+          },
+          "url": {
+            "type": "string",
+            "title": "Url"
+          },
+          "coletado_em": {
+            "type": "string",
+            "title": "Coletado Em"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "instituicao",
+          "url",
+          "coletado_em"
+        ],
+        "title": "Fonte"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Indicador": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "valor": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Valor"
+          },
+          "unidade": {
+            "type": "string",
+            "enum": [
+              "mm/ano",
+              "dias/ano",
+              "°C",
+              "fracao",
+              "km/h",
+              "protocolos",
+              "ocorrencias",
+              "ocorrencias/100mil_habitantes"
+            ],
+            "title": "Unidade"
+          },
+          "periodo": {
+            "$ref": "#/components/schemas/Periodo"
+          },
+          "disponibilidade": {
+            "type": "string",
+            "enum": [
+              "DISPONIVEL",
+              "AUSENTE"
+            ],
+            "title": "Disponibilidade"
+          },
+          "motivo_ausencia": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "FONTE_SEM_VALOR",
+                  "SEM_RECORTE_RESIDENCIAL",
+                  "SEM_COBERTURA_TERRITORIAL",
+                  "PERIODO_NAO_DISPONIVEL"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Motivo Ausencia"
+          },
+          "fontes": {
+            "items": {
+              "$ref": "#/components/schemas/Fonte"
+            },
+            "type": "array",
+            "title": "Fontes"
+          },
+          "metodo": {
+            "type": "string",
+            "title": "Metodo"
+          },
+          "estacao": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Estacao"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "cobertura": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Cobertura"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limitacoes": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Limitacoes"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "valor",
+          "unidade",
+          "periodo",
+          "disponibilidade",
+          "motivo_ausencia",
+          "fontes",
+          "metodo",
+          "estacao",
+          "cobertura",
+          "limitacoes"
+        ],
+        "title": "Indicador"
+      },
+      "Pedido": {
+        "properties": {
+          "codigo_ibge": {
+            "type": "string",
+            "pattern": "^[0-9]{7}$",
+            "title": "Codigo Ibge"
+          },
+          "versao_base": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 128,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Versao Base"
+          },
+          "consultas": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/Consulta"
+                },
+                "type": "array",
+                "maxItems": 100,
+                "minItems": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Consultas"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "codigo_ibge"
+        ],
+        "title": "Pedido"
+      },
+      "Periodo": {
+        "properties": {
+          "inicio": {
+            "type": "string",
+            "title": "Inicio"
+          },
+          "fim": {
+            "type": "string",
+            "title": "Fim"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "inicio",
+          "fim"
+        ],
+        "title": "Periodo"
+      },
+      "RespostaConsulta": {
+        "properties": {
+          "versao_contrato": {
+            "type": "string",
+            "const": "1.0.0",
+            "title": "Versao Contrato"
+          },
+          "versao_base": {
+            "type": "string",
+            "title": "Versao Base"
+          },
+          "consultado_em": {
+            "type": "string",
+            "title": "Consultado Em"
+          },
+          "territorio": {
+            "$ref": "#/components/schemas/Territorio"
+          },
+          "atualizacao": {
+            "$ref": "#/components/schemas/Atualizacao"
+          },
+          "indicadores": {
+            "items": {
+              "$ref": "#/components/schemas/Indicador"
+            },
+            "type": "array",
+            "title": "Indicadores"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "versao_contrato",
+          "versao_base",
+          "consultado_em",
+          "territorio",
+          "atualizacao",
+          "indicadores"
+        ],
+        "title": "RespostaConsulta"
+      },
+      "RespostaErro": {
+        "properties": {
+          "erro": {
+            "$ref": "#/components/schemas/DetalheErro"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "erro"
+        ],
+        "title": "RespostaErro"
+      },
+      "Territorio": {
+        "properties": {
+          "codigo_ibge": {
+            "type": "string",
+            "pattern": "^[0-9]{7}$",
+            "title": "Codigo Ibge"
+          },
+          "municipio": {
+            "type": "string",
+            "title": "Municipio"
+          },
+          "uf": {
+            "type": "string",
+            "title": "Uf"
+          },
+          "abrangencia": {
+            "type": "string",
+            "enum": [
+              "municipio",
+              "distrito_federal"
+            ],
+            "title": "Abrangencia"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "codigo_ibge",
+          "municipio",
+          "uf",
+          "abrangencia"
+        ],
+        "title": "Territorio"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    },
+    "securitySchemes": {
+      "APIKeyHeader": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key"
+      }
+    }
+  }
+}

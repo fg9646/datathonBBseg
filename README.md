@@ -27,7 +27,7 @@ Os resultados do motor permanecem reservados na v2. A preparação dos dados nã
 
 ## Base de consulta territorial
 
-A preparação do ponto 4 da API Território está em [api_territorio/README.md](api_territorio/README.md): SQLite regenerável a partir da edição congelada, com consulta local por município/edição e testes. Essa frente é separada do pacote residencial em `entregas/`. O serviço HTTP ainda não foi implementado.
+A base SQLite da API Território está em [api_territorio/README.md](api_territorio/README.md). O endpoint autenticado, HTTPS, instalação e testes do ponto 5 estão em [api_territorio/HTTP.md](api_territorio/HTTP.md). A construção não exige serviços pagos; publicação externa ainda pendente. Essa frente é separada do pacote residencial em `entregas/`, que permanece preservado.
 
 ## Uso de IA e documentação
 

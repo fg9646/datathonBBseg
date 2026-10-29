@@ -1,6 +1,6 @@
 # Território — base de consulta (ponto 4)
 
-**Entregue:** importação validada em SQLite e consultas locais indexadas por edição, município, indicador e período. O endpoint HTTP, as chaves de acesso e a hospedagem são o ponto 5 em diante e ainda não foram implementados. Esta camada não altera o motor, a Bússola ou o pacote em `entregas/`.
+**Entregue no ponto 4:** importação validada em SQLite e consultas locais indexadas por edição, município, indicador e período. O ponto 5 acrescentou endpoint HTTP e autenticação, documentados em [HTTP.md](HTTP.md). A hospedagem continua pendente. Esta camada não altera o motor, a Bússola ou o pacote em `entregas/`.
 
 ## Preparar e conferir
 
@@ -25,7 +25,7 @@ O comando também aceita `--edicao`, `--destino` e `--cadastro`. O destino não 
 | `indicadores` | 180 registros com valores ou ausências, períodos, métodos, estações, cobertura, limitações e fontes resolvidas. Índice composto para consulta. |
 | `configuracao` | Identificação da edição ativa. |
 
-O serviço futuro usará `Repositorio.consultar`, desta camada, com código IBGE e, opcionalmente, edição e lista de consultas no formato do contrato. O resultado já organiza os dados e metadados previstos no contrato 1.0.0, mas a função local não é um serviço HTTP e não autentica consumidores.
+O endpoint usa `Repositorio.consultar`, desta camada, com código IBGE e, opcionalmente, edição e lista de consultas no formato do contrato. O resultado organiza os dados e metadados previstos no contrato 1.0.0. A função local permanece separada do serviço HTTP e da autenticação.
 
 As consultas abrem o SQLite em modo somente leitura. Não leem Excel, CSVs de origem, JSONs de referência ou fontes externas durante a consulta. Não contêm dados individuais de clientes ou imóveis.
 
@@ -45,7 +45,7 @@ Para distinguir município válido sem cobertura de código inexistente, foi col
 
 Esse cadastro pertence à preparação operacional e não altera a edição congelada de clima, desastres e criminalidade. Só nome, código e UF foram selecionados. Ele também fica armazenado por edição no banco para preservar consultas históricas. A consulta não chama o IBGE em tempo real. Códigos novos ou mudanças cadastrais posteriores exigirão revisão do cadastro e nova edição operacional, sem sobrescrever a origem registrada para a edição atual.
 
-## Tratamento de erros para o serviço futuro
+## Tratamento de erros no serviço HTTP
 
 | Exceção da camada | Mapeamento previsto pelo contrato |
 |---|---|
@@ -54,10 +54,10 @@ Esse cadastro pertence à preparação operacional e não altera a edição cong
 | `EdicaoInexistente` | HTTP 404, `EDICAO_INEXISTENTE`. |
 | `BaseIndisponivel` | Falha técnica; HTTP 503, sem transformar em risco zero. |
 
-O ponto 5 fará esse mapeamento HTTP e adicionará autenticação. A camada usa parâmetros SQL e consultas somente leitura. O arquivo SQLite deve ser publicado apenas para os backends autorizados, sem expor um caminho de banco como parâmetro de requisição.
+O ponto 5 implementa esse mapeamento HTTP e a autenticação. A camada usa parâmetros SQL e consultas somente leitura. O arquivo SQLite deve ser acessível somente ao serviço autorizado, sem expor um caminho de banco como parâmetro de requisição.
 
 ## Evidência de aceite
 
 Nesta entrega, 16 testes passaram. Eles cobrem os 180 registros, SP e taxas, Recife/Goiânia, DF, município válido sem cobertura versus inexistente, períodos ausentes, entradas inválidas, edição inexistente, base indisponível ou com JSON corrompido, ausência de rede/arquivos externos na consulta, importação idempotente, rejeição de snapshot adulterado, bloqueio de sobrescrita, consulta por edição e preservação da edição ativa, índice SQL e precisão das datas. Os testes não exigem rede nem bibliotecas externas e usam bancos temporários.
 
-Depois do ponto 4, o próximo passo é construir o serviço HTTP conforme o contrato. Ainda não há URL para o Pipo conectar.
+O serviço HTTP está implementado, com detalhes de inicialização e segurança em [HTTP.md](HTTP.md). Ainda não há URL externa publicada para o Pipo conectar.

@@ -1,0 +1,356 @@
+{
+  "observacao": "Gerado localmente pela implementação; não representa publicação na internet.",
+  "requisicao": {
+    "metodo": "POST",
+    "caminho": "/v1/enriquecimento/consulta",
+    "headers": {
+      "Content-Type": "application/json",
+      "X-API-Key": "<chave-do-consumidor>"
+    },
+    "corpo": {
+      "codigo_ibge": "3509502"
+    }
+  },
+  "http_status": 200,
+  "resposta": {
+    "versao_contrato": "1.0.0",
+    "versao_base": "territorio-2026-10-28-r1",
+    "consultado_em": "2026-10-29T00:52:08.108970+00:00",
+    "territorio": {
+      "codigo_ibge": "3509502",
+      "municipio": "Campinas",
+      "uf": "SP",
+      "abrangencia": "municipio"
+    },
+    "atualizacao": {
+      "ultima_coleta_em": null,
+      "situacao": "SEM_FALHA_REGISTRADA"
+    },
+    "indicadores": [
+      {
+        "id": "clima.chuva_normal",
+        "valor": null,
+        "unidade": "mm/ano",
+        "periodo": {
+          "inicio": "1991-01-01",
+          "fim": "2020-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "clima.cobertura_chuva",
+        "valor": null,
+        "unidade": "fracao",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "clima.cobertura_rajada",
+        "valor": null,
+        "unidade": "fracao",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "clima.dias_chuva_ge50_normal",
+        "valor": null,
+        "unidade": "dias/ano",
+        "periodo": {
+          "inicio": "1991-01-01",
+          "fim": "2020-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "clima.dias_minima_le10_normal",
+        "valor": null,
+        "unidade": "dias/ano",
+        "periodo": {
+          "inicio": "1991-01-01",
+          "fim": "2020-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "clima.maxima_media_normal",
+        "valor": null,
+        "unidade": "°C",
+        "periodo": {
+          "inicio": "1991-01-01",
+          "fim": "2020-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "clima.minima_media_normal",
+        "valor": null,
+        "unidade": "°C",
+        "periodo": {
+          "inicio": "1991-01-01",
+          "fim": "2020-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "clima.rajada_max_observada",
+        "valor": null,
+        "unidade": "km/h",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "desastres.protocolos_alagamento",
+        "valor": null,
+        "unidade": "protocolos",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "desastres.protocolos_chuva_intensa",
+        "valor": null,
+        "unidade": "protocolos",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "desastres.protocolos_enxurrada",
+        "valor": null,
+        "unidade": "protocolos",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "desastres.protocolos_granizo",
+        "valor": null,
+        "unidade": "protocolos",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "desastres.protocolos_inundacao",
+        "valor": null,
+        "unidade": "protocolos",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "desastres.protocolos_vendaval",
+        "valor": null,
+        "unidade": "protocolos",
+        "periodo": {
+          "inicio": "2015-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "seguranca.furto_residencial",
+        "valor": null,
+        "unidade": "ocorrencias",
+        "periodo": {
+          "inicio": "2025-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "seguranca.roubo_residencial",
+        "valor": null,
+        "unidade": "ocorrencias",
+        "periodo": {
+          "inicio": "2025-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "seguranca.taxa_furto_residencial",
+        "valor": null,
+        "unidade": "ocorrencias/100mil_habitantes",
+        "periodo": {
+          "inicio": "2025-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      },
+      {
+        "id": "seguranca.taxa_roubo_residencial",
+        "valor": null,
+        "unidade": "ocorrencias/100mil_habitantes",
+        "periodo": {
+          "inicio": "2025-01-01",
+          "fim": "2025-12-31"
+        },
+        "disponibilidade": "AUSENTE",
+        "motivo_ausencia": "SEM_COBERTURA_TERRITORIAL",
+        "fontes": [],
+        "metodo": "Município válido no cadastro IBGE, fora da cobertura desta edição.",
+        "estacao": null,
+        "cobertura": null,
+        "limitacoes": [
+          "Nenhum valor estimado a partir de vizinhos ou médias estaduais."
+        ]
+      }
+    ]
+  }
+}

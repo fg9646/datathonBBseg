@@ -1,6 +1,6 @@
 # Território — proposta da API de enriquecimento residencial
 
-**Status:** pontos 1 a 4 concluídos: contrato documental 1.0.0, edição `territorio-2026-10-28-r1` congelada e camada local de consulta em SQLite preparada. Pontos 5 a 10 pendentes. Serviço HTTP, autenticação e integração ao motor/Bússola ainda não implementados. Hospedagem, endereço do servidor, limite numérico de chamadas e responsáveis nominais permanecem pendentes.
+**Status:** pontos 1 a 5 concluídos na feature da API: contrato 1.0.0, edição congelada, SQLite e endpoint HTTP autenticado implementados. Pontos 6 a 10 permanecem pendentes. Serviço testado localmente, ainda sem URL externa, credenciais de produção ou integração ao motor/Bússola. A construção não exige serviços pagos; hospedagem deverá ser gratuita e ainda será definida.
 
 ## 1. Objetivo e limites
 
@@ -72,6 +72,8 @@ Esta proposta define o comportamento esperado. Não estabelece ainda uma URL ope
 Não haverá um único ano de referência para toda a resposta: normais climáticas, séries recentes, desastres e criminalidade têm períodos diferentes.
 
 CEP fictício, rua e coordenadas mascaradas não serão usados para localizar o imóvel.
+
+Campos opcionais podem ser omitidos ou preenchidos com o tipo previsto; `null` explícito não solicita valor padrão e é rejeitado. Campos desconhecidos e JSON com chaves duplicadas também são rejeitados.
 
 ## 6. Catálogo inicial de indicadores
 
@@ -204,7 +206,7 @@ A equipe confirmou a proposta geral e Pipo confirmou as definições do ponto 1.
 
 Este documento registra a proposta e as recomendações para alinhamento. A escolha de responsáveis e as decisões técnicas pendentes serão concluídas com a equipe antes da implementação.
 
-**O ponto 4 implementa somente a camada local de dados; o serviço HTTP ainda não existe. Motor e Bússola permanecem sem alterações nesta frente.**
+**O ponto 4 entrega a camada local de dados e o ponto 5 implementa o endpoint e a autenticação. Publicação e integração permanecem pendentes. Motor e Bússola seguem sem alterações nesta frente.**
 
 ## 13. Fechamento técnico e controle de mudanças
 
@@ -352,4 +354,17 @@ O cadastro auxiliar da API de Localidades do IBGE distingue código inexistente 
 
 A preparação recusa origem divergente para uma edição já importada. A primeira edição torna-se ativa; importações posteriores não alteram a ativa silenciosamente. O repositório de consulta abre o banco somente para leitura. Documentação, comandos de preparação, testes e limites estão em `api_territorio/README.md`.
 
-Não há endpoint, chave de acesso emitida ou URL operacional. Isso pertence ao ponto 5 e às etapas seguintes. Esta entrega não altera `entregas/`, o motor ou a Bússola.
+O ponto 5 acrescenta a implementação HTTP descrita abaixo. Não há URL externa nem chave de produção emitida nesta entrega. `entregas/`, o motor e a Bússola permanecem preservados.
+
+## 19. Endpoint autenticado implementado — ponto 5 concluído
+
+Na `feat/api-territorio`, `POST /v1/enriquecimento/consulta` recebe e responde JSON conforme o contrato 1.0.0. Há validação de entrada e saída, mapeamento de erros e preservação dos 180 registros e das 27 ausências. Exemplos gerados pela implementação e esquema OpenAPI ficam em `api_territorio/exemplos/` e `api_territorio/openapi.json`.
+
+- **Autenticação:** cabeçalho `X-API-Key`, chave aleatória exclusiva por consumidor e comparação constante de seu hash. O servidor guarda hashes em variável de ambiente, sem chave padrão. Credencial ausente/incorreta retorna 401; consumidor sem permissão, 403. Nenhum segredo de produção foi publicado.
+- **Transporte:** HTTPS obrigatório fora do modo local de desenvolvimento. O inicializador aceita TLS com certificado ou proxy HTTPS com IPs confiáveis explícitos, sem curingas. HTTP local exige autorização explícita e endereço loopback.
+- **Limite inicial:** 60 chamadas/minuto por consumidor, configurável e em memória de uma única instância/worker; 429 inclui `Retry-After`. A hospedagem e sua capacidade serão avaliadas no ponto 7, sem serviço pago de controle de chamadas.
+- **Validação operacional:** até 16 KiB de JSON sem compressão e 100 pares indicador/período por chamada; rejeições adicionais 408 (`TEMPO_REQUISICAO_EXCEDIDO`), 413 (`REQUISICAO_MUITO_GRANDE`) e 415 (`TIPO_CONTEUDO_INVALIDO`). Método/rota inválidos usam 405/404 com `METODO_NAO_PERMITIDO`/`ROTA_INEXISTENTE`. Respostas de erro da aplicação preservam `erro.codigo` e `erro.mensagem`.
+- **Verificação do serviço:** `/health` sem dados territoriais; `/ready` autenticado verifica a base. Documentação web não fica exposta; OpenAPI é entregue como arquivo.
+- **Gratuidade:** Python/SQLite, FastAPI e Uvicorn, sem licença paga, provedor externo de autenticação ou cobrança por consulta. Nenhuma infraestrutura paga foi provisionada. A publicação externa deverá usar opção gratuita ainda a definir.
+
+Instalação, geração segura de chaves, inicialização, limites e testes estão em `api_territorio/HTTP.md`. A edição congelada e o pacote em `entregas/` permanecem inalterados. A validação de aceite com a equipe, publicação e integração continuam nos pontos 6 a 9; implementar o endpoint não significa que ele já esteja publicado.

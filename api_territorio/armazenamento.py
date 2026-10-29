@@ -200,7 +200,7 @@ class Repositorio:
         if consultas is not None and (not isinstance(consultas, list) or not consultas):
             raise EntradaInvalida('Consultas deve ser lista não vazia.')
         try:
-            with closing(sqlite3.connect(self.caminho.as_uri() + '?mode=ro', uri=True)) as db:
+            with closing(sqlite3.connect(self.caminho.as_uri() + '?mode=ro', uri=True, timeout=1.0)) as db:
                 db.row_factory = sqlite3.Row
                 if db.execute('PRAGMA user_version').fetchone()[0] != 1:
                     raise BaseIndisponivel('Esquema operacional incompatível.')
