@@ -35,3 +35,6 @@ Desktop.ini
 *.swp
 
 # CSVs, ZIPs e documentação versionados são mantidos.
+
+# Base operacional regenerável da API Território.
+/api_territorio/var/

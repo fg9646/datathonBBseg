@@ -1,0 +1,9 @@
+{
+  "fonte": "IBGE — API de Localidades",
+  "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios?orderBy=id",
+  "coletado_em": "2026-10-29T00:29:58.417020+00:00",
+  "quantidade": 5571,
+  "sha256_resposta_json_original": "86ecdccdf97d72e7e5e46f0854cfcea8bacc28154cc1bc4ed0e6110e3a6c9c02",
+  "sha256_cadastro_normalizado": "428f6d7cee40333b539e9b93e2490f3836744927a6bb985f3ce8c8f217e6f952",
+  "transformacao": "Selecionados id, nome e UF; código como texto; Brasília/DF explicitado. Cadastro auxiliar; não altera a edição congelada dos indicadores."
+}

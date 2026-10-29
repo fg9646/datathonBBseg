@@ -25,6 +25,10 @@ python 02_Scripts/consolidar_seguro_residencial.py --entrada originais --saida r
 
 Os resultados do motor permanecem reservados na v2. A preparação dos dados não comprova execução do motor nem substitui os templates oficiais de resultado e coberturas.
 
+## Base de consulta territorial
+
+A preparação do ponto 4 da API Território está em [api_territorio/README.md](api_territorio/README.md): SQLite regenerável a partir da edição congelada, com consulta local por município/edição e testes. Essa frente é separada do pacote residencial em `entregas/`. O serviço HTTP ainda não foi implementado.
+
 ## Uso de IA e documentação
 
 ChatGPT foi utilizado como apoio à consolidação, scripts, documentação e verificações técnicas desta camada de dados. As limitações, origens e transformações estão no pacote. A equipe deve compreender, revisar e defender a entrega. Novas alterações devem registrar fonte, método, versão e evidências.
