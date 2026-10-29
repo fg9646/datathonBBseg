@@ -1,0 +1,58 @@
+{
+  "etapa": 7,
+  "estado": "PREPARADO_SEM_DEPLOY_SEM_MERGE",
+  "registrado_em_utc": "2026-10-29T04:28:58.287813+00:00",
+  "data_de_referencia_sao_paulo": "2026-10-29",
+  "branch": "feat/api-territorio",
+  "commit_base": "b3ab8117ebb9ef40c335ba88ed2765f2fefca51e",
+  "python": "3.12.14",
+  "sha256_arquivos_testados": {
+    "api_territorio/render.yaml": "996367a3e373a8a6540c40e587368b4dd352ce15602f757bbb0eb91cf57d2df9",
+    "api_territorio/servidor_render.py": "343f7e69b04fcfbdce030ca39ecc0736647451dd67f84fb1e90e648f76b6bef2",
+    "tests/test_render_territorio.py": "66e0e807f7e5fbe800835249cae832c897c3cdc89de8824f317f95a8aa2fd24e"
+  },
+  "testes_locais": {
+    "executados": 53,
+    "aprovados": 53,
+    "falhas": 0,
+    "erros": 0,
+    "ignorados": 0,
+    "novos_do_perfil_render": 10,
+    "comando": "python -m unittest discover -s tests -v"
+  },
+  "blueprint": {
+    "resultado": "VALIDO_NO_SCHEMA_OFICIAL",
+    "schema_url": "https://render.com/schema/render.yaml.json",
+    "schema_sha256": "8a3fb8da6b4f55fe686fbefa790e011d3dd7895f013f355953c572a21ab6494a",
+    "validador_jsonschema": "4.26.0",
+    "validador_instalado_no_projeto": false,
+    "validacao_no_painel_render": false
+  },
+  "pip_check": "No broken requirements found.",
+  "integridade_edicao": {
+    "resultado": "CONFERIDA",
+    "arquivos": 21,
+    "indicadores": 180
+  },
+  "arvores_git_preservadas": {
+    "dados/edicoes/territorio-2026-10-28-r1": "df17da987013eff027e352788a98cb68b1646f57",
+    "entregas": "3b702720e8dde39616d37f97c83bc4d2ddd06768"
+  },
+  "entregas": {
+    "itens_manifesto_conferidos": 32,
+    "zip_sha256": "5039ab35224fe2e209f814166847dbf4cf0b041ffecac98dbd71dcb53a180c3f"
+  },
+  "novas_dependencias_da_api": false,
+  "servicos_criados": 0,
+  "segredos_de_producao_emitidos": false,
+  "verificacoes_externas_realizadas": false,
+  "premissa_de_seguranca": "Perfil exclusivo para origem isolada pelo Render Free, com HTTPS na borda; metadados/Host nao provam origem. Nao usar fora da plataforma.",
+  "pendencias": [
+    "Autorizacao GitHub do Garrido",
+    "Revisao e merge autorizado da preparacao",
+    "Configuracao da conta e plano Free sem pagamento",
+    "Emissao/entrega segura das credenciais",
+    "Autorizacao para criar servico",
+    "URL e validacao real de HTTPS, headers, base, reinicio e hibernacao"
+  ]
+}

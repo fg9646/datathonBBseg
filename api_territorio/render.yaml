@@ -1,0 +1,24 @@
+{
+  "services": [
+    {
+      "type": "web",
+      "name": "api-territorio",
+      "runtime": "python",
+      "plan": "free",
+      "branch": "main",
+      "numInstances": 1,
+      "autoDeployTrigger": "off",
+      "buildCommand": "python -m pip install -r api_territorio/requirements.txt",
+      "startCommand": "python -m api_territorio.servidor_render",
+      "healthCheckPath": "/health",
+      "envVars": [
+        {"key": "PYTHON_VERSION", "value": "3.12.14"},
+        {"key": "TERRITORIO_CONSUMIDORES", "sync": false},
+        {"key": "TERRITORIO_LIMITE_MINUTO", "value": "60"},
+        {"key": "TERRITORIO_HTTP_LOCAL", "value": "0"},
+        {"key": "FORWARDED_ALLOW_IPS", "value": ""}
+      ]
+    }
+  ],
+  "previews": {"generation": "off"}
+}
