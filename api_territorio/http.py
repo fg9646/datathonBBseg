@@ -2,148 +2,43 @@
 import asyncio
 import json
 import logging
-from typing import Annotated, Literal
+from typing import Annotated, Any
 
 from fastapi import FastAPI, Request, Security, HTTPException
 from fastapi.exceptions import RequestValidationError
 from fastapi.security import APIKeyHeader
-from pydantic import BaseModel, ConfigDict, Field, model_validator
 from starlette.concurrency import run_in_threadpool
 from starlette.exceptions import HTTPException as StarletteHTTPException
 from starlette.responses import JSONResponse
 
-from .armazenamento import Repositorio, EntradaInvalida, MunicipioInexistente, EdicaoInexistente, BaseIndisponivel, _periodo
+from .armazenamento import (
+    Repositorio, EntradaInvalida, MunicipioInexistente, EdicaoInexistente, BaseIndisponivel,
+)
+from .modelos import Pedido, RespostaConsulta, RespostaErro
+from .validadores import MAX_CONSULTAS
 from .seguranca import Configuracao, LimiteConsumidor, identificar, loopback
 
 ROTA = '/v1/enriquecimento/consulta'
 MAX_CORPO = 16384
-MAX_CONSULTAS = 100
 TEMPO_CORPO = 3.0
 TEMPO_CONSULTA = 2.0
 logger = logging.getLogger('territorio')
 
 
-def erro(status, codigo, mensagem, headers=None):
-    return JSONResponse({'erro': {'codigo': codigo, 'mensagem': mensagem}}, status_code=status, headers={'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', **(headers or {})})
+def erro(status: int, codigo: str, mensagem: str, headers: dict[str, str] | None = None) -> JSONResponse:
+    return JSONResponse(
+        {'erro': {'codigo': codigo, 'mensagem': mensagem}}, status_code=status,
+        headers={'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', **(headers or {})},
+    )
 
 
-class Modelo(BaseModel):
-    model_config = ConfigDict(extra='forbid', strict=True)
-
-
-class Periodo(Modelo):
-    inicio: str
-    fim: str
-
-    @model_validator(mode='after')
-    def validar(self):
-        _periodo(self.model_dump())
-        return self
-
-
-class Consulta(Modelo):
-    indicador: Annotated[str, Field(min_length=1, max_length=128)]
-    periodo: Periodo | None = None
-
-    @model_validator(mode='before')
-    @classmethod
-    def sem_null(cls, data):
-        if isinstance(data, dict) and data.get('periodo', False) is None:
-            raise ValueError('Período deve ser omitido ou informado por completo.')
-        return data
-
-
-class Pedido(Modelo):
-    codigo_ibge: Annotated[str, Field(pattern=r'^[0-9]{7}$')]
-    versao_base: Annotated[str, Field(min_length=1, max_length=128)] | None = None
-    consultas: Annotated[list[Consulta], Field(min_length=1, max_length=MAX_CONSULTAS)] | None = None
-
-    @model_validator(mode='before')
-    @classmethod
-    def sem_null(cls, data):
-        if isinstance(data, dict) and any(k in data and data[k] is None for k in ['versao_base', 'consultas']):
-            raise ValueError('Campos opcionais devem ser omitidos ou preenchidos.')
-        return data
-
-
-class Fonte(Modelo):
-    instituicao: str
-    url: str
-    coletado_em: str
-
-
-class Estacao(Modelo):
-    codigo: str
-    nome: str
-
-
-class Cobertura(Modelo):
-    numerador: Annotated[int, Field(ge=0)]
-    denominador: Annotated[int, Field(gt=0)]
-    proporcao: Annotated[float, Field(ge=0, le=1)]
-    unidade: Literal['dias']
-
-
-class Indicador(Modelo):
-    id: str
-    valor: int | float | None
-    unidade: Literal['mm/ano', 'dias/ano', '°C', 'fracao', 'km/h', 'protocolos', 'ocorrencias', 'ocorrencias/100mil_habitantes']
-    periodo: Periodo
-    disponibilidade: Literal['DISPONIVEL', 'AUSENTE']
-    motivo_ausencia: Literal['FONTE_SEM_VALOR', 'SEM_RECORTE_RESIDENCIAL', 'SEM_COBERTURA_TERRITORIAL', 'PERIODO_NAO_DISPONIVEL'] | None
-    fontes: list[Fonte]
-    metodo: str
-    estacao: Estacao | None
-    cobertura: Cobertura | None
-    limitacoes: list[str]
-
-    @model_validator(mode='after')
-    def ausencia_coerente(self):
-        if self.valor is None:
-            if self.disponibilidade != 'AUSENTE' or self.motivo_ausencia is None:
-                raise ValueError('Ausência sem motivo explícito.')
-        elif self.disponibilidade != 'DISPONIVEL' or self.motivo_ausencia is not None:
-            raise ValueError('Valor presente com estado incompatível.')
-        return self
-
-
-class Territorio(Modelo):
-    codigo_ibge: Annotated[str, Field(pattern=r'^[0-9]{7}$')]
-    municipio: str
-    uf: str
-    abrangencia: Literal['municipio', 'distrito_federal']
-
-
-class Atualizacao(Modelo):
-    ultima_coleta_em: str | None
-    situacao: Literal['SEM_FALHA_REGISTRADA', 'FALHA_NA_ULTIMA_TENTATIVA']
-
-
-class RespostaConsulta(Modelo):
-    versao_contrato: Literal['1.0.0']
-    versao_base: str
-    consultado_em: str
-    territorio: Territorio
-    atualizacao: Atualizacao
-    indicadores: list[Indicador]
-
-
-class DetalheErro(Modelo):
-    codigo: str
-    mensagem: str
-
-
-class RespostaErro(Modelo):
-    erro: DetalheErro
-
-
-def _objeto_sem_duplicatas(pairs):
-    result = {}
-    for key, value in pairs:
-        if key in result:
+def _objeto_sem_duplicatas(pares: list[tuple[str, Any]]) -> dict[str, Any]:
+    resultado = {}
+    for chave, valor in pares:
+        if chave in resultado:
             raise ValueError('Campo JSON duplicado.')
-        result[key] = value
-    return result
+        resultado[chave] = valor
+    return resultado
 
 
 class ProtecoesHTTP:
@@ -173,10 +68,20 @@ class ProtecoesHTTP:
             headers = {}
             for k, v in scope['headers']:
                 headers.setdefault(k.lower(), []).append(v.decode('latin-1'))
-            if len(headers.get(b'content-type', [])) != 1 or headers[b'content-type'][0].split(';')[0].strip().lower() != 'application/json' or headers.get(b'content-encoding', ['identity']) != ['identity']:
-                return await erro(415, 'TIPO_CONTEUDO_INVALIDO', 'Envie JSON sem compressão com Content-Type application/json.')(scope, receive, seguro)
+            tipos = headers.get(b'content-type', [])
+            tipo_json = len(tipos) == 1 and tipos[0].split(';')[0].strip().lower() == 'application/json'
+            sem_compressao = headers.get(b'content-encoding', ['identity']) == ['identity']
+            if not tipo_json or not sem_compressao:
+                resposta = erro(
+                    415, 'TIPO_CONTEUDO_INVALIDO',
+                    'Envie JSON sem compressão com Content-Type application/json.',
+                )
+                return await resposta(scope, receive, seguro)
             lengths = headers.get(b'content-length', [])
-            if lengths and (len(lengths) != 1 or not lengths[0].isascii() or not lengths[0].isdigit() or len(lengths[0]) > 9):
+            if lengths and (
+                len(lengths) != 1 or not lengths[0].isascii()
+                or not lengths[0].isdigit() or len(lengths[0]) > 9
+            ):
                 return await erro(400, 'ENTRADA_INVALIDA', 'Content-Length inválido.')(scope, receive, seguro)
             declared = int(lengths[0]) if lengths else None
             if declared is not None and declared > MAX_CORPO:
@@ -222,24 +127,33 @@ class ProtecoesHTTP:
         return await self.app(scope, receive, seguro)
 
 
-def criar_app(config=None, repositorio=None):
+def criar_app(config: Configuracao | None = None, repositorio: Repositorio | None = None) -> FastAPI:
     config = config if config is not None else Configuracao.ambiente()
     repo = repositorio if repositorio is not None else Repositorio(config.base)
     limite = LimiteConsumidor(config.limite_por_minuto)
-    app = FastAPI(title='Território — enriquecimento residencial', version='1.0.0', docs_url=None, redoc_url=None, openapi_url=None, redirect_slashes=False)
+    app = FastAPI(
+        title='Território — enriquecimento residencial', version='1.0.0',
+        docs_url=None, redoc_url=None, openapi_url=None, redirect_slashes=False,
+    )
     app.add_middleware(ProtecoesHTTP, config=config)
     chave_header = APIKeyHeader(name='X-API-Key', auto_error=False)
 
-    async def autenticar(request: Request, chave: Annotated[str | None, Security(chave_header)]):
-        consumer = identificar(chave, config.consumidores) if len(request.headers.getlist('x-api-key')) == 1 else None
-        if consumer is None:
-            raise HTTPException(401, detail={'codigo': 'CREDENCIAL_INVALIDA', 'mensagem': 'Credencial ausente ou inválida.'}, headers={'WWW-Authenticate': 'ApiKey'})
-        if not consumer.permitido:
+    async def autenticar(request: Request, chave: Annotated[str | None, Security(chave_header)]) -> str:
+        consumidor = identificar(chave, config.consumidores) if len(request.headers.getlist('x-api-key')) == 1 else None
+        if consumidor is None:
+            raise HTTPException(
+                401, detail={'codigo': 'CREDENCIAL_INVALIDA', 'mensagem': 'Credencial ausente ou inválida.'},
+                headers={'WWW-Authenticate': 'ApiKey'},
+            )
+        if not consumidor.permitido:
             raise HTTPException(403, detail={'codigo': 'ACESSO_NEGADO', 'mensagem': 'Consumidor sem autorização.'})
-        retry = limite.consumir(consumer.nome)
-        if retry is not None:
-            raise HTTPException(429, detail={'codigo': 'LIMITE_EXCEDIDO', 'mensagem': 'Limite de consultas excedido.'}, headers={'Retry-After': str(retry)})
-        return consumer.nome
+        espera = limite.consumir(consumidor.nome)
+        if espera is not None:
+            raise HTTPException(
+                429, detail={'codigo': 'LIMITE_EXCEDIDO', 'mensagem': 'Limite de consultas excedido.'},
+                headers={'Retry-After': str(espera)},
+            )
+        return consumidor.nome
 
     @app.exception_handler(RequestValidationError)
     async def validacao(request, exc):
@@ -258,7 +172,7 @@ def criar_app(config=None, repositorio=None):
         logger.error('Falha interna na consulta territorial; verifique o serviço.')
         return erro(500, 'ERRO_INTERNO', 'Falha interna do serviço.')
 
-    async def consultar_dados(**kwargs):
+    async def consultar_dados(**kwargs: Any) -> dict[str, Any] | JSONResponse:
         try:
             return await asyncio.wait_for(run_in_threadpool(repo.consultar, **kwargs), timeout=TEMPO_CONSULTA)
         except EntradaInvalida:
@@ -270,7 +184,17 @@ def criar_app(config=None, repositorio=None):
         except (BaseIndisponivel, asyncio.TimeoutError):
             return erro(503, 'SERVICO_INDISPONIVEL', 'Base de consulta temporariamente indisponível.', {'Retry-After': '1'})
 
-    respostas_erro = {status: {'model': RespostaErro, 'description': description} for status, description in {400: 'Entrada inválida', 401: 'Credencial inválida', 403: 'Acesso negado ou HTTPS obrigatório', 404: 'Município ou edição inexistente', 408: 'Tempo de recebimento excedido', 413: 'Corpo excessivo', 415: 'Content-Type inválido', 429: 'Limite excedido', 500: 'Falha interna', 503: 'Serviço indisponível'}.items()}
+    descricoes_erro = {
+        400: 'Entrada inválida', 401: 'Credencial inválida',
+        403: 'Acesso negado ou HTTPS obrigatório', 404: 'Município ou edição inexistente',
+        408: 'Tempo de recebimento excedido', 413: 'Corpo excessivo',
+        415: 'Content-Type inválido', 429: 'Limite excedido',
+        500: 'Falha interna', 503: 'Serviço indisponível',
+    }
+    respostas_erro = {
+        status: {'model': RespostaErro, 'description': descricao}
+        for status, descricao in descricoes_erro.items()
+    }
 
     @app.post(ROTA, response_model=RespostaConsulta, responses=respostas_erro)
     async def consulta(payload: Pedido, consumidor: Annotated[str, Security(autenticar)]):

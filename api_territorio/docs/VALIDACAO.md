@@ -5,9 +5,11 @@
 ## Referência e resultados atuais
 
 <!-- RESULTADO_ATUAL -->
-Execução em `2026-10-29T05:35:35.988714+00:00` (UTC), Windows/Python 3.12.14: **53 testes aprovados, zero falhas, erros ou ignorados**. `pip check`, auditor de integridade dos 21 arquivos, manifesto dos 32 itens de `entregas/`, ZIP e comparação completa dos 180 registros/metadados aprovados. Foram conferidos 76 links locais e os quatro exemplos/OpenAPI.
+Execução em `2026-10-29T05:40:54.260748+00:00` (UTC), Windows/Python 3.12.14: **70 testes aprovados, zero falhas, erros ou ignorados**. São os 53 testes existentes mais 17 regressões de integridade e preservação da transação. `pip check`, auditor de integridade dos 21 arquivos, manifesto dos 32 itens de `entregas/`, ZIP e comparação completa dos 180 registros/metadados aprovados.
 
-[Evidência desta revisão](../validacao/revisao-documental-2026-10-29.json): referência Git anterior e hashes dos fontes efetivamente testados. Comparação de AST dos arquivos Python confirmou execução idêntica à `main`, ignorando somente docstrings; outras seções do README geral foram preservadas. A evidência registra a versão testada, sem substituir os registros anteriores.
+[Evidência desta versão](../validacao/qualidade-2026-10-29.json): referência Git anterior e hashes dos fontes efetivamente testados. Os quatro exemplos, o OpenAPI e o esquema SQLite permanecem iguais. Endpoints, campos, unidades, períodos, autenticação, limites e dependências foram preservados; nenhuma nova infraestrutura ou integração foi adicionada.
+
+A [revisão documental anterior](../validacao/revisao-documental-2026-10-29.json) registrou 53 testes aprovados e 76 links locais, com execução Python idêntica à `main` após ignorar duas docstrings. Esse resultado pertence à versão documental; esta versão inclui as correções funcionais e suas novas evidências.
 <!-- FIM_RESULTADO_ATUAL -->
 
 Critérios conferidos: fidelidade dos 180 registros e metadados, três cenários de dados/cobertura, entrada e erros, autenticação, HTTPS local real, limites, SQLite e perfil opcional de hospedagem. O teste TLS gera certificado temporário com OpenSSL e valida certificado/nome do servidor; não usa `verify=False`. Arquivos temporários são removidos ao final.
@@ -45,9 +47,13 @@ Conferência de exemplos: São Paulo roubo/furto 657/5.193 e Curitiba 208/3.222 
 
 Campos `etapa` existem nesses registros de desenvolvimento; **não fazem parte da resposta pública da API**. Correções posteriores de docstrings/código não invalidam a origem histórica, mas mudam os hashes da versão atual. Novas execuções devem registrar referência e resultado próprios. O [checklist antigo](historico/ACEITE_EQUIPE.md) é histórico; aprovações não foram fabricadas e não são requisito da entrega atual.
 
-## Limitações identificadas para correção separada
+## Regressões corrigidas nesta versão
 
-Simulações anteriores sobre cópias temporárias do SQLite identificaram catálogo incompleto/vazio aceito como sucesso, números não finitos serializados como `null` disponível e estruturas JSON inválidas retornando erro genérico. Os 53 testes desta revisão não cobrem essas regressões. A edição canônica permanece íntegra; a correção e novos testes pertencem a um PR de código separado. Não apresentar esta revisão documental como correção dessas falhas.
+Testes em cópias temporárias do SQLite confirmam 503 `SERVICO_INDISPONIVEL` para catálogo incompleto/vazio ou com ID substituído, números não finitos/overflow, JSON inválido e registros com campos, tipos ou estados incoerentes. A leitura valida o catálogo completo e os registros consultados; não é uma varredura integral do banco a cada chamada. `/ready` detecta catálogo danificado; `/health` continua verificando somente o processo.
+
+Ausências legítimas continuam 200 com `null`/motivo; consultas e códigos inexistentes preservam 400/404, enquanto falhas inesperadas de programação continuam 500. Edição ativa quebrada é 503; edição inexistente pedida explicitamente é 404. Testes também confirmam rollback integral de uma importação que falha durante a gravação e consulta/preparação sem dependência de frameworks HTTP. A edição canônica permaneceu íntegra durante todos os testes.
+
+Os modelos foram separados em `modelos.py`, as regras compartilhadas em `validadores.py`, e a preparação foi dividida em leitura, normalização e gravação. A validação da estrutura ocorre na fronteira dos dados; não existe conversão genérica de toda exceção para 503.
 
 ## O que esta validação não comprova
 
