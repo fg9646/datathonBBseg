@@ -12,7 +12,7 @@ Referências oficiais: [FastAPI — segurança por API key](https://fastapi.tian
 
 ## Preparação local
 
-Na raiz do repositório, criar/ativar um ambiente virtual Python 3.10+ e instalar:
+Usar Python 3.12 (versão testada); as dependências fixadas exigem no mínimo Python 3.11. Na raiz do repositório, criar/ativar o ambiente virtual e instalar:
 
 ```bash
 python -m pip install -r api_territorio/requirements-dev.txt

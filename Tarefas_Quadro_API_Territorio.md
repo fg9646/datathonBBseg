@@ -23,7 +23,7 @@
 - [x] Edição inicial dos dados e referência para conferir os valores: `dados/edicoes/territorio-2026-10-28-r1`.
 - [x] Mapeamento do nome antigo de vendaval para o identificador corrigido, em `mapeamento_catalogo.csv`.
 - [x] Exemplos completos gerados pela implementação: dados disponíveis, lacunas, município sem cobertura e credencial ausente; esquema OpenAPI entregue como arquivo.
-- [x] Validação dos dados e lacunas documentadas; testes da API permanecem pendentes.
+- [x] Validação dos dados e lacunas documentadas; 43 testes locais da base e da API aprovados. A validação de aceite com a equipe permanece pendente no ponto 6.
 - [ ] Acordo de falhas, limites e contatos de suporte/atualização.
 
 ## Regra de trabalho
