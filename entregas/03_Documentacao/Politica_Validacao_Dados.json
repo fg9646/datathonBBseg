@@ -1,0 +1,65 @@
+{
+  "versao": "validacao-0.2.0",
+  "versao_script": "0.2.0",
+  "versao_schema": "0.2.0",
+  "marcadores_ausencia": [
+    "",
+    "DESCONHECIDO",
+    "NAO_COLETADO",
+    "NAO_DISPONIVEL",
+    "NAO_INFORMADO"
+  ],
+  "escopo_marcadores": [
+    "material_parede_externa_cadastrado",
+    "padrao_construtivo_cadastrado",
+    "origem_area",
+    "nivel_confianca_vinculo",
+    "probabilidade_bem_no_imovel_referencia"
+  ],
+  "classificacao_ausencia": "Somente para classificar estados: remover espaços laterais e comparar em maiúsculas. O valor original nunca é substituído.",
+  "nao_se_aplica": "Estado próprio no cadastro; em probabilidade/confiança indica ausência de valor utilizável, preservando o marcador.",
+  "probabilidade": {
+    "minimo": 0,
+    "maximo": 1,
+    "limites_inclusivos": true,
+    "formato": "decimal com ponto; sem separador de milhar",
+    "estados": [
+      "VALIDA",
+      "AUSENTE",
+      "INVALIDA"
+    ],
+    "invalido": "Preservar no campo original e registrar pendência; não recortar, imputar ou reponderar."
+  },
+  "confianca_vinculo": {
+    "categorias_exatas": [
+      "ALTA",
+      "MEDIA",
+      "BAIXA"
+    ],
+    "resumos_adicionais": [
+      "DESCONHECIDA",
+      "INVALIDA"
+    ],
+    "reconciliacao": "ALTA + MEDIA + BAIXA + DESCONHECIDA + INVALIDA = bens com vínculo válido."
+  },
+  "layout_tecnico": {
+    "maximo_blocos_bens": 6,
+    "categorias": [
+      "ELETRODOMESTICO",
+      "ELETRONICO",
+      "ITEM_LAZER",
+      "MOVEL"
+    ],
+    "colunas": 200,
+    "schema": "0.2.0",
+    "mudanca_inesperada": "Interromper antes dos CSVs finais e registrar ERRO de schema. Não expandir silenciosamente.",
+    "contrato_integracao": "PENDENTE_ALINHAMENTO_COM_PIPPO_E_BUSSOLA"
+  },
+  "qualidade_nao_define": [
+    "elegibilidade",
+    "prioridade_pergunta",
+    "encaminhamento_P0",
+    "plano",
+    "score"
+  ]
+}

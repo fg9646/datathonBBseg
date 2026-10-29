@@ -1,0 +1,29 @@
+{
+  "status": "APROVADO",
+  "versao": "0.2.0",
+  "bases": [
+    {
+      "base": "Desenvolvimento",
+      "linhas": 2578,
+      "bens": 8988,
+      "colunas": 200,
+      "celulas_preexistentes_preservadas": 487242,
+      "ids_e_ordem_preservados": true
+    },
+    {
+      "base": "Teste_Comum",
+      "linhas": 138,
+      "bens": 494,
+      "colunas": 200,
+      "celulas_preexistentes_preservadas": 26082,
+      "ids_e_ordem_preservados": true
+    }
+  ],
+  "oito_colunas_novas_exatas": true,
+  "contagens_confianca_e_probabilidade_completas": true,
+  "probabilidades_e_confiancas_invalidas_nos_originais": 0,
+  "ocorrencias_ausencia_documentadas": 5758,
+  "estimativas_area_novas": 0,
+  "fontes_originais_preservadas": true,
+  "pacote_anterior_sha256": "7f7270451c8e2cd13acf3ddb53d5cdecb055a711a391948459147dd10529e7fb"
+}

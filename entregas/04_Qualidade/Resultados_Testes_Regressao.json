@@ -1,0 +1,99 @@
+{
+  "script_testado": "consolidar_seguro_residencial.py",
+  "fase": "completa",
+  "total": 10,
+  "aprovados": 10,
+  "resultados": [
+    {
+      "caso": "material_e_padrao_vazios",
+      "passou": true,
+      "detalhe": {
+        "material": "DESCONHECIDO",
+        "padrao": "DESCONHECIDO",
+        "status_relatorio": "VALIDADO_COM_AUSENCIAS"
+      }
+    },
+    {
+      "caso": "probabilidade_fora_intervalo",
+      "passou": true,
+      "detalhe": {
+        "valor": "1.25",
+        "contagem_invalida": "1",
+        "status_relatorio": "VALIDADO_COM_PENDENCIAS"
+      }
+    },
+    {
+      "caso": "confianca_nao_reconhecida",
+      "passou": true,
+      "detalhe": {
+        "contagens": {
+          "ALTA": 5,
+          "MEDIA": 0,
+          "BAIXA": 0,
+          "DESCONHECIDA": 0,
+          "INVALIDA": 1
+        },
+        "bens": 6,
+        "status_relatorio": "VALIDADO_COM_PENDENCIAS"
+      }
+    },
+    {
+      "caso": "probabilidade_limites_ausencia_e_negativa",
+      "passou": true,
+      "detalhe": {
+        "VALIDA": 3,
+        "AUSENTE": 2,
+        "INVALIDA": 1
+      }
+    },
+    {
+      "caso": "confianca_ausente_e_invalida",
+      "passou": true,
+      "detalhe": {
+        "ALTA": 1,
+        "MEDIA": 1,
+        "BAIXA": 1,
+        "DESCONHECIDA": 2,
+        "INVALIDA": 1
+      }
+    },
+    {
+      "caso": "outros_marcadores_ausencia",
+      "passou": true,
+      "detalhe": {
+        "material": "DESCONHECIDO",
+        "padrao": "DESCONHECIDO"
+      }
+    },
+    {
+      "caso": "bem_orfao_preservado_separadamente",
+      "passou": true,
+      "detalhe": {
+        "bens_detalhe": 6,
+        "bens_resumo": "5",
+        "confiancas": {
+          "ALTA": 5,
+          "MEDIA": 0,
+          "BAIXA": 0,
+          "DESCONHECIDA": 0,
+          "INVALIDA": 0
+        }
+      }
+    },
+    {
+      "caso": "mais_bens_nao_altera_schema_silenciosamente",
+      "passou": true,
+      "detalhe": "('SCHEMA_LIMITE_BLOCOS_EXCEDIDO', ('CASO_00001', 'IMO_CASO_00001_01'), 7, 'Revisar representação antes de expandir colunas')"
+    },
+    {
+      "caso": "nova_categoria_nao_altera_schema_silenciosamente",
+      "passou": true,
+      "detalhe": "('SCHEMA_CATEGORIA_NAO_PREVISTA', 'BEM_FIXTURE_01', 'NOVA_CATEGORIA', 'Revisar contrato antes de alterar colunas')"
+    },
+    {
+      "caso": "chave_duplicada_bloqueia_saida",
+      "passou": true,
+      "detalhe": "('Chave duplicada', 'clientes', ('CASO_00001',))"
+    }
+  ]
+}

@@ -1,0 +1,1211 @@
+{
+  "versao_schema": "0.2.0",
+  "total_colunas": 200,
+  "colunas": [
+    {
+      "nome": "ID",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "IDENTIFICADOR"
+    },
+    {
+      "nome": "cliente_id",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "IDENTIFICADOR"
+    },
+    {
+      "nome": "imovel_id",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "IDENTIFICADOR"
+    },
+    {
+      "nome": "territorio_id",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "IDENTIFICADOR"
+    },
+    {
+      "nome": "obs_idade",
+      "tipo": "inteiro",
+      "unidade": "anos",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_renda_mensal_informada",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_usuario_app",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_frequencia_acesso_app_90d",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_quantidade_dependentes",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_possui_pet_informado",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_qtd_produtos_seguridade",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_possui_seguro_residencial",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_logradouro",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_numero",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_complemento",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bairro",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_municipio_real",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_uf_real",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_codigo_ibge_municipio",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_cep_agregado",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_endereco_principal_compativel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_possui_termo_apartamento",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_possui_termo_casa",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_possui_termo_bloco",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_possui_termo_condominio",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_area_cadastrada_m2",
+      "tipo": "decimal",
+      "unidade": "m²",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_padrao_construtivo_cadastrado",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_material_parede_externa_cadastrado",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_situacao_imovel_cadastral",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_pagamento_aluguel_recorrente",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_valor_aluguel_recorrente",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_credito_recorrente_compativel_aluguel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_valor_medio_credito_recorrente",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_quantidade_creditos_recorrentes_12m",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_parcela_financiamento_imobiliario",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_pagamento_condominio_mensal",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_pagamento_iptu_anual",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_energia_media_mensal_6m",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_agua_media_mensal_6m",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_internet_mensal",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_compras_moveis_36m",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_compras_eletrodomesticos_36m",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_compras_eletronicos_36m",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_gastos_material_construcao_24m",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_gastos_vidracaria_24m",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_1_id",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_1_tipo_bem",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_1_valor_cadastrado",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_1_mesma_uf_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_1_mesmo_municipio_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_1_bem_financiado_pelo_banco",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_2_id",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_2_tipo_bem",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_2_valor_cadastrado",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_2_mesma_uf_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_2_mesmo_municipio_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_2_bem_financiado_pelo_banco",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_3_id",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_3_tipo_bem",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_3_valor_cadastrado",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_3_mesma_uf_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_3_mesmo_municipio_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_3_bem_financiado_pelo_banco",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_4_id",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_4_tipo_bem",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_4_valor_cadastrado",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_4_mesma_uf_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_4_mesmo_municipio_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_4_bem_financiado_pelo_banco",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_5_id",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_5_tipo_bem",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_5_valor_cadastrado",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_5_mesma_uf_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_5_mesmo_municipio_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_5_bem_financiado_pelo_banco",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_6_id",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_6_tipo_bem",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_6_valor_cadastrado",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_6_mesma_uf_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_6_mesmo_municipio_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "obs_bem_6_bem_financiado_pelo_banco",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "OBSERVADO"
+    },
+    {
+      "nome": "der_indice_maturidade_digital",
+      "tipo": "decimal",
+      "unidade": "pontos; escala definida pela fonte",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_quantidade_bens_referencia",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_valor_bens_cadastrado_total_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_quantidade_bens_eletrodomestico_referencia",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_valor_bens_eletrodomestico_cadastrado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_quantidade_bens_eletronico_referencia",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_valor_bens_eletronico_cadastrado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_quantidade_bens_item_lazer_referencia",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_valor_bens_item_lazer_cadastrado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_quantidade_bens_movel_referencia",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_valor_bens_movel_cadastrado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_quantidade_bens_confianca_alta",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_quantidade_bens_confianca_media",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_quantidade_bens_confianca_baixa",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_quantidade_bens_confianca_desconhecida",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_quantidade_bens_confianca_invalida",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_quantidade_bens_probabilidade_valida",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_quantidade_bens_probabilidade_ausente",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_quantidade_bens_probabilidade_invalida",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_area_cadastral_utilizavel_m2",
+      "tipo": "decimal",
+      "unidade": "m²",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_tipo_imovel_sugerido",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_uso_imovel_sugerido",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "der_tipo_vinculo_sugerido",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "DERIVADO"
+    },
+    {
+      "nome": "est_renda_mensal_presumida",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_latitude_aproximada",
+      "tipo": "decimal",
+      "unidade": "graus",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_longitude_aproximada",
+      "tipo": "decimal",
+      "unidade": "graus",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_bem_1_probabilidade_bem_no_imovel_referencia",
+      "tipo": "decimal",
+      "unidade": "proporção de 0 a 1",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_bem_1_valor_bem_ponderado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_bem_2_probabilidade_bem_no_imovel_referencia",
+      "tipo": "decimal",
+      "unidade": "proporção de 0 a 1",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_bem_2_valor_bem_ponderado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_bem_3_probabilidade_bem_no_imovel_referencia",
+      "tipo": "decimal",
+      "unidade": "proporção de 0 a 1",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_bem_3_valor_bem_ponderado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_bem_4_probabilidade_bem_no_imovel_referencia",
+      "tipo": "decimal",
+      "unidade": "proporção de 0 a 1",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_bem_4_valor_bem_ponderado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_bem_5_probabilidade_bem_no_imovel_referencia",
+      "tipo": "decimal",
+      "unidade": "proporção de 0 a 1",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_bem_5_valor_bem_ponderado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_bem_6_probabilidade_bem_no_imovel_referencia",
+      "tipo": "decimal",
+      "unidade": "proporção de 0 a 1",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_bem_6_valor_bem_ponderado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_valor_bens_ponderado_total_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_valor_bens_eletrodomestico_ponderado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_valor_bens_eletronico_ponderado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_valor_bens_item_lazer_ponderado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_valor_bens_movel_ponderado_referencia",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_valor_bens_min",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_valor_bens_max",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_area_m2",
+      "tipo": "decimal",
+      "unidade": "m²",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_area_min_m2",
+      "tipo": "decimal",
+      "unidade": "m²",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "est_area_max_m2",
+      "tipo": "decimal",
+      "unidade": "m²",
+      "natureza": "ESTIMADO"
+    },
+    {
+      "nome": "conf_tipo_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "DECLARADO"
+    },
+    {
+      "nome": "conf_uso_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "DECLARADO"
+    },
+    {
+      "nome": "conf_tipo_vinculo",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "DECLARADO"
+    },
+    {
+      "nome": "conf_material_parede_externa",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "DECLARADO"
+    },
+    {
+      "nome": "conf_area_m2",
+      "tipo": "decimal",
+      "unidade": "m²",
+      "natureza": "DECLARADO"
+    },
+    {
+      "nome": "conf_valor_bens",
+      "tipo": "decimal",
+      "unidade": "BRL",
+      "natureza": "DECLARADO"
+    },
+    {
+      "nome": "conf_imovel_possui_seguro_residencial",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "DECLARADO"
+    },
+    {
+      "nome": "ctl_origem_renda",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_confianca_renda",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_origem_area",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_confianca_area",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_chave_enriquecimento_publico",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_observacao_privacidade",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_orientacao_enriquecimento",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_bem_1_nivel_confianca_vinculo",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_bem_2_nivel_confianca_vinculo",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_bem_3_nivel_confianca_vinculo",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_bem_4_nivel_confianca_vinculo",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_bem_5_nivel_confianca_vinculo",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_bem_6_nivel_confianca_vinculo",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_conf_tipo_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_conf_uso_imovel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_conf_tipo_vinculo",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_conf_material_parede_externa",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_conf_area_m2",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_conf_valor_bens",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_conf_imovel_possui_seguro_residencial",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_versao_schema",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_revisao_base",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_revisao_perfil",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_fonte_base",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_fontes_dados",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_consolidado_em",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_dados_atualizados_em",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_data_atualizacao",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_revisao",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_inferencias",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_faixa_bens",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_area_cadastrada",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_material_cadastrado",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_padrao_cadastrado",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_bussola",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_revisao_perfil_usada_bussola",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_integridade_juncoes",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_estimativa_area_status",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_estimativa_area_metodo",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_estimativa_area_formula",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_estimativa_area_versao_metodo",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_estimativa_area_dados_utilizados_json",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_estimativa_area_parametros_json",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_estimativa_area_fonte_referencia",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_estimativa_area_data_referencia",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_estimativa_area_confianca",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_estimativa_area_limitacoes",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_status_qualidade_dados",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_quantidade_ocorrencias_qualidade",
+      "tipo": "inteiro",
+      "unidade": "quantidade",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "ctl_ocorrencias_qualidade_json",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "CONTROLE"
+    },
+    {
+      "nome": "motor_elegivel",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    },
+    {
+      "nome": "motor_motivo_inelegibilidade",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    },
+    {
+      "nome": "motor_plano_recomendado",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    },
+    {
+      "nome": "motor_coberturas_recomendadas",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    },
+    {
+      "nome": "motor_confianca_geral",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    },
+    {
+      "nome": "motor_justificativa_recomendacao",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    },
+    {
+      "nome": "motor_perguntas_confirmacao",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    },
+    {
+      "nome": "motor_fontes_publicas_adicionais",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    },
+    {
+      "nome": "motor_scores_json",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    },
+    {
+      "nome": "motor_pendencias_json",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    },
+    {
+      "nome": "motor_versao_regras",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    },
+    {
+      "nome": "motor_revisao_perfil_avaliada",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    },
+    {
+      "nome": "motor_avaliado_em",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    },
+    {
+      "nome": "motor_status",
+      "tipo": "texto",
+      "unidade": "texto",
+      "natureza": "RESULTADO_MOTOR"
+    }
+  ],
+  "identificacao": [
+    "cliente_id",
+    "imovel_id"
+  ],
+  "status": "LAYOUT_TECNICO_VERSIONADO; CONTRATO_DE_INTEGRACAO_PENDENTE"
+}
